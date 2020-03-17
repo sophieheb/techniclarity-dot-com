@@ -1,0 +1,6 @@
+.aboutBackground {
+  background-image: url('../assets/about-background.png');
+  background-position: top;
+  background-size: cover;
+  color: #404a28;
+}

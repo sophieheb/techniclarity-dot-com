@@ -1,0 +1,13 @@
+.tuitionBackground {
+  background-image: url('../assets/tuition-background.png');
+  background-position: top;
+  background-size: cover;
+  color: #404a28;
+}
+
+.tuitionDivider {
+  background-image: url('../assets/tuition-divider.png');
+  background-position: top;
+  background-size: cover;
+  color: #404a28;
+}

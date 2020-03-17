@@ -1,0 +1,6 @@
+.coursesBackground {
+  background-image: url('../assets/courses-background.png');
+  background-position: top;
+  background-size: cover;
+  color: #404a28;
+}

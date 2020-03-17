@@ -1,0 +1,47 @@
+.homeBackground {
+  background-image: url('../assets/homepage-background.png');
+  background-position: top;
+  background-size: cover;
+  color: #404a28;
+}
+
+.customerJourneyContainer {
+  background-color: #FEFEFA;
+  border-radius: .5rem;
+}
+
+.listItem {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
+.before :before {
+content: '\1F44E';
+margin-right: 5px;
+}
+
+.after li:before {
+content: '\1F44D';
+margin-right: 5px;
+}
+
+.thriving {
+  font-size: 1.5em;
+}
+
+.homeMailchimp {
+ width: 50%;
+}
+
+
+@media (max-width: 650px) {
+  .background {
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  .homeMailchimp {
+    width: 100%;
+  }
+
+}
