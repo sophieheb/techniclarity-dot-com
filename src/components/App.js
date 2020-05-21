@@ -30,7 +30,7 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
               <li className="nav-item">
-                <Link className="nav-link ml-auto" to="courses">Product Launchpad</Link>
+                <Link className="nav-link ml-auto" to="product-launchpad">Product Launchpad</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="tuition">Tuition</Link>
@@ -47,7 +47,7 @@ function App() {
 
 
         <Switch>
-          <Route path="/courses">
+          <Route path="/product-launchpad">
             <Courses />
           </Route>
           <Route path="/tuition">
