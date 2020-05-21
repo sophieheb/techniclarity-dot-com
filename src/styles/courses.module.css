@@ -4,3 +4,10 @@
   background-size: cover;
   color: #404a28;
 }
+
+.coursesDivider {
+  background-image: url('../assets/tuition-divider.png');
+  background-position: top;
+  background-size: cover;
+  color: #404a28;
+}

@@ -22,19 +22,29 @@ function App() {
     <div className="App background-green">
       <Router>
         <nav className="navbar navbar-expand-sm fixed-top navbar-light background-green">
-          <Link className="navbar-brand" to="/">
-            <img className={`${navStyles.navLogo}`} src={logo} alt="Logo" />
-            Techniclarity
-          </Link>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div className="navbar-nav collapse navbar-collapse">
-            <Link className="nav-item nav-link ml-auto" to="courses">Courses</Link>
-            <Link className="nav-item nav-link" to="tuition">Tuition</Link>
-            <Link className="nav-item nav-link" to="about">About</Link>
+        <Link className="navbar-brand" to="/">
+          <img className={`${navStyles.navLogo}`} src={logo} alt="Logo" />
+          Techniclarity
+        </Link>
+
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link ml-auto" to="courses">Product Launchpad</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="tuition">Tuition</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-item nav-link" to="about">About</Link>
+              </li>
+            </ul>
           </div>
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
         </nav>
+
 
         <Switch>
           <Route path="/courses">
