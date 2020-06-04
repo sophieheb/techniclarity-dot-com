@@ -11,3 +11,11 @@
   background-size: cover;
   color: #404a28;
 }
+
+.buyButton {
+  color: #FEFEFA;
+  background-color: #38023b;
+  border: 1px solid #38023b;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+}

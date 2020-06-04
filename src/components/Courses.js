@@ -26,10 +26,13 @@ const Courses = () => {
 
   return [
   <section className={`p-sm-5 p-3 container-fluid`}>
-    <h1 className="p-sm-5 p-3 text-wrap">Product Launchpad</h1>
-    <h2 className="p-sm-5 p-3 w-75">
+    <h1 className="p-sm-5 p-3 text-wrap row">Product Launchpad</h1>
+    <h2 className="p-sm-5 p-3 w-75 row">
       You&apos;ve got an incredible idea for your tech product. You just need a place to start.
     </h2>
+    <div className="row">
+      <a className={`${styles.buyButton} m-sm-5 m-3 p-4 row`} href="https://courses.techniclarity.co/enroll/749942?price_id=797731&coupon=early-bird">Buy now</a>
+    </div>
   </section>,
   <section className={`${styles.coursesDivider} p-sm-5 p-3 py-5 container-fluid text-center`}>
     <div className="w-75 p-5 m-auto box-shadow background-green">
@@ -71,19 +74,27 @@ const Courses = () => {
       </div>
     </div>
   </section>,
+  <section className={`${styles.coursesDivider} p-sm-5 p-3 py-5 container-fluid text-center`}>
+    <div className="w-75 p-5 m-auto box-shadow background-green">
+      <p className="text-wrap">Usually priced at £450, Product Launchpad is offered at £225 for the first five users. That's a massive 50% discount.</p>
+      <h4>Just to sweeten the deal you'll also get a bonus 60 minute tuition session to make sure you cement your new knowledge on completion.</h4>
+      <hr className="short-break background-white"/>
+      <a className={`${styles.buyButton} m-sm-5 m-3 p-4` } href="https://courses.techniclarity.co/enroll/749942?price_id=797731&coupon=early-bird">Buy now</a>
+    </div>
+  </section>,
   <section className="container-fluid">
     <section className="row">
       <section className="col-sm-6 p-5">
-        <h4>
+        <p>
           The combination of new knowledge
           delivered via videos you can watch any time and hands-on exercises to
           tailor to your own business will take you from stumbling around with
           google, to an action plan in no time.
-        </h4>
+        </p>
       </section>
       <section className="col-sm-6 p-5">
         <div id="fd-form-5ec655ccb9c153002b5acf92"></div>
-      </section>
+        </section>
     </section>
   </section>,
 ]
