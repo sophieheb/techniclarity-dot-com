@@ -46,28 +46,36 @@ const Courses = () => {
   <section className="container-fluid background-white p-5">
     <h2 className="pb-3 mx-auto col-lg-6">Here's what to expect at the end of this course...</h2>
     <div className="row p-5 d-flex justify-content-center">
-      <img src={comingSoonOne} className="col-sm-3 p-3" alt="Illustrative doodle" />
+      <div className="col-sm-3">
+        <img src={comingSoonOne} className="img-fluid" alt="Illustrative doodle" />
+      </div>
       <div className="col-sm-9 col-lg-6 my-auto">
         <h3 >Clearly articulate your idea</h3>
         <p>By getting clarity on what your idea really is you'll reduce the overwhelm. This is the first step in taking your big idea and turning it into manageable pieces.</p>
       </div>
     </div>
     <div className="row p-5 d-flex justify-content-center">
-      <img src={comingSoonTwo} className="col-sm-3 order-sm-1 p-3"  alt="Illustrative doodle" />
+      <div className="col-sm-3 order-sm-1">
+        <img src={comingSoonTwo} className="img-fluid"  alt="Illustrative doodle" />
+      </div>
       <div className="col-sm-9 order-sm-0 col-lg-6 my-auto">
         <h3 >Estimate costs and timelines</h3>
         <p >When you don't know how long something will take or how much it will cost it's hard to know if to invest. Digging deeper into the specifics of your idea will unlock your ability to answer these questions.</p>
       </div>
     </div>
     <div className="row p-5 d-flex justify-content-center">
-      <img src={comingSoonThree} className="col-sm-3 p-3"  alt="Illustrative doodle" />
+      <div className="col-sm-3">
+        <img src={comingSoonThree} className="img-fluid"  alt="Illustrative doodle" />
+      </div>
       <div className="col-sm-9 col-lg-6 my-auto">
         <h3 >Figure out whats possible</h3>
         <p >Not coming from a technical background, you probably still feel reliant on others to help you shape your dreams. Understanding the possibilities puts you back in the driver's seat.</p>
       </div>
     </div>
     <div className="row p-5 d-flex justify-content-center">
-      <img src={comingSoonFour} className="col-sm-3 order-sm-1 p-3"  alt="Illustrative doodle" />
+      <div className="col-sm-3 order-sm-1">
+        <img src={comingSoonFour} className="img-fluid"  alt="Illustrative doodle" />
+      </div>
       <div className="col-sm-9 order-sm-0 col-lg-6 my-auto">
         <h3 >Collect vital feedback</h3>
         <p >It is challenging to get feedback on your idea without something for potential users to play with. You'll create early versions of your product so that the wheels are in motion.</p>
