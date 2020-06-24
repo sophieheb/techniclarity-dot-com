@@ -30,6 +30,9 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
               <li className="nav-item">
+                <a className="nav-link ml-auto"  href="https://view.flodesk.com/pages/5ef34f1c08344d002685bdd2">Freebie</a>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link ml-auto" to="product-launchpad">Product Launchpad</Link>
               </li>
               <li className="nav-item">

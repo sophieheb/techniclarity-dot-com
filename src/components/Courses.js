@@ -15,7 +15,6 @@ import comingSoonFour from '../assets/coming-soon-4.png';
 // even though you have already taken one of our online courses? Or perhaps
 // you can’t find an online course anywhere that covers what you need.</p>
 
-
 const Courses = () => {
   useEffect(() => {
     window.fd('form', {
