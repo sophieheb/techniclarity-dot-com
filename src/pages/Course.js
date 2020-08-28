@@ -2,7 +2,7 @@ import React from 'react';
 
 function Course() {
   return (
-    <p>Course</p>
+    <p className="text-green">Course</p>
   );
 }
 

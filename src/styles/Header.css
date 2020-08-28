@@ -1,0 +1,17 @@
+.footer{
+    height: 75px
+}
+
+.link {
+    font-family: SyneBold;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+    color: #031799;
+}
+
+.menu {
+    background-image: linear-gradient(#CFE0FC, #E1D5FA);
+}
