@@ -17,6 +17,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
+      <div className="d-flex min-vh-100 flex-column justify-content-between">
       <Header/>
       <Switch>
         <Route path="/tuition">
@@ -36,6 +37,7 @@ function App() {
         </Route>
       </Switch>
       <Footer/>
+      </div>
   </Router>
   );
 }

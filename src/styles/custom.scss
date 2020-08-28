@@ -3,6 +3,7 @@ $body-bg:#E1D5FA;
 $body-color: #031799;
 $font-family-sans-serif: 'Montserrat';
 $theme-colors: (
+"primary": #031799,
 "yellow": #FFF9E1,
 "green": #0B807F,
 "pink": #FF92D3,
@@ -24,13 +25,38 @@ $bg-variant: (
 "bg-cyan": #8924F1,
 );
 
+
+$h1-font-size: 50px;
+$h2-font-size: 18px;
+$h3-font-size: 26px;
+$font-size-base: 1.125rem;
+
+
+
+
 @font-face {
     font-family: SyneBold;
     src: url("../assets/fonts/Syne-Bold.otf") format("opentype");
 }
+@font-face {
+    font-family: GalanoGrotesque;
+    src: url("../assets/fonts/Galano-Grotesque-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: ClearFace;
+    src: url("../assets/fonts/Clearface-Italic.otf") format("opentype");
+}
 
-h1 {
+h1, h3 {
     font-family: SyneBold;
 }
+
+span {
+    font-family: ClearFace
+}
+
+// p {
+//     font-size: 18px;
+// }
 
 @import '~bootstrap/scss/bootstrap';
