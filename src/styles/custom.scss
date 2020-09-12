@@ -11,7 +11,7 @@ $theme-colors: (
 "blue": #031799,
 "purple": #E1D5FA,
 "teal": #CFE0FC,
-"cyan": #8924F1,
+"cyan": #8294F1,
 );
 
 $bg-variant: (
@@ -22,7 +22,7 @@ $bg-variant: (
 "bg-blue": #031799,
 "bg-purple": #E1D5FA,
 "bg-teal": #CFE0FC,
-"bg-cyan": #8924F1,
+"bg-cyan": #8294F1,
 );
 
 
@@ -31,7 +31,9 @@ $h2-font-size: 18px;
 $h3-font-size: 26px;
 $font-size-base: 1.125rem;
 
-
+$border-radius: 23px;
+$btn-border-radius-lg:23px;
+$btn-border-radius-sm:23px;
 
 
 @font-face {
@@ -51,8 +53,24 @@ h1, h3 {
     font-family: SyneBold;
 }
 
+h2 {
+    font-family: GalanoGrotesque;
+}
+
 span {
     font-family: ClearFace
+}
+
+.btn {
+    font-family: roc-grotesk-wide,sans-serif;
+}
+
+.btn-purple{
+    color: #fA544E !important;
+}
+
+.btn-red {
+    color: #E1D5FA !important;
 }
 
 // p {

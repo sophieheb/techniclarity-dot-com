@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,10 +15,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+
+  const [headerColor, setHeaderColour] = useState('#E1D5FA')
+
   return (
     <Router>
       <div className="d-flex min-vh-100 flex-column justify-content-between">
-      <Header/>
+      <Header headerColor={headerColor}/>
       <Switch>
         <Route path="/tuition">
           <Tuition />
@@ -33,7 +36,7 @@ function App() {
           <Contact />
         </Route>
         <Route path="/">
-          <Home />
+          <Home setHeaderColour={(color)=> setHeaderColour(color)} />
         </Route>
       </Switch>
       <Footer/>

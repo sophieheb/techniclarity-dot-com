@@ -15,3 +15,11 @@
 .menu {
     background-image: linear-gradient(#CFE0FC, #E1D5FA);
 }
+
+.scrolled {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    background-color: #E1D5FA
+}

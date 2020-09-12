@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div className="container-fluid mb-5 bg-green w-100 p-5">
       <div className="row">
-        <div className="col-4 p-5">
+        <div className="col-sm-4 p-5">
           <img
             src={textLogo}
             alt="Techniclarity logo"
@@ -35,16 +35,16 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="col-4 p-5">
+        <div className="col-sm-4 p-5">
           <h3 className="text-white">The <span>Handbook</span></h3>
           <p className="text-white">Sign up to our newsletter for high-quality info that stops you feeling like a fraud when you're running your startup.</p>
           <NewsletterSignup/>
         </div>
-        <div className="col-4 p-5">
+        <div className="col-sm-4 p-5">
           <img
             src={symbolLogo}
             alt="Techniclarity logo"
-            className="h-25 mb-2"
+            className="h-25 mb-2 img-fluid"
           />
           <p className="text-white m-0">	&#169; Techniclarity 2020</p>
           <p className="text-white m-0">Site design by <a className="footerLink" href="https://www.chloeford.co.uk/">Chloe Ford</a></p>

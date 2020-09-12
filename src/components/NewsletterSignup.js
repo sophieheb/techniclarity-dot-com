@@ -1,7 +1,4 @@
-import React, { useEffect } from 'react';
-import textLogo from '../assets/textLogoWhite.svg'
-import facebookLogo from '../assets/facebookLogoWhite.svg'
-import instagramLogo from '../assets/instagramLogoWhite.svg'
+import React from 'react';
 
 import '../styles/NewsletterSignup.css'
 
@@ -31,7 +28,7 @@ function NewsletterSignup() {
               </div>
               <div className="ff__footer">
                 <button type="submit" className="fd-btn ff__button px-5 py-3" data-form-el="submit">
-                  <span>Submit</span>
+                  <span id="ff__button">Submit</span>
                 </button>
               </div>
             </div>

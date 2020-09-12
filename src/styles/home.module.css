@@ -1,0 +1,100 @@
+.cloudTop{
+    left:-40%;
+    top:30%;
+    
+}
+
+.cloudTopLoaded{
+    top:10%;
+    left:20%;
+    transition: top 6s, left 7s;
+    transition-timing-function: ease-out;
+}
+
+.cloudMiddle{
+    top:15%;
+    right:-10%;
+}
+
+.cloudMiddleLoaded{
+    top:25%;
+    right:-5%;
+    transition: top 5s, right 5s;
+    transition-timing-function: ease-out;
+}
+
+.cloudBottom{
+    top:90%;
+    left:-15%;
+}
+
+.cloudBottomLoaded{
+    top:60%;
+    left:-5%;
+    transition: top 5s, left 5s;
+    transition-timing-function: ease-out;
+}
+
+@keyframes bouncingGlobe {
+    0% {bottom: -30%}
+    50% {bottom: -25%}
+    100% {bottom: -30%}
+  }
+
+.globe{
+    bottom:-30%;
+    left:80%;
+    animation: bouncingGlobe 7s;
+    animation-iteration-count: infinite;
+    z-index: 10
+}
+
+@keyframes bouncingPinkGlobe {
+    0% {bottom: -30%; transform: scale(0.9)}
+    50% {bottom: -25%; transform: scale(1.2)}
+    100% {bottom: -30%; transform: scale(0.9)}
+}
+
+.pinkGlobe{
+    bottom:-30%;
+    left:80%;
+    animation: bouncingPinkGlobe 7s;
+    animation-iteration-count: infinite;
+}
+
+.containerTopLoaded {
+    background-image: linear-gradient(#8294F1, #E1D5FA);
+    overflow: hidden;
+    transition: linear-gradient 5s;
+    transition-timing-function: ease-out;
+
+}
+
+.containerTop{
+    background-image: linear-gradient(#262DBA, #8294F1, #E1D5FA);
+    overflow: hidden
+}
+
+.cloudFreebieLeft{
+    z-index:10;
+    left: 10%;
+
+}
+
+.cloudFreebieRight{
+    z-index:10;
+    right: 10%;
+}
+
+.cloudFreebieLeftLoaded{
+    z-index:10;
+    left: -650px;
+    transition: left 5s;
+
+}
+
+.cloudFreebieRightLoaded{
+    z-index:10;
+    right: -650px;
+    transition: right 5s;
+}

@@ -1,11 +1,11 @@
-button > span{
+#ff__button{
 font-family: roc-grotesk-wide,sans-serif;
 font-weight: 700;
 font-style: normal;
 font-size:24px;
 }
 
-button {
+.fd-btn {
     width: auto
 }
 
@@ -402,14 +402,9 @@ div > .fd-ef-5f490f51c1e8d80026e7fb98 .ff__control {
       margin: 0;
     }
 
-    .fd-ef-5f490f51c1e8d80026e7fb98 .ff__root {
-      background: #0B807F;
-    }
-
     .fd-ef-5f490f51c1e8d80026e7fb98 .ff__container {
       margin: 0 auto;
       max-width: 1170px;
-      background: #0B807F;
     }
 
     .fd-ef-5f490f51c1e8d80026e7fb98 .ff__form {
@@ -470,6 +465,8 @@ div > .fd-ef-5f490f51c1e8d80026e7fb98 .ff__control {
       margin: -10px -5px 0;
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
 
     .fd-ef-5f490f51c1e8d80026e7fb98 .ff__cell {
@@ -478,7 +475,6 @@ div > .fd-ef-5f490f51c1e8d80026e7fb98 .ff__control {
       flex-grow: 1;
       max-width: 250px;
       min-width: 140px;
-      flex-basic: 0%;
       flex-shrink: 0;
     }
 

@@ -5,7 +5,7 @@ import {
   BrowserView,
   MobileView,
 } from "react-device-detect";
-import '../styles/Header.css'
+import styles from '../styles/header.module.css'
 
 import symbolLogo from '../assets/symbolLogo.png'
 import textLogo from '../assets/textLogo.svg'
@@ -15,17 +15,35 @@ import cloudTop from '../assets/cloud-1.png'
 import cloudBottom from '../assets/cloud-2.png'
 import Burger from './Burger';
 
-function Header() {
+function Header({headerColor}) {
   const [collapsed, setCollapsed] = useState(true)
+  const [scrolled, setScrolled]= useState(false);
+
+  const handleScroll=() => {
+    const offset=window.scrollY;
+    if(offset > 10 ){
+      setScrolled(true);
+    }
+    else{
+      setScrolled(false);
+    }
+  }
   
   useEffect(() => {
     document.body.style.overflow = collapsed ? 'unset' : 'hidden';
- }, [collapsed ]);
+  }, [collapsed ]);
+
+  useEffect(() => {
+    window.addEventListener('scroll',handleScroll)
+  })
   
   return (
     <>
     <BrowserView>
-      <Navbar className="d-flex justify-content-between align-items-start">
+      <Navbar 
+        className={`${scrolled ? styles.scrolled : null} w-100 d-flex justify-content-between align-items-start`}
+        style={{backgroundColor: headerColor}}
+        >
         <Navbar.Brand href="/" className="">
           <img
             src={textLogo}
@@ -37,6 +55,7 @@ function Header() {
             src={symbolLogo}
             height={75}
             alt="Techniclarity logo"
+            className={`${scrolled ? 'd-none' : 'd-flex'}`}
           />
         <Nav className="" navbar={false}>
           <Nav.Link href="tuition">Tuition</Nav.Link>
@@ -47,7 +66,7 @@ function Header() {
       </Navbar>
     </BrowserView>
     <MobileView >
-      <div className={`${collapsed ? null : 'vh-100'} d-flex flex-column bg-teal`}>
+      <div className={`${scrolled ? styles.scrolled : null} ${collapsed ? null : 'vh-100'} d-flex flex-column bg-teal`}>
       <Navbar className="d-flex justify-content-between">
         <Navbar.Brand href="/" className="w-50">
           <img
@@ -59,7 +78,7 @@ function Header() {
         <Burger collapsed={collapsed} setCollapsed={() =>setCollapsed(!collapsed)}/>
       </Navbar>
       {collapsed ? null :
-      <div className="container flex-grow-1 d-flex justify-content-between flex-column pb-4 pt-3 menu ">
+      <div className={`container flex-grow-1 d-flex justify-content-between flex-column pb-4 pt-3 ${styles.menu}`}>
           <img
             src={cloudTop}
             alt="Cloud Background"
@@ -73,12 +92,12 @@ function Header() {
             style={{top:'40%', right:'45%'}}
           />
           <Nav className="row flex-column"  navbar={false}>
-            <Nav.Link href="tuition" className="link">Tuition</Nav.Link>
-            <Nav.Link href="course" className="link">Course</Nav.Link>
-            <Nav.Link href="about" className="link">About</Nav.Link>
-            <Nav.Link href="contact" className="link">Contact</Nav.Link>
+            <Nav.Link href="tuition" className={styles.link}>Tuition</Nav.Link>
+            <Nav.Link href="course" className={styles.link}>Course</Nav.Link>
+            <Nav.Link href="about" className={styles.link}>About</Nav.Link>
+            <Nav.Link href="contact" className={styles.link}>Contact</Nav.Link>
           </Nav>
-          <div className="footer row d-flex justify-content-between align-items-end ">
+          <div className={`${styles.footer} row d-flex justify-content-between align-items-end`}>
             <div className="col-3 d-flex h-50">
               <a href="https://instagram.com/the.techniclarity">
               <img
