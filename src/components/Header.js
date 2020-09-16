@@ -7,7 +7,7 @@ import {
 } from "react-device-detect";
 import styles from '../styles/header.module.css'
 
-import symbolLogo from '../assets/symbolLogo.png'
+import symbolLogo from '../assets/symbol-logo.png'
 import textLogo from '../assets/textLogo.svg'
 import facebookLogo from '../assets/facebookLogo.svg'
 import instagramLogo from '../assets/instagramLogo.svg'

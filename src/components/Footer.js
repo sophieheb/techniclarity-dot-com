@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/Footer.css'
 import NewsletterSignup from './NewsletterSignup'
 import textLogo from '../assets/textLogoWhite.svg'
-import symbolLogo from '../assets/symbolLogo.png'
+import symbolLogo from '../assets/symbol-logo.png'
 import facebookLogo from '../assets/facebookLogoWhite.svg'
 import instagramLogo from '../assets/instagramLogoWhite.svg'
 
@@ -44,7 +44,7 @@ function Footer() {
           <img
             src={symbolLogo}
             alt="Techniclarity logo"
-            className="h-25 mb-2 img-fluid"
+            className="w-25 mb-2 img-fluid"
           />
           <p className="text-white m-0">	&#169; Techniclarity 2020</p>
           <p className="text-white m-0">Site design by <a className="footerLink" href="https://www.chloeford.co.uk/">Chloe Ford</a></p>
