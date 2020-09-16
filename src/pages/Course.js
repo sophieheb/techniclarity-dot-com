@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import { Waypoint } from 'react-waypoint';
@@ -498,7 +498,7 @@ function Course() {
       <div className="row">
       <div className="col-5 mb-5">
         <h1>FAQs</h1>
-        <p className="mb-0">Got any more questions? Send them over to:</p>
+        <p className="mb-0">Got any more <span>questions?</span> Send them over to:</p>
         <p><b>productlaunchpad@techniclarity.co</b></p>
       </div>
       </div><div className="row">
@@ -578,7 +578,7 @@ function Course() {
       <div>
         <h1 className="text-center">Looking for <span>1:1 tuition?</span></h1>
         <div className="text-center">
-          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">FIND OUT MORE</Button>
+          <Button variant="red" className="btn-lg" href="/tuition">FIND OUT MORE</Button>
         </div>
       </div>
     </div>
