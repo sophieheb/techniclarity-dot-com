@@ -14,12 +14,13 @@ import cloudFreebieRight from '../assets/cloud-freebie-right.png'
 import cloudFreebieLeft from '../assets/cloud-freebie-left.png'
 import glossary from '../assets/glossary.png'
 
-import handGlobe from '../assets/hand-globe.png'
+
 
 import useOnScreen from '../shared/onScreen'
-import NewsletterSignup from '../components/NewsletterSignup'
+
 import Instagram from '../components/Instagram'
 import Services from '../components/Services'
+import TheHandbook from '../components/TheHandbook'
 
 
 function Home({setHeaderColour}) {
@@ -115,29 +116,8 @@ function Home({setHeaderColour}) {
       </div>
     </div>
     <Services/>
-    <div
-      className={`bg-cyan p-4 container-fluid position-relative d-flex align-items-center`}
-    >
-      <div className="container py-5">
-        <div className="row justify-content-center">
 
-          <div 
-            className="col-6 text-center my-auto"
-          >
-            <h2 className="text-white">Newsletter</h2>
-            <h1 className="text-white">The <span>handbook</span></h1>
-            <p className="text-white">You don’t need more advice (or inbox clutter), you just need high-quality info that stops you feeling like a fraud when you’re running your startup.
-</p>
-            <NewsletterSignup/>
-          </div>
-          <img
-            src={handGlobe}
-            alt="Line drawing of a hand holding a globe"
-            className="col-6 img-fluid"
-          />
-        </div>
-      </div>
-    </div>
+    <TheHandbook />
 
     <Instagram/>
       
