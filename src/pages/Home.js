@@ -13,13 +13,13 @@ import greenDiamond from '../assets/green-diamond.svg'
 import cloudFreebieRight from '../assets/cloud-freebie-right.png'
 import cloudFreebieLeft from '../assets/cloud-freebie-left.png'
 import glossary from '../assets/glossary.png'
-import rocket from '../assets/line-rocket.svg'
-import hand from '../assets/line-hand-right.svg'
+
 import handGlobe from '../assets/hand-globe.png'
 
 import useOnScreen from '../shared/onScreen'
 import NewsletterSignup from '../components/NewsletterSignup'
 import Instagram from '../components/Instagram'
+import Services from '../components/Services'
 
 
 function Home({setHeaderColour}) {
@@ -114,53 +114,7 @@ function Home({setHeaderColour}) {
       </div>
       </div>
     </div>
-    <div className="container py-5">
-      <h1 className="text-center">Services</h1>
-      <div className="row py-5">
-        <div className="col-6 my-auto">
-          <h2>Course</h2>
-          <h1>Product <span>Launchpad</span></h1>
-          <h3>The <span>starting point</span> you need to get your idea ready for your future technical team.</h3> 
-          <p>Product Launchpad is an online course that guides you through the first few steps of creating your app or web platform. You’ll learn all the knowledge you need to launch your product and put all that new know-how into practice at the same time.</p>
-          <Button className="btn-lg" variant="red" href="/course">Find out more</Button>
-        </div>
-        <div className="col-6 position-relative d-flex justify-content-center align-items-center">
-            <img
-            src={greenDiamond}
-            alt="Green diamond background"
-            className={`w-100`}
-          />
-          <img
-            src={rocket}
-            alt="Line drawing of a rocket"
-            className={`h-50 position-absolute`}
-          />
-        </div>
-      </div>
-      <div className="row py-5">
-        <div className="col-6 position-relative d-flex justify-content-center align-items-center">
-              <img
-              src={pinkGlobe}
-              alt="Pink circle background"
-              className={`w-100`}
-            />
-            <img
-              src={hand}
-              alt="Line drawing of a hand"
-              className={`w-75 position-absolute`}
-            />
-          </div>
-        <div className="col-6  my-auto ">
-          <h2>Tuition</h2>
-          <h1>Work <span>together</span> 1:1</h1>
-          <h3>Get <span>an expert take</span> on your tech plans and idea. </h3> 
-          <p>You can do all the research in the world, but sometimes all you need is an experienced pair of eyes to validate your thinking. You’ll leave with solutions to problems that have been holding you back, so that you can lead with confidence.
-</p>
-        <Button className="btn-lg" variant="red" href="/tuition">Find out more</Button>
-        </div>
-
-      </div>
-    </div>
+    <Services/>
     <div
       className={`bg-cyan p-4 container-fluid position-relative d-flex align-items-center`}
     >
