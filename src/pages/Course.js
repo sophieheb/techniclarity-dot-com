@@ -11,6 +11,7 @@ import greenDiamond from '../assets/green-diamond.svg'
 import pinkCircle from '../assets/pink-circle.svg'
 import woman from '../assets/woman-course.svg'
 import globe from '../assets/globe.png'
+import sparkle from '../assets/sparkle.svg'
 import cloud from '../assets/small-cloud.png'
 import headshot from '../assets/headshot.jpg'
 import hand from '../assets/line-hand-left.svg'
@@ -139,9 +140,9 @@ function Course() {
             onLeave={()=>{setSparkleOne(false)}}
           />
           <img
-            src={globe}
-            alt="Globe background"
-            className={`col-2 col-xl-1
+            src={sparkle}
+            alt="Sparkle"
+            className={`col-2 h-100
             ${styles.sparkle} ${sparkleOne ? 'visible' :'invisible'}`}
           />
           <div className="col-10">
@@ -156,9 +157,9 @@ function Course() {
             onLeave={()=>{setSparkleTwo(false)}}
           />
           <img
-            src={globe}
-            alt="Globe background"
-            className={`col-2 col-xl-1
+            src={sparkle}
+            alt="Sparkle "
+            className={`col-2 h-100
             ${styles.sparkle} ${sparkleTwo ? 'visible' :'invisible'}`}
           />
           <div className="col-10">
@@ -172,9 +173,9 @@ function Course() {
               onLeave={()=>{setSparkleThree(false)}}
             />
             <img
-              src={globe}
-              alt="Globe background"
-              className={`col-2 col-xl-1
+              src={sparkle}
+              alt="Sparkle "
+              className={`col-2 h-100
               ${styles.sparkle} ${sparkleThree ? 'visible' :'invisible'}`}
             />
             <div className="col-10">
@@ -188,9 +189,9 @@ function Course() {
             onLeave={()=>{setSparkleFour(false)}}
           />
           <img
-            src={globe}
-            alt="Globe background"
-            className={`col-2 col-xl-1
+            src={sparkle}
+            alt="Sparkle "
+            className={`col-2 h-100
             ${styles.sparkle} ${sparkleFour ? 'visible' :'invisible'}`}
           />
           <div className="col-10">
@@ -204,9 +205,9 @@ function Course() {
             onLeave={()=>{setSparkleFive(false)}}
           />
           <img
-            src={globe}
-            alt="Globe background"
-            className={`col-2 col-xl-1
+            src={sparkle}
+            alt="Sparkle "
+            className={`col-2 h-100
             ${styles.sparkle} ${sparkleFive ? 'visible' :'invisible'}`}
           />
           <div className="col-10">
@@ -220,9 +221,9 @@ function Course() {
             onLeave={()=>{setSparkleSix(false)}}
           />
           <img
-            src={globe}
-            alt="Globe background"
-            className={`col-2 col-xl-1
+            src={sparkle}
+            alt="Sparkle "
+            className={`col-2 h-100
             ${styles.sparkle} ${sparkleSix ? 'visible' :'invisible'}`}
           />
           <div className="col-10">
@@ -236,9 +237,9 @@ function Course() {
             onLeave={()=>{setSparkleSeven(false)}}
           />
           <img
-            src={globe}
-            alt="Globe background"
-            className={`col-2 col-xl-1
+            src={sparkle}
+            alt="Sparkle "
+            className={`col-2 h-100
             ${styles.sparkle} ${sparkleSeven ? 'visible' :'invisible'}`}
           />
           <div className="col-10">
@@ -252,9 +253,9 @@ function Course() {
             onLeave={()=>{setSparkleEight(false)}}
           />
           <img
-            src={globe}
-            alt="Globe background"
-            className={`col-2 col-xl-1
+            src={sparkle}
+            alt="Sparkle "
+            className={`col-2 h-100
             ${styles.sparkle} ${sparkleEight ? 'visible' :'invisible'}`}
           />
           <div className="col-10">
@@ -268,9 +269,9 @@ function Course() {
             onLeave={()=>{setSparkleNine(false)}}
           />
           <img
-            src={globe}
-            alt="Globe background"
-            className={`col-2 col-xl-1
+            src={sparkle}
+            alt="Sparkle "
+            className={`col-2 h-100
             ${styles.sparkle} ${sparkleNine ? 'visible' :'invisible'}`}
           />
           <div className="col-10">
