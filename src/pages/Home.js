@@ -1,7 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 import Button from 'react-bootstrap/Button';
 
-import axios from 'axios';
 
 import styles from '../styles/home.module.css'
 
@@ -15,18 +14,19 @@ import cloudFreebieRight from '../assets/cloud-freebie-right.png'
 import cloudFreebieLeft from '../assets/cloud-freebie-left.png'
 import glossary from '../assets/glossary.png'
 import rocket from '../assets/line-rocket.svg'
-import hand from '../assets/line-hand.svg'
+import hand from '../assets/line-hand-right.svg'
 import handGlobe from '../assets/hand-globe.png'
 
 import useOnScreen from '../shared/onScreen'
 import NewsletterSignup from '../components/NewsletterSignup'
+import Instagram from '../components/Instagram'
 
 
 function Home({setHeaderColour}) {
   
   const [loaded, setLoaded] = useState(false);
-  const [token, setToken] = useState(null)
-  const [instagramData, setInstagramData] = useState([])
+
+
 
   useEffect(() => {
     setHeaderColour('#262DBA')
@@ -37,29 +37,7 @@ function Home({setHeaderColour}) {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(()=>{
-    const fetchToken = async () => {
-      const result = await axios.get('https://techniclarity-instagram-widget.herokuapp.com/token.json')
-      setToken(result.data.token);
-    };
- 
-    fetchToken();
 
-  }, [])
-
-  useEffect(()=>{
-    const fetchMediaIds = async () => {
-      try {
-      // const result = await axios.get(`https://graph.instagram.com/me?fields=media.limit(5){thumbnail_url,media_url,permalink}&access_token=${token}`)
-      // const mediaIds = result.data.media.data.slice(0, 10)
-
-
-    } catch {}
-    };
-    if(token){
-    fetchMediaIds()
-    }
-  }, [token])
 
   const ref = useRef();
   const glossaryOnScreen = useOnScreen(ref, '-300px');
@@ -131,7 +109,7 @@ function Home({setHeaderColour}) {
         <h2 className="text-white">Free!</h2>
         <h1 className="text-white">The <span>Glossary</span> of Tech Lingo</h1>
         <p className="text-white">All the tech jargon you need to know so that you can chat about your product with ease.</p>
-        <Button variant="purple" href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01">Get your free glossary</Button>
+        <Button  className="btn-lg" variant="purple" href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01">Download now</Button>
       </div>
       </div>
       </div>
@@ -144,7 +122,7 @@ function Home({setHeaderColour}) {
           <h1>Product <span>Launchpad</span></h1>
           <h3>The <span>starting point</span> you need to get your idea ready for your future technical team.</h3> 
           <p>Product Launchpad is an online course that guides you through the first few steps of creating your app or web platform. You’ll learn all the knowledge you need to launch your product and put all that new know-how into practice at the same time.</p>
-          <Button variant="red" href="/course">Find out more</Button>
+          <Button className="btn-lg" variant="red" href="/course">Find out more</Button>
         </div>
         <div className="col-6 position-relative d-flex justify-content-center align-items-center">
             <img
@@ -178,7 +156,7 @@ function Home({setHeaderColour}) {
           <h3>Get <span>an expert take</span> on your tech plans and idea. </h3> 
           <p>You can do all the research in the world, but sometimes all you need is an experienced pair of eyes to validate your thinking. You’ll leave with solutions to problems that have been holding you back, so that you can lead with confidence.
 </p>
-        <Button variant="red" href="/tuition">Find out more</Button>
+        <Button className="btn-lg" variant="red" href="/tuition">Find out more</Button>
         </div>
 
       </div>
@@ -206,14 +184,9 @@ function Home({setHeaderColour}) {
         </div>
       </div>
     </div>
-    <div >
-      <p>Instagram</p>
-      <h1>{instagramData.length}</h1>
-      {/* TODO: Was hitting rate limit */}
-      {/* {instagramData.map(post =>{
-        return <p>{post.id}</p>
-      })} */}
-    </div>
+
+    <Instagram/>
+      
     </>
     );
 }
