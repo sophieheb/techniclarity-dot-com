@@ -1,5 +1,8 @@
 import React, {useEffect, useState, useRef} from 'react';
 import Button from 'react-bootstrap/Button';
+import {
+  useLocation
+} from "react-router-dom";
 
 
 import styles from '../styles/home.module.css'
@@ -9,10 +12,10 @@ import cloudLeft from '../assets/cloud-2.png'
 import cloudRight from '../assets/cloud-3.png'
 import globe from '../assets/globe.png'
 import pinkGlobe from '../assets/pink-circle.svg'
-import greenDiamond from '../assets/green-diamond.svg'
 import cloudFreebieRight from '../assets/cloud-freebie-right.png'
 import cloudFreebieLeft from '../assets/cloud-freebie-left.png'
 import glossary from '../assets/glossary.png'
+
 
 
 
@@ -22,8 +25,11 @@ import Instagram from '../components/Instagram'
 import Services from '../components/Services'
 import TheHandbook from '../components/TheHandbook'
 
+import NewsletterSignupHome from '../components/NewsletterSignupHome'
+
 
 function Home({setHeaderColour}) {
+  let location = useLocation();
   
   const [loaded, setLoaded] = useState(false);
 
@@ -117,7 +123,9 @@ function Home({setHeaderColour}) {
     </div>
     <Services/>
 
-    <TheHandbook />
+    <a name="newsletter-signup">
+      <TheHandbook newsletterSignUp={<NewsletterSignupHome/>} signedUp={location.hash === '#newsletter-signup' ? true : false}/>
+    </a>
 
     <Instagram/>
       

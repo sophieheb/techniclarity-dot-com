@@ -1,13 +1,18 @@
 import React from 'react';
+import {
+useLocation
+} from "react-router-dom";
 
 import '../styles/Footer.css'
-import NewsletterSignup from './NewsletterSignup'
+import NewsletterSignupFooter from './NewsletterSignupFooter'
 import textLogo from '../assets/textLogoWhite.svg'
 import symbolLogo from '../assets/symbol-logo.png'
 import facebookLogo from '../assets/facebookLogoWhite.svg'
 import instagramLogo from '../assets/instagramLogoWhite.svg'
 
 function Footer() {
+  let location = useLocation();
+  
   return (
     <div className="container-fluid mb-5 bg-green w-100 p-5">
       <div className="row">
@@ -38,7 +43,10 @@ function Footer() {
         <div className="col-sm-4 p-5">
           <h3 className="text-white">The <span>Handbook</span></h3>
           <p className="text-white">Sign up to our newsletter for high-quality info that stops you feeling like a fraud when you're running your startup.</p>
-          <NewsletterSignup/>
+          <a name="footer-newsetter-signup">
+          {location.hash === '#newsletter-signup' ?  <h2 className="text-white">Thanks for signing up</h2>  : <NewsletterSignupFooter/>}
+            
+          </a>
         </div>
         <div className="col-sm-4 p-5">
           <img

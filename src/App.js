@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 import Tuition from './pages/Tuition';
@@ -15,6 +14,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+
 
   const [headerColor, setHeaderColour] = useState('#E1D5FA')
 

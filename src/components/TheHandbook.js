@@ -1,8 +1,20 @@
 import React from 'react';
-import NewsletterSignup from '../components/NewsletterSignup'
 import handGlobe from '../assets/hand-globe.png'
-function TheHandbook() {
+
+function TheHandbook({newsletterSignUp, signedUp}) {
+
+  console.log(newsletterSignUp)
+
+  let signUpBox;
+
+  if (signedUp){
+    signUpBox = <h2 className="text-white">Thanks for signing up</h2>
+  } else {
+    signUpBox = newsletterSignUp
+  }
+
     return (
+
         <div
         className={`bg-cyan p-4 container-fluid position-relative d-flex align-items-center`}
       >
@@ -16,7 +28,7 @@ function TheHandbook() {
               <h1 className="text-white">The <span>handbook</span></h1>
               <p className="text-white">You don’t need more advice (or inbox clutter), you just need high-quality info that stops you feeling like a fraud when you’re running your startup.
   </p>
-              <NewsletterSignup/>
+  {signUpBox}
             </div>
             <img
               src={handGlobe}

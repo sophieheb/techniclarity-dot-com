@@ -1,5 +1,8 @@
 import React from 'react';
 import {MailIcon} from '@primer/octicons-react'
+import {
+  useLocation
+} from "react-router-dom";
 
 import woman from '../assets/woman-contact.svg'
 import greenDiamond from '../assets/green-diamond.svg'
@@ -7,7 +10,12 @@ import greenDiamond from '../assets/green-diamond.svg'
 import TheHandbook from '../components/TheHandbook'
 import Instagram from '../components/Instagram'
 
+import NewsletterSignupContact from '../components/NewsletterSignupContact'
+
 function Contact() {
+  let location = useLocation();
+
+  console.log(location.hash)
   return (
     <>
      <div 
@@ -60,7 +68,9 @@ function Contact() {
       </div>
     </div>
 
-    <TheHandbook />
+    <a name="newsletter-signup">
+      <TheHandbook newsletterSignUp={<NewsletterSignupContact/>} signedUp={location.hash === '#newsletter-signup' ? true : false}/>
+    </a>
     <Instagram />
     </>
   );
