@@ -31,6 +31,7 @@ function Header({headerColor}) {
   
   useEffect(() => {
     document.body.style.overflow = collapsed ? 'unset' : 'hidden';
+    document.body.style.height = collapsed ? 'auto' : '100vh';
   }, [collapsed ]);
 
   useEffect(() => {
@@ -40,9 +41,9 @@ function Header({headerColor}) {
   return (
     <>
     <BrowserView>
-      <div className="container-fluid bg-green p-2" >
-        <a href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01">
-        <p className="text-center text-white mb-0"><b>GET YOUR FREE GUIDE 'THE GLOSSARY OF TECH LINGO'</b></p>
+      <div className="container-fluid bg-green">
+        <a  href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01">
+        <h2 className="text-center text-white m-0 p-2">GET YOUR FREE GUIDE 'THE GLOSSARY OF TECH LINGO'</h2>
         </a>
       </div>
       <Navbar 
@@ -71,7 +72,7 @@ function Header({headerColor}) {
       </Navbar>
     </BrowserView>
     <MobileView >
-      <div className={`${scrolled ? styles.scrolled : null} ${collapsed ? null : 'vh-100'} d-flex flex-column bg-teal`}>
+      <div className={`${scrolled ? styles.scrolled : null} ${collapsed ? null : 'vh-100'} w-100 d-flex flex-column bg-teal`}>
       <Navbar className="d-flex justify-content-between">
         <Navbar.Brand href="/" className="w-50">
           <img

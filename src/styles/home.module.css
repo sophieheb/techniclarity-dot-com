@@ -91,10 +91,48 @@
     left: -650px;
     transition: left 5s;
 
-}
+} 
 
 .cloudFreebieRightLoaded{
     z-index:10;
     right: -650px;
     transition: right 5s;
+}
+
+@media (max-width: 768px) {
+    .globe{
+        left:30%;
+    }  
+
+    .pinkGlobe{
+        left:30%;
+    }
+
+    .cloudTopLoaded{
+        top:0%;
+        left:60%;
+    }
+
+    .cloudBottomLoaded{
+        top:35%;
+        right:60%;
+    }
+
+    .cloudFreebieLeft{
+        left: 10%;
+        bottom: 30%;
+    }
+    
+    .cloudFreebieRight{
+        right: 10%;
+    }
+
+    .cloudFreebieLeftLoaded {
+        left: 300px;
+        bottom: 30%;
+    }
+    
+    .cloudFreebieRightLoaded {
+        right: 300px
+    }
 }

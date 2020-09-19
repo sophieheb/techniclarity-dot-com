@@ -20,7 +20,7 @@ function TheHandbook({newsletterSignUp, signedUp}) {
           <div className="row justify-content-center">
   
             <div 
-              className="col-6 text-center my-auto"
+              className="col-lg-6 text-center my-auto"
             >
               <h2 className="text-white">Newsletter</h2>
               <h1 className="text-white">The <span>handbook</span></h1>
@@ -31,7 +31,7 @@ function TheHandbook({newsletterSignUp, signedUp}) {
             <img
               src={handGlobe}
               alt="Line drawing of a hand holding a globe"
-              className="col-6 img-fluid"
+              className="col-lg-6 h-50 align-self-center img-fluid w-100"
             />
           </div>
         </div>
