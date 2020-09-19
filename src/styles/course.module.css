@@ -17,10 +17,9 @@
     height: 35px;
     transform: rotate(25deg)
 }
-
 .pinkCircle {
-    top: -100%;
-    right: -30%
+    top: -30%;
+    left: 40%
 }
 
 .headshot {

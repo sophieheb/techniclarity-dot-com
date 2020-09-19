@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import { Waypoint } from 'react-waypoint';
 import {CheckIcon, XIcon, PlusIcon, DashIcon} from '@primer/octicons-react'
+import {  isMobile
+} from "react-device-detect";
 
 import styles from '../styles/course.module.css'
 
@@ -34,29 +36,35 @@ function Course() {
   const [faqFourOpen, setFaqFourOpen] = useState(false)
   const [faqFiveOpen, setFaqFiveOpen] = useState(false)
 
+  const outcomeIconSize = isMobile ? 22 : 36
+
+  const faqIconSize = isMobile ? 18 : 22
+
   return (
     < >
     <div 
       className={`container-fluid position-relative vh-100 d-flex align-items-center`}
     >
-      <div className="col-6 position-relative d-flex justify-content-center align-items-center">
-        <img
-        src={greenDiamond}
-        alt="Green diamond background"
-        className={`w-100`}
-        />
-        <img
-          src={rocket}
-          alt="Line drawing of a rocket"
-          className={`h-50 position-absolute`}
-        />
-      </div>
-      <div>
-        <h2 className="text-center">Course</h2>
-        <h1 className="text-center">Product <span>Launchpad</span></h1>
-        <h3 className="text-center">An <span>online course</span> for early-stage startup founders.</h3> 
-        <div className="text-center">
-          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+      <div className="row">
+        <div className="col-md-6 col-12 order-1 order-md-0 position-relative d-flex justify-content-center align-items-center">
+          <img
+          src={greenDiamond}
+          alt="Green diamond background"
+          className={`w-75`}
+          />
+          <img
+            src={rocket}
+            alt="Line drawing of a rocket"
+            className={`h-xs-75 h-sm-50 h-lg-50 position-absolute`}
+          />
+        </div>
+        <div className="col-12 pb-lg-0 pb-5 col-md-6 order-0 order-md-1 d-flex flex-column align-items-lg-center justify-content-center">
+          <h2 className="text-center">Course</h2>
+          <h1 className="text-center">Product <span>Launchpad</span></h1>
+          <h3 className="text-center">An <span>online course</span> for early-stage startup founders.</h3> 
+          <div className="text-center">
+            <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+          </div>
         </div>
       </div>
     </div>
@@ -82,7 +90,9 @@ function Course() {
     <div 
       className={`container-fluid position-relative p-5 d-flex align-items-center`}
     >
-      <div className="col-6 ">
+      <div className="row">
+      <div className="col-lg-6 col-12 order-1 order-lg-0 ">
+        
         <h1 >You could be turning your idea into reality, <span>instead of feeling overwhelmed.</span></h1>
         <p>
           You’ve mastered all the other parts of your startup, but you’re stuck when it comes to creating your product. The process is confusing, the jargon sounds like another language and you just don’t know what the first step is. The app idea you’ve got is needed, or the web platform you want to create is a total game-changer, but that doesn’t make bringing it to life any easier.
@@ -91,10 +101,10 @@ function Course() {
           What would you say if I told you I had something to give you everything you needed to stop talking about your idea and actually get it into customers hands?
         </p>
         <div >
-          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+          <Button variant="red" className="btn-lg w-sm-50 w-xs-100" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
       </div>
-      <div className="col-6 position-relative d-flex justify-content-center align-items-center">
+      <div className="col-lg-6 col-12 order-0 order-lg-1  position-relative d-flex justify-content-center align-items-center">
         <img
         src={greenDiamond}
         alt="Green diamond background"
@@ -103,19 +113,20 @@ function Course() {
         <img
           src={woman}
           alt="Line drawing of a woman in a suit jacket with her hand on her hip"
-          className={`position-absolute`}
+          className={`position-absolute  h-lg-100 h-xs-75`}
         />
+      </div>
       </div>
     </div>
     
     <div className={`container-fluid p-5 bg-cyan `}>
       <div className="row">
-      <div className="col-6">
+      <div className="col-lg-6 col-12">
         <h3 className="text-white">Meet your <span>tutor</span></h3>
         <h2 className="text-white">Find out why Sophie created the course.</h2>
         <Button variant="red" className="btn-lg" href="/about">READ MORE</Button>
       </div>
-      <div className="col-6">
+      <div className="col-lg-6 col-12">
         <h1>VIDEO TO GO HERE</h1>
       </div>
       </div>
@@ -123,16 +134,16 @@ function Course() {
     
     <div className="container-fluid ">
       <div className="row">
-      <div className="col-4">
+      <div className="col-lg-4 col-12 pt-5">
         <h1>The Curriculum</h1>
         <img
           src={globe}
           alt="Globe background"
-          className={`position-relative
+          className={`position-relative d-lg-inline d-none
            ${styles.globe}`}
         />
       </div>
-      <div className="col-6 m-5">
+      <div className="col-lg-6 col-12 p-lg-5 p-3">
         <div className="mb-5 row">
           <Waypoint
           bottomOffset= {'100px'}
@@ -283,81 +294,83 @@ function Course() {
     </div>
     
     <div className="container-fluid p-5 bg-cyan">
-      <h3 className="text-center text-white p-3">Ready to bring your <span> tech product </span> to life?</h3>
-      <h2 className="text-center text-white p-3">£450</h2>
+    <h1 className="text-center text-white p-3 d-lg-none d-block">Ready to bring your <span> tech product </span> to life?</h1>
+      <h3 className="text-center text-white p-3 d-lg-block d-none">Ready to bring your <span> tech product </span> to life?</h3>
+      <h2 className="text-center text-white p-3 d-lg-block d-none">£450</h2>
+      <h3 className="text-center text-white p-3 d-lg-none d-block">£450</h3>
       <div className="text-center p-3">
-          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+          <Button variant="red" className="btn-lg w-75" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
     </div>
     
     <div className="container-fluid my-5">
       <div className="row mt-5">
-        <div className="col-6 pr-5">
-          <h3 className="ml-5 mb-4"><span>At the end of </span> Product Launchpad you’ll be:</h3>
-          <div className="row ml-5">
-            <div className="col-1">
-              <CheckIcon size={36} className="mr-3"/>
+        <div className="col-lg-6 col-12 pr-lg-5">
+          <h3 className="ml-lg-5  mb-lg-4"><span>At the end of </span> Product Launchpad you’ll be:</h3>
+          <div className="row ml-lg-5">
+          <div className="col-2 col-sm-1">
+              <CheckIcon size={outcomeIconSize} className="mr-3"/>
             </div>
-            <div className="col-11">
+            <div className="col-10 col-sm-11">
               <p> Totally unphased by technical convos, because you’ve mastered all the lingo.</p>
             </div>
           </div>
-          <div className="row ml-5">
-            <div className="col-1">
-              <CheckIcon size={36} className="mr-3"/>
+          <div className="row ml-lg-5">
+            <div className="col-2 col-sm-1">
+              <CheckIcon size={outcomeIconSize} className="mr-3"/>
             </div>
-            <div className="col-11">
+            <div className="col-10 col-sm-11">
               <p > Flying through the first steps you need to take to get your app or web platform off the ground. You’ll be guided through the process.</p>
             </div>
           </div>
-          <div className="row ml-5">
-            <div className="col-1">
-              <CheckIcon size={36} className="mr-3"/>
+          <div className="row ml-lg-5">
+            <div className="col-2 col-sm-1">
+              <CheckIcon size={outcomeIconSize} className="mr-3"/>
             </div>
-            <div className="col-11">
+            <div className="col-10 col-sm-11">
               <p>Managing the technical process with ease, because you know it from top to bottom.</p>
             </div>
           </div>
-          <div className="row ml-5">
-            <div className="col-1">
-              <CheckIcon size={36} className="mr-3"/>
+          <div className="row ml-lg-5">
+            <div className="col-2 col-sm-1">
+              <CheckIcon size={outcomeIconSize} className="mr-3"/>
             </div>
-            <div className="col-11">
+            <div className="col-10 col-sm-11">
               <p>Ready to pitch for investment (if that’s what you want for your business).</p>
             </div>
           </div>
         </div>
-        <div className="col-6 pr-5">
-          <h3 className="ml-5 mb-4"><span>Currently </span> you're spending your days:</h3>
-          <div className="row ml-5">
-            <div className="col-1">
-              <XIcon size={36} className="mr-3"/>
+        <div className="col-lg-6 col-12 pr-lg-5 p-3">
+          <h3 className="ml-lg-5 mb-lg-4"><span>Currently </span> you're spending your days:</h3>
+          <div className="row ml-lg-5">
+            <div className="col-2 col-sm-1">
+              <XIcon size={outcomeIconSize} className="mr-3"/>
             </div>
-            <div className="col-11">
+            <div className="col-10 col-sm-11">
               <p className="text-wrap"> Trying to hire a CTO, but without really understanding what their job description should look like</p>
             </div>
           </div>
-          <div className="row ml-5">
-            <div className="col-1">
-              <XIcon size={36} className="mr-3"/>
+          <div className="row ml-lg-5">
+            <div className="col-2 col-sm-1">
+              <XIcon size={outcomeIconSize} className="mr-3"/>
             </div>
-            <div className="col-11">
+            <div className="col-10 col-sm-11">
               <p className="text-wrap">Working your butt off, but still don’t have a tangible product as an outcome</p>
             </div>
           </div>
-          <div className="row ml-5">
-            <div className="col-1">
-              <XIcon size={36} className="mr-3"/>
+          <div className="row ml-lg-5">
+            <div className="col-2 col-sm-1">
+              <XIcon size={outcomeIconSize} className="mr-3"/>
             </div>
-            <div className="col-11">
+            <div className="col-10 col-sm-11">
               <p>Feeling like a fraud, because you’re confused when the conversation turns techy</p>
             </div>
           </div>
-          <div className="row ml-5">
-            <div className="col-1">
-              <XIcon size={36} className="mr-3"/>
+          <div className="row ml-lg-5">
+            <div className="col-2 col-sm-1">
+              <XIcon size={outcomeIconSize} className="mr-3"/>
             </div>
-            <div className="col-11">
+            <div className="col-10 col-sm-11">
               <p>Worrying about how much building a tech product will cost.</p>
             </div>
           </div>
@@ -367,69 +380,69 @@ function Course() {
     
     <div className="container-fluid my-5">
       <div className="row mt-5">
-        <div className="col-6">
+        <div className="col-6 d-lg-block d-none">
         <img
           src={globe}
           alt="Globe background"
           className={`float-right`}
         />
         </div>
-        <div className="col-6">
+        <div className="col-lg-6 col-12">
           <h3 className="mb-4 pb-4 text-center"><span>And </span> you'll be armed with:</h3>
           <div className="row">
             <div className="w-50 pb-5 mb-5 text-center">
               <img
                 src={cloud}
-                alt="Globe background"
-                className="w-25 "
+                alt="Cloud icon"
+                className="w-lg-25 w-xs-75 "
               />
               <p className="pt-4 w-75 m-auto"> A <b class="font-weight-bold">product vision</b> so clear, you’ll never lose sight of it.</p>
             </div>
             <div className="w-50 pb-5 mb-5 text-center">
               <img
                 src={cloud}
-                alt="Globe background"
-                className="w-25 "
+                alt="Cloud icon"
+                className="w-lg-25 w-xs-75 "
               />
               <p className="pt-4 w-75 m-auto"><b class="font-weight-bold">Digital mockups and diagrams </b> of your product, your product will finally be real.</p>
             </div>
             <div className="w-50 pb-5 mb-5 text-center">
               <img
                 src={cloud}
-                alt="Globe background"
-                className="w-25 "
+                alt="Cloud icon"
+                className="w-lg-25 w-xs-75 "
               />
               <p className="pt-4 w-75 m-auto"><b class="font-weight-bold">Feedback from your ideal users,</b> so you can make decisions about what to invest in with them at the heart.</p>
             </div>
             <div className="w-50 pb-5 mb-5 text-center">
               <img
                 src={cloud}
-                alt="Globe background"
-                className="w-25 "
+                alt="Cloud icon"
+                className="w-lg-25 w-xs-75 "
               />
               <p className="pt-4 w-75 m-auto"> A <b class="font-weight-bold">feature list</b> that’s more organised than Marie Kondo’s wrapping paper drawer, because then you know exactly what’s worth building.</p>
             </div>
             <div className="w-50 pb-5 mb-5 text-center">
                 <img
                   src={cloud}
-                  alt="Globe background"
-                  className="w-25 "
+                  alt="Cloud icon"
+                  className="w-lg-25 w-xs-75 "
                 />
                 <p className="pt-4 w-75 m-auto"> A <b class="font-weight-bold">roadmap, </b> so that you can plan the rest of your business in parallel with your tech milestones.</p>
               </div>
             <div className="w-50 pb-5 mb-5 text-center">
                 <img
                   src={cloud}
-                  alt="Globe background"
-                  className="w-25 "
+                  alt="Cloud icon"
+                  className="w-lg-25 w-xs-75 "
                 />
                 <p className="pt-4 w-75 m-auto"> A <b class="font-weight-bold">launch plan, </b> because your product’s no good to anyone if it stays stuck on someone’s laptop.</p>
               </div>
             <div className="w-50 pb-5 mb-5 text-center">
               <img
                 src={cloud}
-                alt="Globe background"
-                className="w-25 "
+                alt="Cloud icon"
+                className="w-lg-25 w-xs-75 "
               />
               <p className="pt-4 w-75 m-auto"><b class="font-weight-bold">Estimates</b> for time and cost of building your tech product.</p>
             </div>
@@ -439,33 +452,35 @@ function Course() {
     </div>
     
     <div className="container-fluid p-5 bg-cyan">
-      <h3 className="text-center text-white p-3">Ready to get started?</h3>
-      <h2 className="text-center text-white p-3">£450</h2>
+    <h1 className="text-center text-white p-3 d-lg-none d-block">Ready to bring your <span> tech product </span> to life?</h1>
+      <h3 className="text-center text-white p-3 d-lg-block d-none">Ready to bring your <span> tech product </span> to life?</h3>
+      <h2 className="text-center text-white p-3 d-lg-block d-none">£450</h2>
+      <h3 className="text-center text-white p-3 d-lg-none d-block">£450</h3>
       <div className="text-center p-3">
-          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+          <Button variant="red" className="btn-lg w-75" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
     </div>
-    
+
     <div className="container-fluid p-5">
-      <h1>How this course <span>works</span></h1>
+      <h1 className="pb-5">How this course <span>works</span></h1>
       <div className="row">
-        <div className="w-25 m-3 p-5">
+        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
           <h3>Workbooks</h3>
           <p className="w-100">Put everything you learn into practice straight away with workbooks you tailor specifically to your product.</p>
         </div>
-        <div className="w-25 m-3 p-5">
+        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
           <h3>Videos</h3>
           <p className="w-100">Walkthroughs of definitions, tools, techniques and processes.</p>
         </div>
-        <div className="w-25 m-3 p-5">
+        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
           <h3>Support</h3>
           <p className="w-100">You won’t be alone on this journey. Along the way, you’ll be able to ask any questions you have.</p>
         </div>
-        <div className="w-25 m-3 p-5">
+        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
           <h3>Self-paced</h3>
           <p className="w-100">Learn as and when it suits you. Early bird or night owl, it doesn’t matter to us!</p>
         </div>
-        <div className="w-25 m-3 p-5">
+        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
           <h3>Online</h3>
           <p className="w-100">Access all the content whenever suits you best, no need to travel.</p>
         </div>
@@ -473,57 +488,58 @@ function Course() {
     </div>
 
     <div className="container-fluid position-relative p-5 d-flex align-items-center bg-green overflow-hidden">
-      <div className="col-6">
+      <div className="row">
+      <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-1 order-md-1 ">
           <h1 className="text-white" >About your <span>instructor</span></h1>
           <h3 className="text-white">Hi I'm Sophie</h3>
           <p className="text-white">
           Over the last decade I’ve built and launched products and startups. I’ve ridden the highs and the lows, so I’ve been in your shoes. I’ve taken everything I’ve learnt and packaged it up so that you can start your entrepreneurial journey. When I was a CTO, I saw first hand how many businesses never made it past the idea stage, all because there wasn’t enough tech support available. I’ve taught senior exec about their businesses' digital transformations and even budding software developers how to build their first website. But now I think it’s high-time I support you because I know your idea is set for success and I can’t wait to help you set the foundations for your startup.
           </p>
         </div>
-        <div className="col-6 position-relative d-flex justify-content-center align-items-center">
+        <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-0 order-md-1 position-relative d-flex justify-content-center align-items-center">
         <img
             src={headshot}
             alt="Photo of Sophie laughing"
-            className={`rounded-circle img-fluid w-50 ${styles.headshot}`}
+            className={`rounded-circle img-fluid w-xs-100 w-lg-75 ${styles.headshot}`}
           />
           <img
           src={pinkCircle}
           alt="pink circle background"
-          className={`w-100 position-absolute ${styles.pinkCircle}`}
+          className={` w-100 position-absolute ${styles.pinkCircle}`}
           />
         </div>
-
+        </div>
     </div>
 
     <div className="container-fluid p-5">
       <div className="row">
-      <div className="col-5 mb-5">
+      <div className="col-md-5 col-12 mb-md-5 mb-3 ">
         <h1>FAQs</h1>
         <p className="mb-0">Got any more <span>questions?</span> Send them over to:</p>
         <p><b>productlaunchpad@techniclarity.co</b></p>
       </div>
       </div><div className="row">
-        <div className="col-6 py-3">
+        <div className="col-md-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqOneOpen(!faqOneOpen)}}>
-            {faqOneOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqOneOpen ? <DashIcon  size={faqIconSize} /> :  <PlusIcon size={faqIconSize} />}
             <h2 className="pl-4">Do I need to know how to code?</h2>
           </div>
           <Collapse in={faqOneOpen}>
             <p>Nope, not at all! You’ve got some incredible skills already. You don’t need to know how to code to be the founder of a tech business, but you do need to understand how tech products get built so you can manage the process.</p>
           </Collapse>
         </div>
-        <div className="col-6 py-3">
+        <div className="col-md-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqTwoOpen(!faqTwoOpen)}}>
-            {faqTwoOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqTwoOpen ? <DashIcon  size={faqIconSize} /> :  <PlusIcon size={faqIconSize} />}
             <h2 className="pl-4">Will you connect me with people to build my product for me?</h2>
           </div>
           <Collapse in={faqTwoOpen}>
             <p>Product Launchpad teaches you how to work with technical people and will recommend where you can look to find the right tech team for you but we won’t connect you directly to those teams.</p>
           </Collapse>
         </div>
-        <div className="col-6 py-3">
+        <div className="col-md-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqThreeOpen(!faqThreeOpen)}}>
-            {faqThreeOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqThreeOpen ? <DashIcon  size={faqIconSize} /> :  <PlusIcon size={faqIconSize} />}
             <h2 className="pl-4">Do I need to be building a tech product?</h2>
           </div>
           <Collapse in={faqThreeOpen}>
@@ -531,18 +547,18 @@ function Course() {
             </p>
           </Collapse>
         </div>
-        <div className="col-6 py-3">
+        <div className="col-md-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqFourOpen(!faqFourOpen)}}>
-            {faqFourOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqFourOpen ? <DashIcon  size={faqIconSize} /> :  <PlusIcon size={faqIconSize} />}
             <h2 className="pl-4">Will I be able to ask you questions?</h2>
           </div>
           <Collapse in={faqFourOpen}>
             <p>Yes, support is available on each and every lesson in the course.</p>
           </Collapse>
         </div>
-        <div className="col-6 py-3">
+        <div className="col-md-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqFiveOpen(!faqFiveOpen)}}>
-            {faqFiveOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqFiveOpen ? <DashIcon  size={faqIconSize} /> :  <PlusIcon size={faqIconSize} />}
             <h2 className="pl-4">How long will it take?</h2>
           </div>
           <Collapse in={faqFiveOpen}>
@@ -554,18 +570,21 @@ function Course() {
     </div>
 
     <div className="container-fluid p-5 bg-cyan">
-      <h3 className="text-center text-white p-3">Ready to get started?</h3>
-      <h2 className="text-center text-white p-3">£450</h2>
+    <h1 className="text-center text-white p-3 d-lg-none d-block">Ready to get started?</h1>
+      <h3 className="text-center text-white p-3 d-lg-block d-none">Ready to get started?</h3>
+      <h2 className="text-center text-white p-3 d-lg-block d-none">£450</h2>
+      <h3 className="text-center text-white p-3 d-lg-none d-block">£450</h3>
       <div className="text-center p-3">
-        <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
-      </div>
+          <Button variant="red" className="btn-lg w-75" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+        </div>
     </div>
 
     <div 
-      className={`container-fluid position-relative d-flex align-items-center`}
+      className={`container-fluid position-relative d-flex align-items-center p-5 `}
     >
-      <div className="col-6 position-relative d-flex justify-content-center align-items-center">
-        <img
+       <div className="row">
+      <div className="col-md-6 col-12 position-relative d-flex justify-content-center align-items-center">
+         <img
         src={pinkCircle}
         alt="Pink circle background"
         className={`w-100`}
@@ -576,12 +595,14 @@ function Course() {
           className={`h-50 w-75 position-absolute`}
         />
       </div>
-      <div>
+
+      <div className="col-md-6 col-12 d-flex flex-column justify-content-center">
         <h1 className="text-center">Looking for <span>1:1 tuition?</span></h1>
         <div className="text-center">
           <Button variant="red" className="btn-lg" href="/tuition">FIND OUT MORE</Button>
         </div>
       </div>
+    </div>
     </div>
     
     <Instagram/>
