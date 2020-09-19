@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import {PlusIcon, DashIcon} from '@primer/octicons-react'
+import {  isMobile
+} from "react-device-detect";
 
 import styles from '../styles/tuition.module.css'
 
@@ -21,25 +23,28 @@ function Tuition() {
   const [faqThreeOpen, setFaqThreeOpen] = useState(false)
   const [faqFourOpen, setFaqFourOpen] = useState(false)
   const [faqFiveOpen, setFaqFiveOpen] = useState(false)
-  console.log(faqOneOpen)
+  
+  const iconSize = isMobile ? 18 : 22
+
   return (
     <>
         <div 
-      className={`container-fluid position-relative vh-100 d-flex align-items-center`}
+      className={`container-fluid position-relative vh-100 d-flex pt-5 align-items-start align-items-lg-center`}
     >
-      <div className="col-6 position-relative d-flex justify-content-center align-items-center">
+      <div className="row">
+      <div className="col-lg-6 col-12 order-1 order-lg-0 position-relative d-flex justify-content-center align-items-center">
         <img
         src={pinkCircle}
         alt="Pink circle background"
-        className={`w-100`}
+        className={`w-xs-100 w-sm-75 w-md-50 w-lg-100`}
         />
         <img
           src={hand}
           alt="Line drawing of a hand"
-          className={`h-50 position-absolute`}
+          className={`w-xs-100 w-sm-75 w-md-50  w-lg-100 position-absolute`}
         />
       </div>
-      <div>
+      <div className="col-12 mb-lg-0 mb-5 col-lg-6 order-0 order-lg-1 d-flex flex-column align-items-lg-center justify-content-center">
         <h2 className="text-center">Tuition</h2>
         <h1 className="text-center">Working <span>Together</span> 1:1</h1>
         <h3 className="text-center"><span>Your chance</span> to get personalised support from someone who's been there and done that.</h3> 
@@ -47,11 +52,12 @@ function Tuition() {
           <Button variant="red" className="btn-lg" href="/">BOOK NOW</Button>
         </div>
       </div>
+      </div>
     </div>
 
     <div>
       <h3 className="text-center"><span>Does this sound like you?</span></h3>
-      <div >
+      <div className="p-4" >
         <h3 className="text-center">
         I’m committed to making this idea real
         </h3>
@@ -71,9 +77,10 @@ function Tuition() {
     </div>
 
     <div 
-      className={`container-fluid position-relative p-5 d-flex align-items-center`}
+      className={`container-fluid position-relative p-lg-5 pb-5 d-flex align-items-center`}
     >
-      <div className="col-6 ">
+      <div className="row">
+      <div className="col-lg-6 col-12 order-1 order-lg-0 ">
         <h1 >You’re closer to  <span>overcoming the barriers </span> than you think.</h1>
         <p>
         Imagine introducing yourself as the founder of a tech startup. Your company is growing, it’s got investment, a product you can show off to people and it’s something you can be really proud of.        </p>
@@ -84,10 +91,10 @@ function Tuition() {
         You’re working harder than ever before so I’m going to guess it’s fear that’s stopping you. A sure-fire way to overcome fear is by levelling up your know-how in a safe, non-judgemental environment.
         </p>
         <div >
-          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BOOK NOW</Button>
+          <Button variant="red" className="btn-lg w-50" href="https://courses.techniclarity.co/enroll/749942">BOOK NOW</Button>
         </div>
       </div>
-      <div className="col-6 position-relative d-flex justify-content-center align-items-center">
+      <div className="col-lg-6 col-12 order-0 order-lg-1 position-relative d-flex justify-content-center align-items-center">
         <img
         src={pinkCircle}
         alt="Pink circle background"
@@ -96,19 +103,20 @@ function Tuition() {
         <img
           src={woman}
           alt="Line drawing of a woman in a suit jacket with her hand on her hip"
-          className={`position-absolute`}
+          className={`position-absolute h-lg-100 h-xs-75`}
         />
       </div>
     </div>
+    </div>
 
-    <div className={`container-fluid p-5 bg-cyan `}>
+    <div className={`container-fluid p-lg-5 py-5 px-3 bg-cyan `}>
       <div className="row">
-      <div className="col-6">
+      <div className="col-lg-6 col-12 ">
         <h3 className="text-white">Meet your <span>tutor</span></h3>
         <h2 className="text-white">It can feel like you are on your own in this entrepreneurial journey but by working with me you’ll have a <span>cheerleader, teacher and guide </span> by your side.</h2>
         <Button variant="red" className="btn-lg" href="/about">READ MORE</Button>
       </div>
-      <div className="col-6">
+      <div className="col-lg-6 col-12 ">
         <h1>VIDEO TO GO HERE</h1>
       </div>
       </div>
@@ -116,7 +124,7 @@ function Tuition() {
 
     <div className="container p-5">
         <div className="row justify-content-center ">
-          <div className="col-6 text-center">
+          <div className="col-lg-6 col-12 text-center">
 
             <h3>Nothing in life is to be feared, it is only to be understood. Now is the time to <span>understand more </span> so that we may <span>fear less.</span></h3>
               <p>-  Marie Curie</p>
@@ -126,7 +134,7 @@ function Tuition() {
 
     <div className="container-fluid p-5">
       <div className="row">
-        <div className="col-6 p-5">
+        <div className="col-lg-6 col-12 p-lg-5 py-5 px-3">
           <h2>01</h2>
           <h1>Power <span>Hour</span></h1>
           <p className="mb-3">
@@ -151,7 +159,8 @@ function Tuition() {
           <h1>£100</h1>
           <Button variant="red" className="btn-lg" href="/">BOOK NOW</Button>
         </div>
-        <div className="col-6 p-5">
+        <div className={`w-100 ${styles.divider} d-lg-none`}/>
+        <div className="col-lg-6 col-12 p-lg-5 py-5 px-3">
           <h2>02</h2>
           <h1> Sanity <span>Check</span></h1>
           <p className="mb-3">
@@ -175,7 +184,8 @@ function Tuition() {
           <h1>£100</h1>
           <Button variant="red" className="btn-lg" href="/">BOOK NOW</Button>
         </div>
-        <div className="col-6 p-5">
+        <div className={`w-100 ${styles.divider} d-lg-none`}/>
+        <div className="col-lg-6 col-12 p-lg-5 py-5 px-3">
           <h2>03</h2>
           <h1>Masterclass</h1>
           <p className="mb-3">
@@ -184,7 +194,8 @@ function Tuition() {
           <h1>£500</h1>
           <Button variant="red" className="btn-lg" href="/">DOWNLOAD BROCHURE</Button>
         </div>
-        <div className="col-6 p-5">
+        <div className={`w-100 ${styles.divider} d-lg-none`}/>
+        <div className="col-lg-6 col-12 p-lg-5 py-5 px-3">
           <h2>04</h2>
           <h1>On-going <span>support</span> </h1>
           <p className="mb-3">
@@ -196,40 +207,41 @@ function Tuition() {
     </div>
 
     <div className="container-fluid position-relative p-5 d-flex align-items-center bg-green overflow-hidden">
-      <div className="col-6">
+      <div className="row">
+      <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-1 order-md-1 ">
           <h1 className="text-white" >About your <span>instructor</span></h1>
           <h3 className="text-white">Hi I'm Sophie</h3>
           <p className="text-white">
           Over the last decade I’ve built and launched products and startups. I’ve ridden the highs and the lows, so I’ve been in your shoes. I’ve taken everything I’ve learnt and packaged it up so that you can start your entrepreneurial journey. When I was a CTO, I saw first hand how many businesses never made it past the idea stage, all because there wasn’t enough tech support available. I’ve taught senior exec about their businesses' digital transformations and even budding software developers how to build their first website. But now I think it’s high-time I support you because I know your idea is set for success and I can’t wait to help you set the foundations for your startup.
           </p>
         </div>
-        <div className="col-6 position-relative d-flex justify-content-center align-items-center">
+        <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-0 order-md-1 position-relative d-flex justify-content-center align-items-center">
         <img
             src={headshot}
             alt="Photo of Sophie laughing"
-            className={`rounded-circle img-fluid w-50 ${styles.headshot}`}
+            className={`rounded-circle img-fluid w-xs-100 w-lg-75 ${styles.headshot}`}
           />
           <img
           src={pinkCircle}
           alt="pink circle background"
-          className={`w-100 position-absolute ${styles.pinkCircle}`}
+          className={` w-100 position-absolute ${styles.pinkCircle}`}
           />
         </div>
-
+        </div>
     </div>
 
     <div className="container-fluid p-5">
       <div className="row">
-      <div className="col-5 mb-5">
+      <div className="col-md-5 col-12 mb-md-5 mb-3 ">
         <h1>FAQs</h1>
         <p className="mb-0">Got any more <span>questions?</span> Send them over to:</p>
         <p><b>tuition@techniclarity.co</b></p>
       </div>
       </div>
       <div className="row">
-        <div className="col-6 py-3">
+        <div className="col-md-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqOneOpen(!faqOneOpen)}}>
-            {faqOneOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqOneOpen ? <DashIcon  size={iconSize} /> :  <PlusIcon size={iconSize} />}
             <h2 className="pl-4">How does it work?</h2>
           </div>
           <h1>{faqOneOpen}</h1> 
@@ -244,9 +256,9 @@ function Tuition() {
             </div>
           </Collapse>
         </div>
-        <div className="col-6 py-3">
+        <div className="col-md-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqTwoOpen(!faqTwoOpen)}}>
-            {faqTwoOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqTwoOpen ? <DashIcon  size={iconSize} /> :  <PlusIcon size={iconSize} />}
             <h2 className="pl-4">Why should I work with you?</h2>
           </div>
           <Collapse in={faqTwoOpen}>
@@ -255,18 +267,18 @@ function Tuition() {
             </p>
           </Collapse>
         </div>
-        <div className="col-6 py-3">
+        <div className="col-md-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqThreeOpen(!faqThreeOpen)}}>
-            {faqThreeOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqThreeOpen ? <DashIcon  size={iconSize} /> :  <PlusIcon size={iconSize} />}
             <h2 className="pl-4">Who do you work with?</h2>
           </div>
           <Collapse in={faqThreeOpen}>
             <p>The clients that work with me are passionate, ambitious business owners, who have a brilliant idea they just can’t wait to get out into the world. The ideas they have range from apps to web platforms, from fintech to sextech. Usually, they are aware of the lack of knowledge they have when it comes to tech, but are so driven by their mission that they won’t stop until it’s complete.            </p>
           </Collapse>
         </div>
-        <div className="col-6 py-3">
+        <div className="col-lg-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqFourOpen(!faqFourOpen)}}>
-            {faqFourOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqFourOpen ? <DashIcon  size={iconSize} /> :  <PlusIcon size={iconSize} />}
             <h2 className="pl-4">How soon can we start?</h2>
           </div>
           <Collapse in={faqFourOpen}>
@@ -280,9 +292,9 @@ function Tuition() {
             </div>
           </Collapse>
         </div>
-        <div className="col-6 py-3">
+        <div className="col-md-6 col-12 py-3">
           <div className="d-flex flex-row" onClick={()=>{setFaqFiveOpen(!faqFiveOpen)}}>
-            {faqFiveOpen ? <DashIcon  size={22} /> :  <PlusIcon size={22} />}
+            {faqFiveOpen ? <DashIcon  size={iconSize} /> :  <PlusIcon size={iconSize} />}
             <h2 className="pl-4">Can I change the time of my booking?</h2>
           </div>
           <Collapse in={faqFiveOpen}>
@@ -298,17 +310,18 @@ function Tuition() {
 
     </div>
 
-    <div className="container-fluid p-5 bg-cyan">
+    <div className="container-fluid p-lg-5 py-5 bg-cyan">
       <h3 className="text-center text-white p-3">Ready to get started?</h3>
-      <div className="text-center p-3">
+      <div className="text-center p-lg-3">
         <Button variant="red" className="btn-lg" href="/">BOOK NOW</Button>
       </div>
     </div>
 
     <div 
-      className={`container-fluid position-relative d-flex align-items-center`}
+      className={`container-fluid position-relative d-flex align-items-center p-5`}
     >
-      <div className="col-6 position-relative d-flex justify-content-center align-items-center">
+      <div className="row">
+      <div className="col-md-6 col-12 position-relative d-flex justify-content-center align-items-center">
         <img
         src={greenDiamond}
         alt="Green diamond background"
@@ -317,14 +330,15 @@ function Tuition() {
         <img
           src={rocket}
           alt="Line drawing of a rocket"
-          className={`h-50 w-75 position-absolute`}
+          className={`h-xs-75 h-lg-50 w-75 position-absolute`}
         />
       </div>
-      <div>
+      <div className="col-md-6 col-12 d-flex flex-column justify-content-center">
         <h1 className="text-center">Looking for our <span>courses?</span></h1>
         <div className="text-center">
           <Button variant="red" className="btn-lg" href="/courses">FIND OUT MORE</Button>
         </div>
+      </div>
       </div>
     </div>
     

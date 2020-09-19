@@ -1,9 +1,14 @@
 .pinkCircle {
-    top: -100%;
-    right: -30%
+    top: -30%;
+    left: 40%
 }
 
 
 .headshot {
     z-index: 10;
+}
+
+.divider {
+    border-bottom: 1px solid white;
+    min-height: 1px;
 }
