@@ -12,6 +12,9 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import NotFound from './pages/NotFound';
+import Privacy from './pages/Privacy';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
 
@@ -32,11 +35,20 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/Contact">
+        <Route path="/contact">
           <Contact />
         </Route>
-        <Route path="/">
+        <Route path="/privacy-policy">
+          <Privacy />
+        </Route>
+        <Route path="/terms-and-conditions">
+          <TermsAndConditions />
+        </Route>
+        <Route exact path="/">
           <Home setHeaderColour={(color)=> setHeaderColour(color)} />
+        </Route>
+        <Route >
+          <NotFound />
         </Route>
       </Switch>
       <Footer/>

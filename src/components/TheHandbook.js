@@ -3,8 +3,6 @@ import handGlobe from '../assets/hand-globe.png'
 
 function TheHandbook({newsletterSignUp, signedUp}) {
 
-  console.log(newsletterSignUp)
-
   let signUpBox;
 
   if (signedUp){

@@ -40,6 +40,11 @@ function Header({headerColor}) {
   return (
     <>
     <BrowserView>
+      <div className="container-fluid bg-green p-2" >
+        <a href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01">
+        <p className="text-center text-white mb-0"><b>GET YOUR FREE GUIDE 'THE GLOSSARY OF TECH LINGO'</b></p>
+        </a>
+      </div>
       <Navbar 
         className={`${scrolled ? styles.scrolled : null} w-100 d-flex justify-content-between align-items-start`}
         style={{backgroundColor: headerColor}}
