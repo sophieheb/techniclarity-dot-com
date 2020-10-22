@@ -4,6 +4,7 @@ import Collapse from 'react-bootstrap/Collapse';
 import {PlusIcon, DashIcon} from '@primer/octicons-react'
 import {  isMobile
 } from "react-device-detect";
+import ReactPlayer from 'react-player'
 
 import styles from '../styles/tuition.module.css'
 
@@ -91,7 +92,7 @@ function Tuition() {
         You’re working harder than ever before so I’m going to guess it’s fear that’s stopping you. A sure-fire way to overcome fear is by levelling up your know-how in a safe, non-judgemental environment.
         </p>
         <div >
-          <Button variant="red" className="btn-lg w-50" href="https://courses.techniclarity.co/enroll/749942">BOOK NOW</Button>
+          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BOOK NOW</Button>
         </div>
       </div>
       <div className="col-lg-6 col-12 order-0 order-lg-1 position-relative d-flex justify-content-center align-items-center">
@@ -109,16 +110,16 @@ function Tuition() {
     </div>
     </div>
 
-    <div className={`container-fluid p-lg-5 py-5 px-3 bg-cyan `}>
-      <div className="row">
-      <div className="col-lg-6 col-12 ">
+    <div className={`container-fluid p-5 bg-cyan `}>
+      <div className="row w-xl-75 mx-auto align-items-center justify-content-space-between">
+        <div className="col-xl-6 col-lg-4 col-12">
         <h3 className="text-white">Meet your <span>tutor</span></h3>
         <h2 className="text-white">It can feel like you are on your own in this entrepreneurial journey but by working with me you’ll have a <span>cheerleader, teacher and guide </span> by your side.</h2>
         <Button variant="red" className="btn-lg" href="/about">READ MORE</Button>
-      </div>
-      <div className="col-lg-6 col-12 ">
-        <h1>VIDEO TO GO HERE</h1>
-      </div>
+        </div>
+        <div className="col-xl-6 col-lg-8 col-12 pt-lg-0 pt-5 d-flex justify-content-center align-items-center">
+          <ReactPlayer url='https://vimeo.com/470963117'/>
+        </div>
       </div>
     </div>
 

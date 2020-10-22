@@ -5,6 +5,7 @@ import { Waypoint } from 'react-waypoint';
 import {CheckIcon, XIcon, PlusIcon, DashIcon} from '@primer/octicons-react'
 import {  isMobile
 } from "react-device-detect";
+import ReactPlayer from 'react-player'
 
 import styles from '../styles/course.module.css'
 
@@ -101,7 +102,7 @@ function Course() {
           What would you say if I told you I had something to give you everything you needed to stop talking about your idea and actually get it into customers hands?
         </p>
         <div >
-          <Button variant="red" className="btn-lg w-sm-50 w-xs-100" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
       </div>
       <div className="col-lg-6 col-12 order-0 order-lg-1  position-relative d-flex justify-content-center align-items-center">
@@ -120,15 +121,15 @@ function Course() {
     </div>
     
     <div className={`container-fluid p-5 bg-cyan `}>
-      <div className="row">
-      <div className="col-lg-6 col-12">
-        <h3 className="text-white">Meet your <span>tutor</span></h3>
-        <h2 className="text-white">Find out why Sophie created the course.</h2>
-        <Button variant="red" className="btn-lg" href="/about">READ MORE</Button>
-      </div>
-      <div className="col-lg-6 col-12">
-        <h1>VIDEO TO GO HERE</h1>
-      </div>
+      <div className="row w-xl-75 mx-auto align-items-center justify-content-space-between">
+        <div className="col-xl-6 col-lg-4 col-12">
+          <h1 className="text-white">Meet your <span>tutor</span></h1>
+          <h3 className="text-white">Find out why Sophie created the course.</h3>
+          <Button variant="red" className="btn-lg" href="/about">READ MORE</Button>
+        </div>
+        <div className="col-xl-6 col-lg-8 col-12 pt-lg-0 pt-5 d-flex justify-content-center align-items-center">
+          <ReactPlayer url='https://vimeo.com/470963786'/>
+        </div>
       </div>
     </div>
     
@@ -299,7 +300,8 @@ function Course() {
       <h2 className="text-center text-white p-3 d-lg-block d-none">£450</h2>
       <h3 className="text-center text-white p-3 d-lg-none d-block">£450</h3>
       <div className="text-center p-3">
-          <Button variant="red" className="btn-lg w-75" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+        
+          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
     </div>
     
@@ -457,7 +459,7 @@ function Course() {
       <h2 className="text-center text-white p-3 d-lg-block d-none">£450</h2>
       <h3 className="text-center text-white p-3 d-lg-none d-block">£450</h3>
       <div className="text-center p-3">
-          <Button variant="red" className="btn-lg w-75" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
     </div>
 
@@ -575,7 +577,7 @@ function Course() {
       <h2 className="text-center text-white p-3 d-lg-block d-none">£450</h2>
       <h3 className="text-center text-white p-3 d-lg-none d-block">£450</h3>
       <div className="text-center p-3">
-          <Button variant="red" className="btn-lg w-75" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
+          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
     </div>
 

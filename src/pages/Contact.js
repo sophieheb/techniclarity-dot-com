@@ -15,7 +15,6 @@ import NewsletterSignupContact from '../components/NewsletterSignupContact'
 function Contact() {
   let location = useLocation();
 
-  console.log(location.hash)
   return (
     <>
      <div 
