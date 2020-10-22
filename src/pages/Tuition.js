@@ -43,7 +43,7 @@ function Tuition() {
         <img
           src={hand}
           alt="Line drawing of a hand"
-          className={`w-xs-100 w-sm-75 w-md-50  w-lg-100 position-absolute`}
+          className={`w-xs-100 w-sm-75 w-md-50  w-lg-75 position-absolute`}
         />
       </div>
       <div className="col-12 mb-lg-0 mb-5 col-lg-6 order-0 order-lg-1 d-flex flex-column align-items-lg-center justify-content-center">
@@ -57,9 +57,9 @@ function Tuition() {
       </div>
     </div>
 
-    <div>
+    <div className="p-5 mb-5">
       <h3 className="text-center"><span>Does this sound like you?</span></h3>
-      <div className="p-4" >
+      <div className="p-4 mb-5 " >
         <h3 className="text-center">
         I’m committed to making this idea real
         </h3>
@@ -124,7 +124,7 @@ function Tuition() {
       </div>
     </div>
 
-    <div className="container p-5">
+    <div className="container p-5 mt-5">
         <div className="row justify-content-center ">
           <div className="col-lg-6 col-12 text-center">
 
@@ -134,6 +134,7 @@ function Tuition() {
         </div>
       </div>
 
+<a id="buy-now"></a>
     <div className="container-fluid p-5">
       <div className="row">
         <div className="col-lg-6 col-12 p-lg-5 py-5 px-3">
@@ -246,7 +247,6 @@ function Tuition() {
             {faqOneOpen ? <DashIcon  size={iconSize} /> :  <PlusIcon size={iconSize} />}
             <h2 className="pl-4">How does it work?</h2>
           </div>
-          <h1>{faqOneOpen}</h1> 
           <Collapse in={faqOneOpen}>
           <div>
             <p>Once you book your time and make your payment it’s a three-step process.</p>
@@ -264,9 +264,11 @@ function Tuition() {
             <h2 className="pl-4">Why should I work with you?</h2>
           </div>
           <Collapse in={faqTwoOpen}>
+          <div>
             <p>If you're looking for someone who will care for your startup nearly as much as you do, then I'm for you
             I believe in creating more female-founded businesses. When I was a CTO I kept seeing women stalled by lack of tech knowledge. It felt like that knowledge was locked away, only for those in the know. I don’t want your idea to get stalled in the same way. It is my mission to support your growth.
             </p>
+            </div>
           </Collapse>
         </div>
         <div className="col-md-6 col-12 py-3">
@@ -275,7 +277,9 @@ function Tuition() {
             <h2 className="pl-4">Who do you work with?</h2>
           </div>
           <Collapse in={faqThreeOpen}>
+          <div>
             <p>The clients that work with me are passionate, ambitious business owners, who have a brilliant idea they just can’t wait to get out into the world. The ideas they have range from apps to web platforms, from fintech to sextech. Usually, they are aware of the lack of knowledge they have when it comes to tech, but are so driven by their mission that they won’t stop until it’s complete.            </p>
+            </div>
           </Collapse>
         </div>
         <div className="col-lg-6 col-12 py-3">
@@ -315,7 +319,7 @@ function Tuition() {
     <div className="container-fluid p-lg-5 py-5 bg-cyan">
       <h3 className="text-center text-white p-3">Ready to get started?</h3>
       <div className="text-center p-lg-3">
-        <Button variant="red" className="btn-lg" href="/">BOOK NOW</Button>
+        <Button variant="red" className="btn-lg" href="#buy-now">BOOK NOW</Button>
       </div>
     </div>
 
@@ -338,7 +342,7 @@ function Tuition() {
       <div className="col-md-6 col-12 d-flex flex-column justify-content-center">
         <h1 className="text-center">Looking for our <span>courses?</span></h1>
         <div className="text-center">
-          <Button variant="red" className="btn-lg" href="/courses">FIND OUT MORE</Button>
+          <Button variant="red" className="btn-lg" href="/course">FIND OUT MORE</Button>
         </div>
       </div>
       </div>

@@ -17,9 +17,6 @@ import cloudFreebieRight from '../assets/cloud-freebie-right.png'
 import cloudFreebieLeft from '../assets/cloud-freebie-left.png'
 import glossary from '../assets/glossary.png'
 
-
-
-
 import useOnScreen from '../shared/onScreen'
 
 import Instagram from '../components/Instagram'
@@ -33,8 +30,7 @@ function Home({setHeaderColour}) {
   let location = useLocation();
   
   const [loaded, setLoaded] = useState(false);
-
-
+  const [glossaryHasBeenOnScreen, setGlossaryHasBeenOnScreen] = useState(false)
 
   useEffect(() => {
     setHeaderColour('#262DBA')
@@ -50,7 +46,11 @@ function Home({setHeaderColour}) {
   const ref = useRef();
   const glossaryOnScreen = useOnScreen(ref, isMobile ? '-100px' : '-300px');
 
-  console.log(glossaryOnScreen)
+  useEffect(()=> {
+    if(glossaryOnScreen && !glossaryHasBeenOnScreen){
+      setGlossaryHasBeenOnScreen(true)
+    }
+  })
 
 
   return (
@@ -77,15 +77,15 @@ function Home({setHeaderColour}) {
       <img
         src={globe}
         alt="Globe Background"
-        className={`position-absolute h-75 ${styles.globe}`}
+        className={`position-absolute h-100 ${styles.globe}`}
       />
       <img
         src={pinkGlobe}
         alt="Globe Background"
-        className={`position-absolute h-75 ${styles.pinkGlobe}`}
+        className={`position-absolute h-100 ${styles.pinkGlobe}`}
       />
       <div 
-        className="col-sm-9 ml-lg-5 pl-lg-5 pt-4 p-2 col-12"
+        className="col-sm-9 col-lg-7 col-xl-6 ml-lg-5 pl-lg-5 pt-4 p-2 col-12"
       >
         <h1>Stop dreaming about your startup. Learn just enough tech to <span>make it happen.</span></h1>
         <p>We develop female founders by teaching them the tech know-how they need to lead a startup to success.</p>
@@ -98,28 +98,28 @@ function Home({setHeaderColour}) {
       <img
         src={cloudFreebieLeft}
         alt="Cloud Background"
-        className={`position-absolute  h-xs-25 h-lg-100  h-sm-50 align-self-lg-center align-self-end  ${ glossaryOnScreen ? styles.cloudFreebieLeftLoaded : styles.cloudFreebieLeft}`}
+        className={`position-absolute  h-xs-25 h-lg-100  h-sm-50 align-self-lg-center align-self-end  ${ glossaryHasBeenOnScreen || glossaryOnScreen ? styles.cloudFreebieLeftLoaded : styles.cloudFreebieLeft}`}
       />
       <img
         src={cloudFreebieRight}
         alt="Cloud Background"
-        className={`position-absolute  h-xs-25 h-lg-100 h-sm-50  align-self-lg-center align-self-end ${ glossaryOnScreen ? styles.cloudFreebieRightLoaded : styles.cloudFreebieRight}`}
+        className={`position-absolute  h-xs-25 h-lg-100 h-sm-50  align-self-lg-center align-self-end ${ glossaryHasBeenOnScreen || glossaryOnScreen ? styles.cloudFreebieRightLoaded : styles.cloudFreebieRight}`}
 
       />
       <div className="container py-5">
       <div className="row justify-content-center">
       <div 
-        className="col-lg-5 order-lg-1 text-center my-auto"
+        className="col-lg-5 py-5 order-lg-1 text-center my-auto"
       >
         <h2 className="text-white">Free!</h2>
         <h1 className="text-white">The <span>Glossary</span> of Tech Lingo</h1>
         <p className="text-white">All the tech jargon you need to know so that you can chat about your product with ease.</p>
-        <Button  className="btn-lg col-6 col-lg-9" variant="purple" href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01">DOWNLOAD NOW</Button>
+        <Button  className="btn-lg col-6 col-lg-9" variant="purple" target="_blank" as="a" href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01">DOWNLOAD NOW</Button>
       </div>
       <img
         src={glossary}
         alt="Glossary"
-        className="col-lg-3 order-lg-0 pt-xl-0 pt-4"
+        className="col-lg-4 order-lg-0 pt-xl-0 pt-4"
       />
       </div>
       </div>

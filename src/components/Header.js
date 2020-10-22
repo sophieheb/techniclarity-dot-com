@@ -42,8 +42,8 @@ function Header({headerColor}) {
     <>
     <BrowserView>
       <div className="container-fluid bg-green">
-        <a  href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01">
-        <h2 className="text-center text-white m-0 p-2">GET YOUR FREE GUIDE 'THE GLOSSARY OF TECH LINGO'</h2>
+        <a  href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01" className={`${styles.annoucementBarLink}`}>
+        <h2 className={`text-center text-white m-0 p-2 ${styles.annoucementBar}`}>GET YOUR FREE GUIDE 'THE GLOSSARY OF TECH LINGO'</h2>
         </a>
       </div>
       <Navbar 
@@ -57,17 +57,19 @@ function Header({headerColor}) {
             alt="Techniclarity logo"
           />
         </Navbar.Brand>
+        <a href="/">
         <img
             src={symbolLogo}
-            height={75}
+            height={50}
             alt="Techniclarity logo"
             className={`${scrolled ? 'd-none' : 'd-flex'}`}
           />
+          </a>
         <Nav className="" navbar={false}>
-          <Nav.Link href="tuition">Tuition</Nav.Link>
-          <Nav.Link href="course">Course</Nav.Link>
-          <Nav.Link href="about">About</Nav.Link>
-          <Nav.Link href="contact">Contact</Nav.Link>
+          <Nav.Link href="tuition">TUITION</Nav.Link>
+          <Nav.Link href="course">COURSE</Nav.Link>
+          <Nav.Link href="about">ABOUT</Nav.Link>
+          <Nav.Link href="contact">CONTACT</Nav.Link>
         </Nav>
       </Navbar>
     </BrowserView>

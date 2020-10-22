@@ -16,10 +16,10 @@ function About() {
   return (
     <>
      <div 
-      className={`container-fluid position-relative p-lg-5 p-3 mt-lg-5 d-flex align-items-center`}
+      className={`container-fluid position-relative p-lg-5 p-3 mt-lg-5 d-flex align-items-center mb-5`}
     >
-      <div className="row">
-        <div className="col-lg-6 col-12 position-relative d-flex flex-column"> 
+      <div className="row mt-lg-5">
+        <div className="col-lg-6 my-auto col-12 position-relative d-flex flex-column"> 
           <h2 >What?</h2>
           <h1 >Techniclarity teaches <span>female founders </span> the tech know-how they need to lead their startups.</h1>
           <p className="d-none d-lg-block">Whether it’s by levelling up with an online course or us working together one to one to remove all your technical blockers - Techniclarity was started to help you press the go-faster button on your app or web-platform idea.</p>
@@ -37,11 +37,10 @@ function About() {
             alt="Line drawing of a woman"
             className={`h-100 d-block d-lg-none position-absolute`}
           />
-
 <img
             src={womanTop}
             alt="Line drawing of a woman"
-            className={`w-75 d-none d-lg-block position-absolute`}
+            className={`w-50 d-none d-lg-block position-absolute`}
           />
         </div>
       </div>
@@ -63,7 +62,7 @@ function About() {
           className={`h-100 position-absolute`}
         />
       </div>
-      <div className="col-lg-6 col-12 order-0 order-lg-1 position-relative d-flex flex-column"> 
+      <div className="my-auto col-lg-6 col-12 order-0 order-lg-1 position-relative d-flex flex-column"> 
         <h2 >Why?</h2>
         <h1 >People leading technological change and new ideas all come from <span>one demographic.</span></h1>
 <p>Technology is creating a new world; this gives us the chance to create a more equal society. However, when the majority of founders, people leading technological change and new ideas all come from one demographic, well that new world is going to be pretty geared towards that one group - and won’t be so equal.</p>

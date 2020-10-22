@@ -70,9 +70,10 @@ function Course() {
       </div>
     </div>
 
-    <div>
-      <h3 className="text-center"><span>Get ready to:</span></h3>
-      <div >
+    <div className="p-5 mb-5">
+    <h3 className="text-center"><span>Get ready to:</span></h3>
+      <div className="p-4 mb-5 " >
+
         <h3 className="text-center">
           Secure investment
         </h3>
@@ -136,6 +137,7 @@ function Course() {
     <div className="container-fluid ">
       <div className="row">
       <div className="col-lg-4 col-12 pt-5">
+        <div className={styles.curriculum}>
         <h1>The Curriculum</h1>
         <img
           src={globe}
@@ -143,6 +145,7 @@ function Course() {
           className={`position-relative d-lg-inline d-none
            ${styles.globe}`}
         />
+        </div>
       </div>
       <div className="col-lg-6 col-12 p-lg-5 p-3">
         <div className="mb-5 row">
@@ -389,9 +392,9 @@ function Course() {
           className={`float-right`}
         />
         </div>
-        <div className="col-lg-6 col-12">
+        <div className="col-lg-6 col-12 my-auto">
           <h3 className="mb-4 pb-4 text-center"><span>And </span> you'll be armed with:</h3>
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="w-50 pb-5 mb-5 text-center">
               <img
                 src={cloud}
@@ -466,23 +469,23 @@ function Course() {
     <div className="container-fluid p-5">
       <h1 className="pb-5">How this course <span>works</span></h1>
       <div className="row">
-        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
+        <div className="col-12 col-lg-4 p-lg-5 pb-5">
           <h3>Workbooks</h3>
           <p className="w-100">Put everything you learn into practice straight away with workbooks you tailor specifically to your product.</p>
         </div>
-        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
+        <div className="col-12 col-lg-4 p-lg-5 pb-5">
           <h3>Videos</h3>
           <p className="w-100">Walkthroughs of definitions, tools, techniques and processes.</p>
         </div>
-        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
+        <div className="col-12 col-lg-4 p-lg-5 pb-5">
           <h3>Support</h3>
           <p className="w-100">You won’t be alone on this journey. Along the way, you’ll be able to ask any questions you have.</p>
         </div>
-        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
+        <div className="col-12 col-lg-4 p-lg-5 pb-5">
           <h3>Self-paced</h3>
           <p className="w-100">Learn as and when it suits you. Early bird or night owl, it doesn’t matter to us!</p>
         </div>
-        <div className="col-12 col-lg-4 m-lg-3 p-lg-5 pb-5">
+        <div className="col-12 col-lg-4 p-lg-5 pb-5">
           <h3>Online</h3>
           <p className="w-100">Access all the content whenever suits you best, no need to travel.</p>
         </div>

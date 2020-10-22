@@ -25,3 +25,8 @@
 .headshot {
     z-index: 10;
 }
+
+.curriculum {
+    position: sticky;
+    top: 56px;
+}

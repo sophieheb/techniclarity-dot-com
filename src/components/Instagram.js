@@ -31,7 +31,7 @@ function Instagram() {
         }
       }, [token])
   return (
-    <div className="container-fluid p-3 bg-yellow">
+    <div className="container-fluid py-xl-5 p-3 bg-yellow">
       { instagramData.length > 1 ?
         <>
           <div className="row justify-content-center ">
@@ -39,7 +39,7 @@ function Instagram() {
               <img
                 src={instagramLogo}
                 alt="Instagram logo"
-                className="img-fluid d-inline-block pr-2"
+                className="pb-3"
               />
               <h3>the.techniclarity</h3>
               <a href="https://instagram.com/the.techniclarity">

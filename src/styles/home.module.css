@@ -7,7 +7,7 @@
 .cloudTopLoaded{
     top:10%;
     left:20%;
-    transition: top 6s, left 7s;
+    transition: top 8s, left 10s;
     transition-timing-function: ease-out;
 }
 
@@ -31,33 +31,33 @@
 .cloudBottomLoaded{
     top:60%;
     left:-5%;
-    transition: top 5s, left 5s;
+    transition: top 8s, left 8s;
     transition-timing-function: ease-out;
 }
 
 @keyframes bouncingGlobe {
-    0% {bottom: -30%}
-    50% {bottom: -25%}
-    100% {bottom: -30%}
+    0% {bottom: -80%}
+    50% {bottom: -45%}
+    100% {bottom: -80%}
   }
 
 .globe{
-    bottom:-30%;
-    left:80%;
+    bottom:-80%;
+    left:40%;
     animation: bouncingGlobe 7s;
     animation-iteration-count: infinite;
     z-index: 10
 }
 
 @keyframes bouncingPinkGlobe {
-    0% {bottom: -30%; transform: scale(0.9)}
-    50% {bottom: -25%; transform: scale(1.2)}
-    100% {bottom: -30%; transform: scale(0.9)}
+    0% {bottom: -80%; transform: scale(0.9)}
+    50% {bottom: -45%; transform: scale(1.2)}
+    100% {bottom: -80%; transform: scale(0.9)}
 }
 
 .pinkGlobe{
-    bottom:-30%;
-    left:80%;
+    bottom:-80%;
+    left:40%;
     animation: bouncingPinkGlobe 7s;
     animation-iteration-count: infinite;
 }
@@ -77,13 +77,13 @@
 
 .cloudFreebieLeft{
     z-index:10;
-    left: 10%;
+    left: -10%;
 
 }
 
 .cloudFreebieRight{
     z-index:10;
-    right: 10%;
+    right: -10%;
 }
 
 .cloudFreebieLeftLoaded{

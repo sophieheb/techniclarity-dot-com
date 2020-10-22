@@ -21,3 +21,13 @@
     z-index: 5000;
     background-color: #E1D5FA
 }
+
+.annoucementBar {
+    font-size: 12px !important;
+    letter-spacing: 1px;
+    
+}
+
+.annoucementBarLink {
+    text-decoration: none !important;
+}
