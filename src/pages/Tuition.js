@@ -5,6 +5,7 @@ import {PlusIcon, DashIcon} from '@primer/octicons-react'
 import {  isMobile
 } from "react-device-detect";
 import ReactPlayer from 'react-player'
+import { openPopupWidget } from "react-calendly";
 
 import styles from '../styles/tuition.module.css'
 
@@ -158,7 +159,7 @@ function Tuition() {
           How much will it cost to build an app?</p>
           <h2 className="mt-5">ONE HOUR</h2>
           <h1>£100</h1>
-          <Button variant="red" className="btn-lg" href="/">BOOK NOW</Button>
+          <Button variant="red" className="btn-lg" as="a" onClick={()=> openPopupWidget({url:"https://calendly.com/learning-about-technology/power-hour" })}>BOOK NOW</Button>
         </div>
         <div className={`w-100 ${styles.divider} d-lg-none`}/>
         <div className="col-lg-6 col-12 p-lg-5 py-5 px-3">
@@ -183,7 +184,7 @@ function Tuition() {
           What haven't I thought of?</p>
           <h2 className="mt-5">ONE HOUR</h2>
           <h1>£100</h1>
-          <Button variant="red" className="btn-lg" href="/">BOOK NOW</Button>
+          <Button variant="red" className="btn-lg" as="a" onClick={()=> openPopupWidget({url:"https://calendly.com/learning-about-technology/sanity-check"})}>BOOK NOW</Button>
         </div>
         <div className={`w-100 ${styles.divider} d-lg-none`}/>
         <div className="col-lg-6 col-12 p-lg-5 py-5 px-3">
