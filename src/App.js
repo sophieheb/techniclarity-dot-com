@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
 import CookieConsent, { Cookies } from "react-cookie-consent";
-
-
+import { createBrowserHistory } from 'history';
+import ReactGA from 'react-ga';
 
 import Tuition from './pages/Tuition';
 import Home from './pages/Home';
@@ -19,10 +19,20 @@ import NotFound from './pages/NotFound';
 import Privacy from './pages/Privacy';
 import TermsAndConditions from './pages/TermsAndConditions';
 
+const history = createBrowserHistory();
+
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
+
 function App() {
 
+  const [headerColor, setHeaderColour] = useState('#E1D5FA');
 
-  const [headerColor, setHeaderColour] = useState('#E1D5FA')
+  useEffect(()=> {
+    ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS);
+  })
 
   return (
     <>
