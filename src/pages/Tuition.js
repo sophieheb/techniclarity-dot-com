@@ -238,7 +238,9 @@ function Tuition() {
       <div className="col-md-5 col-12 mb-md-5 mb-3 ">
         <h1>FAQs</h1>
         <p className="mb-0">Got any more <span>questions?</span> Send them over to:</p>
-        <p><b>tuition@techniclarity.co</b></p>
+        <a href="mailto:tution@techniclarity.co?subject=Question about Tuition">
+        <p><b>tuition @techniclarity.co</b></p>
+        </a>
       </div>
       </div>
       <div className="row">

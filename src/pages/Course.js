@@ -521,7 +521,9 @@ function Course() {
       <div className="col-md-5 col-12 mb-md-5 mb-3 ">
         <h1>FAQs</h1>
         <p className="mb-0">Got any more <span>questions?</span> Send them over to:</p>
-        <p><b>productlaunchpad@techniclarity.co</b></p>
+        <a href="mailto:productlaunchpad@techniclarity.co?subject=Question about Product Launchpad">
+        <p><b>productlaunchpad @techniclarity.co</b></p>
+        </a>
       </div>
       </div><div className="row">
         <div className="col-md-6 col-12 py-3">

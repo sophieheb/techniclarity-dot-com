@@ -27,27 +27,33 @@ function Contact() {
           <div className="row d-flex align-items-center justify-content-center">
           <div className='col-sm-6 col-12 p-5 '>
             <h2 className="text-center">Media Enquiries</h2>
-            <p className="text-center">press@techniclarity.co</p>
+            <a href="mailto:press@techniclarity.co?subject=Media Enquiry">
+            <p className="text-center">press @techniclarity.co</p>
+            </a>
             <div className="text-center">
-              <a href="mailto:press@techniclarity.co">
+            <a href="mailto:press@techniclarity.co?subject=Media Enquiry">
               <MailIcon size={36}/>
               </a>
             </div>
           </div>
           <div className='col-sm-6 col-12 p-5 '>
             <h2 className="text-center">Work together</h2>
-            <p className="text-center">partnerships@techniclarity.co</p>
+            <a href="mailto:partnerships@techniclarity.co?subject=Let's work together">
+            <p className="text-center">partnerships @techniclarity.co</p>
+            </a>
             <div className="text-center">
-              <a href="mailto:partnerships@techniclarity.co">
+              <a href="mailto:partnerships@techniclarity.co?subject=Let's work together">
               <MailIcon size={36}/>
               </a>
             </div>
           </div>
           <div className='col-sm-6 col-12 p-5 '>
             <h2 className="text-center">Everything else</h2>
-            <p className="text-center">hello@techniclarity.co</p>
+            <a href="mailto:hello@techniclarity.co?subject=Techniclarity Website Enquiry">
+            <p className="text-center">hello @techniclarity.co</p>
+            </a>
             <div className="text-center">
-              <a href="mailto:hello@techniclarity.co">
+            <a href="mailto:hello@techniclarity.co?subject=Techniclarity Website Enquiry">
               <MailIcon size={36}/>
               </a>
             </div>

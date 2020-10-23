@@ -7,6 +7,8 @@ import {
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
+import ReactPixel from 'react-facebook-pixel';
+
 
 import Tuition from './pages/Tuition';
 import Home from './pages/Home';
@@ -31,7 +33,9 @@ function App() {
   const [headerColor, setHeaderColour] = useState('#E1D5FA');
 
   useEffect(()=> {
+    ReactPixel.init(process.env.REACT_APP_FACEBOOK_PIXEL)
     ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS);
+    
   })
 
   return (
@@ -70,13 +74,11 @@ function App() {
   </Router>
   <CookieConsent 
     onDecline={()=>{
+      ReactPixel.revokeConsent();
       const cookies = Cookies.get()
-      console.log(cookies)
       Object.keys(cookies).forEach(cookie => {
         Cookies.remove(cookie)
-      })
-      const cookies2 = Cookies.get()
-    console.log(cookies2)}} 
+      })}} 
     enableDeclineButton 
     declineButtonText="No thanks" 
     setDeclineCookie={false}
