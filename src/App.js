@@ -86,9 +86,9 @@ function App() {
     flipButtons
     buttonWrapperClasses='d-flex'
     style={{ background: "#0B807F"}}
-    declineButtonClasses="bg-yellow text-blue"
+    declineButtonClasses="bg-cyan text-white"
     declineButtonStyle={{width: 'auto', 'border-radius': '23px', padding: '0.15rem 3rem'}}
-    buttonClasses="bg-cyan text-white"
+    buttonClasses=" bg-yellow text-blue"
     buttonStyle={{width: 'auto', 'border-radius': '23px', padding: '0.15rem 3rem'}}
     contentStyle= {{display: 'flex', }}
     ><h2>We use cookies to improve your experience on our site. By using our site you consent to cookies. <a href="/cookie" className="text-white" style={{'text-decoration-line': 'underline'}} >Learn more</a></h2></CookieConsent>

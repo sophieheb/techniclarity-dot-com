@@ -36,9 +36,9 @@
 }
 
 @keyframes bouncingGlobe {
-    0% {bottom: -80%}
-    50% {bottom: -45%}
-    100% {bottom: -80%}
+    0% {bottom: -70%}
+    50% {bottom: -65%}
+    100% {bottom: -70%}
   }
 
 .globe{
@@ -50,9 +50,9 @@
 }
 
 @keyframes bouncingPinkGlobe {
-    0% {bottom: -80%; transform: scale(0.9)}
-    50% {bottom: -45%; transform: scale(1.2)}
-    100% {bottom: -80%; transform: scale(0.9)}
+    0% {bottom: -70%; transform: scale(0.9)}
+    50% {bottom: -65%; transform: scale(1.2)}
+    100% {bottom: -70%; transform: scale(0.9)}
 }
 
 .pinkGlobe{
