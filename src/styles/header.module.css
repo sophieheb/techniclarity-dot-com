@@ -1,5 +1,3 @@
-
-
 .link {
     font-family: SyneBold;
     font-size: 2.5rem;
@@ -11,6 +9,8 @@
 }
 
 .menu {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#CFE0FC), to(#E1D5FA));
+    background-image: -o-linear-gradient(#CFE0FC, #E1D5FA);
     background-image: linear-gradient(#CFE0FC, #E1D5FA);
 }
 

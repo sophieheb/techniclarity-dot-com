@@ -7,8 +7,12 @@
 .cloudTopLoaded{
     top:10%;
     left:20%;
+    -webkit-transition: top 8s, left 10s;
+    -o-transition: top 8s, left 10s;
     transition: top 8s, left 10s;
-    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
 }
 
 .cloudMiddle{
@@ -19,8 +23,12 @@
 .cloudMiddleLoaded{
     top:25%;
     right:-5%;
+    -webkit-transition: top 5s, right 5s;
+    -o-transition: top 5s, right 5s;
     transition: top 5s, right 5s;
-    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
 }
 
 .cloudBottom{
@@ -31,9 +39,19 @@
 .cloudBottomLoaded{
     top:60%;
     left:-5%;
+    -webkit-transition: top 8s, left 8s;
+    -o-transition: top 8s, left 8s;
     transition: top 8s, left 8s;
-    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
 }
+
+@-webkit-keyframes bouncingGlobe {
+    0% {bottom: -70%}
+    50% {bottom: -65%}
+    100% {bottom: -70%}
+  }
 
 @keyframes bouncingGlobe {
     0% {bottom: -70%}
@@ -44,33 +62,51 @@
 .globe{
     bottom:-80%;
     left:40%;
-    animation: bouncingGlobe 7s;
-    animation-iteration-count: infinite;
+    -webkit-animation: bouncingGlobe 7s;
+            animation: bouncingGlobe 7s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     z-index: 10
 }
 
+@-webkit-keyframes bouncingPinkGlobe {
+    0% {bottom: -70%; -webkit-transform: scale(0.9); transform: scale(0.9)}
+    50% {bottom: -65%; -webkit-transform: scale(1.2); transform: scale(1.2)}
+    100% {bottom: -70%; -webkit-transform: scale(0.9); transform: scale(0.9)}
+}
+
 @keyframes bouncingPinkGlobe {
-    0% {bottom: -70%; transform: scale(0.9)}
-    50% {bottom: -65%; transform: scale(1.2)}
-    100% {bottom: -70%; transform: scale(0.9)}
+    0% {bottom: -70%; -webkit-transform: scale(0.9); transform: scale(0.9)}
+    50% {bottom: -65%; -webkit-transform: scale(1.2); transform: scale(1.2)}
+    100% {bottom: -70%; -webkit-transform: scale(0.9); transform: scale(0.9)}
 }
 
 .pinkGlobe{
     bottom:-80%;
     left:40%;
-    animation: bouncingPinkGlobe 7s;
-    animation-iteration-count: infinite;
+    -webkit-animation: bouncingPinkGlobe 7s;
+            animation: bouncingPinkGlobe 7s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 
 .containerTopLoaded {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8294F1), to(#E1D5FA));
+    background-image: -o-linear-gradient(#8294F1, #E1D5FA);
     background-image: linear-gradient(#8294F1, #E1D5FA);
     overflow: hidden;
+    -webkit-transition: linear-gradient 5s;
+    -o-transition: linear-gradient 5s;
     transition: linear-gradient 5s;
-    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
 
 }
 
 .containerTop{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#262DBA), color-stop(#8294F1), to(#E1D5FA));
+    background-image: -o-linear-gradient(#262DBA, #8294F1, #E1D5FA);
     background-image: linear-gradient(#262DBA, #8294F1, #E1D5FA);
     overflow: hidden
 }
@@ -89,6 +125,8 @@
 .cloudFreebieLeftLoaded{
     z-index:10;
     left: -650px;
+    -webkit-transition: left 5s;
+    -o-transition: left 5s;
     transition: left 5s;
 
 } 
@@ -96,6 +134,8 @@
 .cloudFreebieRightLoaded{
     z-index:10;
     right: -650px;
+    -webkit-transition: right 5s;
+    -o-transition: right 5s;
     transition: right 5s;
 }
 
