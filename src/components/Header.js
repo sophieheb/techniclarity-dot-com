@@ -99,14 +99,16 @@ function Header({headerColor}) {
             className="position-absolute h-25"
             style={{top:'40%', right:'45%'}}
           />
-          <Nav className="row h-75 flex-column"  navbar={false}>
-            <Nav.Link href="tuition" className={styles.link}>Tuition</Nav.Link>
-            <Nav.Link href="course" className={styles.link}>Course</Nav.Link>
-            <Nav.Link href="about" className={styles.link}>About</Nav.Link>
-            <Nav.Link href="contact" className={styles.link}>Contact</Nav.Link>
-          </Nav>
-          <div className={`${styles.footer} row d-flex justify-content-between align-items-end`}>
-            <div className="col-3 d-flex h-50">
+          <div className="row flex-column h-75">
+            <Nav className="col-12"  navbar={false}>
+              <Nav.Link href="tuition" className={styles.link}>Tuition</Nav.Link>
+              <Nav.Link href="course" className={styles.link}>Course</Nav.Link>
+              <Nav.Link href="about" className={styles.link}>About</Nav.Link>
+              <Nav.Link href="contact" className={styles.link}>Contact</Nav.Link>
+            </Nav>
+          </div>
+          <div className={`row d-flex justify-content-between align-items-end px-3 `}>
+            <div className="flex-row h-50 align-items-end d-flex">
               <a href="https://instagram.com/the.techniclarity">
               <img
                 src={instagramLogo}
@@ -122,7 +124,7 @@ function Header({headerColor}) {
               />
               </a>
             </div>
-            <div className="col-3 d-flex ">
+            <div className="w-25">
               <img
                 src={symbolLogo}
                 alt="Techniclarity logo"
