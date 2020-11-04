@@ -10,7 +10,7 @@ function Burger({collapsed, setCollapsed}) {
         <span 
           className={`${collapsed ? 'bun' : 'topBun'} bg-blue`} />
         <span 
-          className={`${collapsed ? 'bun' : 'bottomBun'} bg-blue`}  />
+          className={`${collapsed ? 'bun' : 'bottomBun'} bg-blue`} />
     </button>
   )
 }

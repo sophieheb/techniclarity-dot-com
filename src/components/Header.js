@@ -83,7 +83,7 @@ function Header({headerColor}) {
             alt="Techniclarity logo"
           />
         </Navbar.Brand>
-        <Burger collapsed={collapsed} setCollapsed={() =>setCollapsed(!collapsed)}  />
+        <Burger collapsed={collapsed} setCollapsed={() =>setCollapsed(!collapsed)} />
       </Navbar>
       {collapsed ? null :
       <div className={`container flex-grow-1 d-flex justify-content-between flex-column pb-4 pt-3 ${styles.menu}`}>
