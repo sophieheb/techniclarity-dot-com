@@ -100,7 +100,7 @@ function Header({headerColor}) {
             style={{top:'40%', right:'45%'}}
           />
           <div className="row flex-column h-75">
-            <Nav className="col-12"  navbar={false}>
+            <Nav className="col-12 flex-column"  navbar={false}>
               <Nav.Link href="tuition" className={styles.link}>Tuition</Nav.Link>
               <Nav.Link href="course" className={styles.link}>Course</Nav.Link>
               <Nav.Link href="about" className={styles.link}>About</Nav.Link>
