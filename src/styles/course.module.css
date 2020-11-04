@@ -1,0 +1,35 @@
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+}
+
+.fixed {
+    position: fixed !important;
+}
+
+.globe {
+    left: -20%;
+    height: 400px
+}
+
+.sparkle {
+    height: 35px;
+    -webkit-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+            transform: rotate(25deg)
+}
+.pinkCircle {
+    top: -30%;
+    left: 40%
+}
+
+.headshot {
+    z-index: 10;
+}
+
+.curriculum {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 56px;
+}

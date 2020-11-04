@@ -1,0 +1,42 @@
+@-webkit-keyframes bouncingGlobe {
+    0% {bottom: -30%}
+    50% {bottom: -25%}
+    100% {bottom: -30%}
+  }
+
+@keyframes bouncingGlobe {
+    0% {bottom: -30%}
+    50% {bottom: -25%}
+    100% {bottom: -30%}
+  }
+
+.globe{
+    bottom:-30%;
+    left:80%;
+    -webkit-animation: bouncingGlobe 7s;
+            animation: bouncingGlobe 7s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    z-index: 10
+}
+
+@-webkit-keyframes bouncingPinkGlobe {
+    0% {bottom: -30%; -webkit-transform: scale(0.9); transform: scale(0.9)}
+    50% {bottom: -25%; -webkit-transform: scale(1.2); transform: scale(1.2)}
+    100% {bottom: -30%; -webkit-transform: scale(0.9); transform: scale(0.9)}
+}
+
+@keyframes bouncingPinkGlobe {
+    0% {bottom: -30%; -webkit-transform: scale(0.9); transform: scale(0.9)}
+    50% {bottom: -25%; -webkit-transform: scale(1.2); transform: scale(1.2)}
+    100% {bottom: -30%; -webkit-transform: scale(0.9); transform: scale(0.9)}
+}
+
+.pinkGlobe{
+    bottom:-30%;
+    left:80%;
+    -webkit-animation: bouncingPinkGlobe 7s;
+            animation: bouncingPinkGlobe 7s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}

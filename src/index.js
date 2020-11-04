@@ -1,15 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as Sentry from '@sentry/browser';
-import App from './components/App';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './styles/custom.scss';
+import * as Sentry from "@sentry/react";
+import { Integrations } from "@sentry/tracing";
 
+Sentry.init({
+  dsn: process.env.REACT_APP_SENTRY,
+  integrations: [
+    new Integrations.BrowserTracing(),
+  ],
 
-Sentry.init({ dsn: 'https://e4e41009a35341538de60ec8791b05a6@sentry.io/4313008' });
+  tracesSampleRate: 1.0,
+});
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

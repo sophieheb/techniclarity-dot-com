@@ -1,13 +1,14 @@
-.tuitionBackground {
-  background-image: url('../assets/tuition-background.png');
-  background-position: top;
-  background-size: cover;
-  color: #404a28;
+.pinkCircle {
+    top: -30%;
+    left: 40%
 }
 
-.tuitionDivider {
-  background-image: url('../assets/tuition-divider.png');
-  background-position: top;
-  background-size: cover;
-  color: #404a28;
+
+.headshot {
+    z-index: 10;
+}
+
+.divider {
+    border-bottom: 1px solid white;
+    min-height: 1px;
 }

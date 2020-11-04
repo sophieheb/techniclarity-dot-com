@@ -1,0 +1,33 @@
+.link {
+    font-family: SyneBold;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+    color: #031799;
+}
+
+.menu {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#CFE0FC), to(#E1D5FA));
+    background-image: -o-linear-gradient(#CFE0FC, #E1D5FA);
+    background-image: linear-gradient(#CFE0FC, #E1D5FA);
+}
+
+.scrolled {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    background-color: #E1D5FA
+}
+
+.annoucementBar {
+    font-size: 12px !important;
+    letter-spacing: 1px;
+    
+}
+
+.annoucementBarLink {
+    text-decoration: none !important;
+}

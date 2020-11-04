@@ -1,0 +1,17 @@
+.footerLink{
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: inherit;
+}
+
+.footerLink:hover{
+    color: #031799
+}
+
+.footerText{
+    font-size: 14px !important;
+}
+
+.socialIcon{
+    height: 32px;
+}
