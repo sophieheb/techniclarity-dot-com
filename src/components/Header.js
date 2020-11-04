@@ -99,7 +99,7 @@ function Header({headerColor}) {
             className="position-absolute h-25"
             style={{top:'40%', right:'45%'}}
           />
-          <Nav className="row flex-column"  navbar={false}>
+          <Nav className="row h-75 flex-column"  navbar={false}>
             <Nav.Link href="tuition" className={styles.link}>Tuition</Nav.Link>
             <Nav.Link href="course" className={styles.link}>Course</Nav.Link>
             <Nav.Link href="about" className={styles.link}>About</Nav.Link>
