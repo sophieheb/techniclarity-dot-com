@@ -9,7 +9,6 @@ import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 import ReactPixel from 'react-facebook-pixel';
 
-
 import Tuition from './pages/Tuition';
 import Home from './pages/Home';
 import Course from './pages/Course';
@@ -19,6 +18,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import NotFound from './pages/NotFound';
 import Privacy from './pages/Privacy';
+import Cookie from './pages/Cookie';
 import TermsAndConditions from './pages/TermsAndConditions';
 
 const history = createBrowserHistory();
@@ -59,6 +59,9 @@ function App() {
         <Route path="/privacy-policy">
           <Privacy />
         </Route>
+        <Route path="/cookie-policy">
+          <Cookie />
+        </Route>
         <Route path="/terms-and-conditions">
           <TermsAndConditions />
         </Route>
@@ -91,7 +94,7 @@ function App() {
     buttonClasses=" bg-yellow text-blue"
     buttonStyle={{width: 'auto', 'border-radius': '23px', padding: '0.15rem 3rem'}}
     contentStyle= {{display: 'flex', }}
-    ><h2>We use cookies to improve your experience on our site. By using our site you consent to cookies. <a href="/cookie" className="text-white" style={{'text-decoration-line': 'underline'}} >Learn more</a></h2></CookieConsent>
+    ><h2>We use cookies to improve your experience on our site. By using our site you consent to cookies. <a href="/cookie-policy" className="text-white" style={{'text-decoration-line': 'underline'}} >Learn more</a></h2></CookieConsent>
   </>
   );
 }

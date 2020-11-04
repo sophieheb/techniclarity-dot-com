@@ -51,7 +51,7 @@ function Tuition() {
         <h1 className="text-center">Working <span>Together</span> 1:1</h1>
         <h3 className="text-center"><span>Your chance</span> to get personalised support from someone who's been there and done that.</h3> 
         <div className="text-center">
-          <Button variant="red" className="btn-lg" href="/">BOOK NOW</Button>
+          <Button variant="red" className="btn-lg" href="#buy-now">BOOK NOW</Button>
         </div>
       </div>
       </div>
@@ -93,7 +93,7 @@ function Tuition() {
         You’re working harder than ever before so I’m going to guess it’s fear that’s stopping you. A sure-fire way to overcome fear is by levelling up your know-how in a safe, non-judgemental environment.
         </p>
         <div >
-          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BOOK NOW</Button>
+          <Button variant="red" className="btn-lg" href="#buy-now">BOOK NOW</Button>
         </div>
       </div>
       <div className="col-lg-6 col-12 order-0 order-lg-1 position-relative d-flex justify-content-center align-items-center">
@@ -149,7 +149,7 @@ function Tuition() {
           <p><b>You might be asking:</b></p>
           <p className="mb-0">Where should I start with my product strategy?</p>
           <p className="mb-0">
-          How do I figure out if this product is work pursuing?</p>
+          How do I figure out if this product is worth pursuing?</p>
           <p className="mb-0">
           How do I best work with my CTO or developer?</p>
           <p className="mb-0">
@@ -195,7 +195,7 @@ function Tuition() {
           Are you feeling like you are ready to put your ideas into action? In one 4 hour session, I’ll guide you through a tailored workbook so that you can take the next step in your journey to launching your startup. This means you’ll wrap up the session having ticked that big scary tech task off of your to-do list.</p>
           <h2 className="mt-5">FOUR HOURS</h2>
           <h1>£500</h1>
-          <Button variant="red" className="btn-lg" href="/">DOWNLOAD BROCHURE</Button>
+          <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9c3ae8ca796f4d56d56932">DOWNLOAD BROCHURE</Button>
         </div>
         <div className={`w-100 ${styles.divider} d-lg-none`}/>
         <div className="col-lg-6 col-12 p-lg-5 py-5 px-3">
@@ -204,7 +204,7 @@ function Tuition() {
           <p className="mb-3">
           You can call me your part-time CTO on retainer, advisor, tech expert or whatever you want (within reason) but basically this means I’ll be there for you, your business and your tech for as much or as little time as you want. With an expert on speed dial, nothing will hold you back.
           </p>
-          <Button variant="red" className="btn-lg" href="/">DOWNLOAD BROCHURE</Button>
+          <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9c43bbd722c9216eca9b61">DOWNLOAD BROCHURE</Button>
         </div>
       </div>
     </div>
