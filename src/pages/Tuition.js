@@ -30,7 +30,7 @@ function Tuition() {
 
   return (
     <>
-        <div 
+    <div 
       className={`container-fluid position-relative vh-100 d-flex pt-5 align-items-start align-items-lg-center`}
     >
       <div className="row">
