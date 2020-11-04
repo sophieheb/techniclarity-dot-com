@@ -116,11 +116,14 @@ function Home({setHeaderColour}) {
           <p className="text-white">All the tech jargon you need to know so that you can chat about your product with ease.</p>
           <Button  className="btn-lg col-12 col-lg-9" variant="purple" target="_blank" as="a" href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01">DOWNLOAD NOW</Button>
         </div>
+        <div           className="col-lg-4 col-12 order-lg-0 pt-xl-0 pt-4">
         <img
           src={glossary}
           alt="Glossary"
-          className="img-fluid col-lg-4 col-12 order-lg-0 pt-xl-0 pt-4"
+          className="img-fluid"
+
         />
+        </div>
       </div>
       </div>
     </div>
