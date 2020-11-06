@@ -115,7 +115,7 @@ function About() {
        <p>I’m inspired to help people without my sort of background, to help themselves gain a better understanding of technology. Then support them whilst they use that new clarity to grow businesses that make an impact.</p>
        <p><i>P.S I’m also a sausage dog owner, attempting to learn Spanish and a total chocoholic. I love listening to podcasts and starting new books (finishing them is a different story).</i></p>
        </div>
-      <div className="col-lg-6 col-12 h-100 d-flex justify-content-center">
+      <div className="col-lg-6 col-12 d-flex justify-content-center">
         <img
           src={headshot}
           alt="Photograph of Sophie"

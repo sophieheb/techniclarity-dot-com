@@ -87,7 +87,7 @@ function App() {
     setDeclineCookie={false}
     location="bottom"
     flipButtons
-    buttonWrapperClasses='d-flex'
+    buttonWrapperClasses='d-flex flex-wrap'
     style={{ background: "#0B807F"}}
     declineButtonClasses="bg-cyan text-white"
     declineButtonStyle={{width: 'auto', 'border-radius': '23px', padding: '0.15rem 3rem'}}

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Burger.css'
+import styles from'../styles/burger.module.css'
 
 function Burger({collapsed, setCollapsed}) {
 
@@ -8,9 +8,9 @@ function Burger({collapsed, setCollapsed}) {
       className={"button shadow-none"} 
       onClick={()=>{setCollapsed()}}>
         <span 
-          className={`${collapsed ? 'bun' : 'topBun'} bg-blue`} />
+          className={`${collapsed ? styles.bun : styles.topBun} ${styles.allBuns} bg-blue`} />
         <span 
-          className={`${collapsed ? 'bun' : 'bottomBun'} bg-blue`} />
+          className={`${collapsed ? styles.bun : styles.bottomBun} ${styles.allBuns} bg-blue`} />
     </button>
   )
 }

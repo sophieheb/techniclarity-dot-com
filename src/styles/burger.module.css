@@ -17,15 +17,13 @@ button{
   padding: 0;
   z-index: 10;
   outline: none;
-
-
 }
 
 button:focus {
     outline: none !important;
   }
 
-  span {
+  .allBuns {
     border-radius: 10px;
     -webkit-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
