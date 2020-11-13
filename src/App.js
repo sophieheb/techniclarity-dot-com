@@ -20,6 +20,7 @@ import NotFound from './pages/NotFound';
 import Privacy from './pages/Privacy';
 import Cookie from './pages/Cookie';
 import TermsAndConditions from './pages/TermsAndConditions';
+import Links from './pages/Links';
 
 const history = createBrowserHistory();
 
@@ -64,6 +65,9 @@ function App() {
         </Route>
         <Route path="/terms-and-conditions">
           <TermsAndConditions />
+        </Route>
+        <Route path="/links">
+          <Links />
         </Route>
         <Route exact path="/">
           <Home setHeaderColour={(color)=> setHeaderColour(color)} />
