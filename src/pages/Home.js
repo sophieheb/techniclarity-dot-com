@@ -83,6 +83,7 @@ function Home({ setHeaderColour }) {
         >
           <h1>
             Stop dreaming about your startup. Learn just enough tech to
+            {' '}
             <span>make it happen.</span>
           </h1>
           <p>We develop female founders by teaching them the tech know-how they need to lead a startup to success.</p>
@@ -110,6 +111,7 @@ function Home({ setHeaderColour }) {
               <h2 className="text-white">Free!</h2>
               <h1 className="text-white">
                 The
+                {' '}
                 <span>Glossary</span>
                 {' '}
                 of Tech Lingo

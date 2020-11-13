@@ -27,10 +27,12 @@ function Services() {
           <h2>Course</h2>
           <h1>
             Product
+            {' '}
             <span>Launchpad</span>
           </h1>
           <h3>
             The
+            {' '}
             <span>starting point</span>
             {' '}
             you need to get your idea ready for your future technical team.
@@ -57,12 +59,14 @@ function Services() {
           <h2>Tuition</h2>
           <h1>
             Work
+            {' '}
             <span>together</span>
             {' '}
             1:1
           </h1>
           <h3>
             Get
+            {' '}
             <span>an expert take</span>
             {' '}
             on your tech plans and idea.

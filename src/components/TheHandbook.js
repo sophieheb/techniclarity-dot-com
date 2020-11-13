@@ -24,6 +24,7 @@ function TheHandbook({ newsletterSignUp, signedUp }) {
             <h2 className="text-white">Newsletter</h2>
             <h1 className="text-white">
               The
+              {' '}
               <span>handbook</span>
             </h1>
             <p className="text-white">

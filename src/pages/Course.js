@@ -64,10 +64,12 @@ function Course() {
             <h2 className="text-center">Course</h2>
             <h1 className="text-center">
               Product
+              {' '}
               <span>Launchpad</span>
             </h1>
             <h3 className="text-center">
               An
+              {' '}
               <span>online course</span>
               {' '}
               for early-stage startup founders.
@@ -107,10 +109,12 @@ function Course() {
 
             <h1>
               You could be turning your idea into reality,
+              {' '}
               <span>instead of feeling overwhelmed.</span>
             </h1>
             <p>
-              You’ve mastered all the other parts of your startup, but you’re stuck when it comes to creating your product. The process is confusing, the jargon sounds like another language and you just don’t know what the first step is. The app idea you’ve got is needed, or the web platform you want to create is a total game-changer, but that doesn’t make bringing it to life any easier.
+              You’ve mastered all the other parts of your startup, but you’re stuck when it comes to creating your product.
+              The process is confusing, the jargon sounds like another language and you just don’t know what the first step is. The app idea you’ve got is needed, or the web platform you want to create is a total game-changer, but that doesn’t make bringing it to life any easier.
             </p>
             <p>
               What would you say if I told you I had something to give you everything you needed to stop talking about your idea and actually get it into customers hands?
@@ -140,6 +144,7 @@ function Course() {
           <div className="col-xl-6 col-lg-4 col-12">
             <h1 className="text-white">
               Meet your
+              {' '}
               <span>tutor</span>
             </h1>
             <h3 className="text-white">Find out why Sophie created the course.</h3>
@@ -180,6 +185,7 @@ function Course() {
               <div className="col-10">
                 <h3>
                   01 -
+                  {' '}
                   <span>How to build a </span>
                   {' '}
                   product
@@ -202,6 +208,7 @@ function Course() {
               <div className="col-10">
                 <h3>
                   02 - Your idea
+                  {' '}
                   <span> in a sentence</span>
                 </h3>
                 <p>In this module, you’ll get clarity on what your idea really is so you can articulate it to investors, colleagues and even your mum. We’ll start to dive into technical jargon so you can make informed decisions about your product. This is the first step in taking your big idea and turning it into manageable pieces. </p>
@@ -222,6 +229,7 @@ function Course() {
               <div className="col-10">
                 <h3>
                   03 -
+                  {' '}
                   <span>Creating a </span>
                   big picture
                 </h3>
@@ -243,6 +251,7 @@ function Course() {
               <div className="col-10">
                 <h3>
                   04 -
+                  {' '}
                   <span>Diving into </span>
                   details
                 </h3>
@@ -264,6 +273,7 @@ function Course() {
               <div className="col-10">
                 <h3>
                   05 -
+                  {' '}
                   <span>Your first</span>
                   {' '}
                   prototype
@@ -286,6 +296,7 @@ function Course() {
               <div className="col-10">
                 <h3>
                   06 - Prototype
+                  {' '}
                   <span> level two </span>
                 </h3>
                 <p>This module teaches you everything you need to know about creating early versions of your product. You’ll create digital mockups of your product, to get feedback and to use in investor meetings (or at least to show your friends what you’re busy working on late at night).</p>
@@ -306,6 +317,7 @@ function Course() {
               <div className="col-10">
                 <h3>
                   07 -
+                  {' '}
                   <span>Getting</span>
                   {' '}
                   specific
@@ -328,6 +340,7 @@ function Course() {
               <div className="col-10">
                 <h3>
                   08 -
+                  {' '}
                   <span>The road </span>
                   ahead
                 </h3>
@@ -349,6 +362,7 @@ function Course() {
               <div className="col-10">
                 <h3>
                   09 - To infinity
+                  {' '}
                   <span> and beyond</span>
                 </h3>
                 <p>To top it all off, you’ll create a launch plan, because your product’s needs to get out into the world and into the hands of users. We’ll discuss the ways you’ll know if your product has been a success and how to manage your app or web platform in the long term.</p>
@@ -361,12 +375,14 @@ function Course() {
       <div className="container-fluid p-5 bg-cyan">
         <h1 className="text-center text-white p-3 d-lg-none d-block">
           Ready to bring your
+          {' '}
           <span> tech product </span>
           {' '}
           to life?
         </h1>
         <h3 className="text-center text-white p-3 d-lg-block d-none">
           Ready to bring your
+          {' '}
           <span> tech product </span>
           {' '}
           to life?
@@ -578,12 +594,14 @@ function Course() {
       <div className="container-fluid p-5 bg-cyan">
         <h1 className="text-center text-white p-3 d-lg-none d-block">
           Ready to bring your
+          {' '}
           <span> tech product </span>
           {' '}
           to life?
         </h1>
         <h3 className="text-center text-white p-3 d-lg-block d-none">
           Ready to bring your
+          {' '}
           <span> tech product </span>
           {' '}
           to life?
@@ -599,6 +617,7 @@ function Course() {
       <div className="container-fluid p-5">
         <h1 className="pb-5">
           How this course
+          {' '}
           <span>works</span>
         </h1>
         <div className="row">
@@ -630,6 +649,7 @@ function Course() {
           <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-1 order-md-1 ">
             <h1 className="text-white">
               About your
+              {' '}
               <span>instructor</span>
             </h1>
             <h3 className="text-white">Hi I'm Sophie</h3>
@@ -658,6 +678,7 @@ function Course() {
             <h1>FAQs</h1>
             <p className="mb-0">
               Got any more
+              {' '}
               <span>questions?</span>
               {' '}
               Send them over to:
@@ -750,6 +771,7 @@ function Course() {
           <div className="col-md-6 col-12 d-flex flex-column justify-content-center">
             <h1 className="text-center">
               Looking for
+              {' '}
               <span>1:1 tuition?</span>
             </h1>
             <div className="text-center">

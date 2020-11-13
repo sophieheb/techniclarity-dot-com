@@ -23,6 +23,7 @@ function About() {
             <h2>What?</h2>
             <h1>
               Techniclarity teaches
+              {' '}
               <span>female founders </span>
               {' '}
               the tech know-how they need to lead their startups.
@@ -71,6 +72,7 @@ function About() {
             <h2>Why?</h2>
             <h1>
               People leading technological change and new ideas all come from
+              {' '}
               <span>one demographic.</span>
             </h1>
             <p>Technology is creating a new world; this gives us the chance to create a more equal society. However, when the majority of founders, people leading technological change and new ideas all come from one demographic, well that new world is going to be pretty geared towards that one group - and won’t be so equal.</p>
@@ -102,11 +104,13 @@ function About() {
         <h2 className="text-white text-center m-auto w-lg-50 w-xs-100 pb-4 d-lg-block d-none">As a result</h2>
         <h3 className="text-white text-center m-auto w-lg-50 w-xs-100 pb-5 d-lg-block d-none">
           Women with ideas that could change the world are
+          {' '}
           <span>completely stalled.</span>
         </h3>
         <h3 className="text-white m-auto w-lg-50 w-xs-100 pb-4  d-lg-none d-block">As a result</h3>
         <h1 className="text-white  m-auto w-lg-50 w-xs-100 pb-5  d-lg-none d-block">
           Women with ideas that could change the world are
+          {' '}
           <span>completely stalled.</span>
         </h1>
       </div>
@@ -114,9 +118,11 @@ function About() {
       <div className="container-fluid bg-green p-5">
         <h3 className="w-lg-50 w-xs-100 m-auto text-white text-lg-center p-lg-5">
           Techniclarity was started to create
+          {' '}
           <span>long term change </span>
           {' '}
           - to equip women with what they needed for the future, not just for now. Which is why Techniclarity is
+          {' '}
           <span>all about education </span>
           because as you grow, so does your business.
         </h3>
@@ -130,6 +136,7 @@ function About() {
             <h2>About me</h2>
             <h1>
               I'm Sophie and I'm the
+              {' '}
               <span> Founder </span>
               {' '}
               of Techniclarity

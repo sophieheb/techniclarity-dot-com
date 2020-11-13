@@ -43,6 +43,7 @@ function Footer() {
         <div className="col-lg-4 col-12 p-xl-5 py-4">
           <h3 className="text-white">
             The
+            {' '}
             <span>Handbook</span>
           </h3>
           <p className="text-white footerText">Sign up to our newsletter for high-quality info that stops you feeling like a fraud when you're running your startup.</p>
