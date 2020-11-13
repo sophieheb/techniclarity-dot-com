@@ -3,9 +3,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  useLocation
 } from "react-router-dom";
 import CookieConsent, { Cookies } from "react-cookie-consent";
-import { createBrowserHistory } from 'history';
 import ReactGA from 'react-ga';
 import ReactPixel from 'react-facebook-pixel';
 
@@ -22,60 +22,66 @@ import Cookie from './pages/Cookie';
 import TermsAndConditions from './pages/TermsAndConditions';
 import Links from './pages/Links';
 
-const history = createBrowserHistory();
 
-history.listen(location => {
-  ReactGA.set({ page: location.pathname }); // Update the user's current page
-  ReactGA.pageview(location.pathname); // Record a pageview for the given page
-});
+function useAnalytics() {
+  let location = useLocation();
+  useEffect(()=> {
+    ReactPixel.init(process.env.REACT_APP_FACEBOOK_PIXEL)
+    ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS); 
+  }, [])
+
+  useEffect(() => {
+    ReactGA.send(["pageview", location.pathname]);
+  }, [location]);
+}
+
+function Routes({setHeaderColour}) {
+
+  useAnalytics();
+  return (<Switch>
+  <Route path="/tuition">
+    <Tuition />
+  </Route>
+  <Route path="/course">
+    <Course />
+  </Route>
+  <Route path="/about">
+    <About />
+  </Route>
+  <Route path="/contact">
+    <Contact />
+  </Route>
+  <Route path="/privacy-policy">
+    <Privacy />
+  </Route>
+  <Route path="/cookie-policy">
+    <Cookie />
+  </Route>
+  <Route path="/terms-and-conditions">
+    <TermsAndConditions />
+  </Route>
+  <Route path="/links">
+    <Links />
+  </Route>
+  <Route exact path="/">
+    <Home setHeaderColour={(color)=> setHeaderColour(color)} />
+  </Route>
+  <Route >
+    <NotFound />
+  </Route>
+</Switch>)
+}
 
 function App() {
 
   const [headerColor, setHeaderColour] = useState('#E1D5FA');
 
-  useEffect(()=> {
-    ReactPixel.init(process.env.REACT_APP_FACEBOOK_PIXEL)
-    ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS);
-    
-  })
-
   return (
     <>
-    <Router>
+    <Router >
       <div className="d-flex min-vh-100 flex-column justify-content-between">
       <Header headerColor={headerColor}/>
-      <Switch>
-        <Route path="/tuition">
-          <Tuition />
-        </Route>
-        <Route path="/course">
-          <Course />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/privacy-policy">
-          <Privacy />
-        </Route>
-        <Route path="/cookie-policy">
-          <Cookie />
-        </Route>
-        <Route path="/terms-and-conditions">
-          <TermsAndConditions />
-        </Route>
-        <Route path="/links">
-          <Links />
-        </Route>
-        <Route exact path="/">
-          <Home setHeaderColour={(color)=> setHeaderColour(color)} />
-        </Route>
-        <Route >
-          <NotFound />
-        </Route>
-      </Switch>
+        <Routes setHeaderColour={setHeaderColour}/>
       <Footer/>
       </div>
   </Router>
