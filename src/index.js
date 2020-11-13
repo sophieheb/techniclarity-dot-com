@@ -7,14 +7,14 @@ import * as Sentry from '@sentry/react';
 import { Integrations } from '@sentry/tracing';
 
 // console.log(process.env.REACT_APP_SENTRY)
-// Sentry.init({
-//   dsn: process.env.REACT_APP_SENTRY,
-//   integrations: [
-//     new Integrations.BrowserTracing(),
-//   ],
+Sentry.init({
+  dsn: process.env.REACT_APP_SENTRY,
+  integrations: [
+    new Integrations.BrowserTracing(),
+  ],
 
-//   tracesSampleRate: 1.0,
-// });
+  tracesSampleRate: 1.0,
+});
 
 ReactDOM.render(
   <React.StrictMode>
