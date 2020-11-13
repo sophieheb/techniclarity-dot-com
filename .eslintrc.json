@@ -29,5 +29,7 @@
         "build/"
     ],
     "rules": {
+        "react/jsx-filename-extension": 0,
+        "react/jsx-fragments": 0
     }
 }
