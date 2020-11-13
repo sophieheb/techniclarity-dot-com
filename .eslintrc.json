@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "node": true
     },
     "extends": [
         "plugin:react/recommended",
@@ -10,7 +11,9 @@
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
+        
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": false
@@ -20,6 +23,10 @@
     },
     "plugins": [
         "react"
+    ],
+    "ignorePatterns": [
+        "node_modules",
+        "build/"
     ],
     "rules": {
     }
