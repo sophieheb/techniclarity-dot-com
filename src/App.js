@@ -25,14 +25,12 @@ import Links from './pages/Links';
 function useAnalytics() {
   const location = useLocation();
   useEffect(() => {
-    console.log('SETTING IT UP');
     ReactPixel.init(process.env.REACT_APP_FACEBOOK_PIXEL);
     ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS);
   }, []);
 
   useEffect(() => {
-    console.log('SENDING A PAGE VIEW');
-    ReactGA.send(['pageview', location.pathname]);
+    ReactGA.pageview(location.pathname);
   }, [location]);
 }
 
