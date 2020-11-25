@@ -30,14 +30,13 @@
     "react-scrolllock": "^5.0.1",
     "react-spinners": "^0.9.0",
     "react-sticky-header": "^0.2.0",
-    "react-waypoint": "^9.0.3",
-    "glob-all": "^3.2.1",
-    "purgecss-webpack-plugin": "^3.0.0"
+    "react-waypoint": "^9.0.3"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "lint": "eslint --ext js,jsx ./",
     "lint:fix": "eslint --ext js,jsx --fix ./"
   },
@@ -61,7 +60,6 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.2",
-    "path": "^0.12.7"
+    "eslint-plugin-react-hooks": "^4.1.2"
   }
 }
