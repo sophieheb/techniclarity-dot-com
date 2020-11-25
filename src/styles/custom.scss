@@ -35,18 +35,20 @@ $btn-border-radius-sm:23px;
 $input-btn-padding-x-lg: 2.5rem;
 $input-btn-padding-y-lg: .15rem;
 
-
 @font-face {
     font-family: SyneBold;
     src: url("../assets/fonts/Syne-Bold.otf") format("opentype");
+    font-display: swap;
 }
 @font-face {
     font-family: GalanoGrotesque;
     src: url("../assets/fonts/Galano-Grotesque-Medium.otf") format("opentype");
+    font-display: swap;
 }
 @font-face {
     font-family: ClearFace;
     src: url("../assets/fonts/Clearface-Italic.otf") format("opentype");
+    font-display: swap;
 }
 
 h1 {
