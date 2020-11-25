@@ -92,7 +92,7 @@ function Links() {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-12 h-100 position-relative d-flex justify-content-center align-items-center">
+        <div className="col-lg-6 col-12 position-relative d-flex justify-content-center align-items-center">
           <img
             src={cloud}
             alt="Cloud"
