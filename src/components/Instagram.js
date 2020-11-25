@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import axios from 'axios';
 
 import { isMobile } from 'react-device-detect';
 import instagramLogo from '../assets/instagramLogo.svg';
 
+import useOnScreen from '../shared/onScreen';
+
 function Instagram() {
   const [token, setToken] = useState(null);
   const [instagramData, setInstagramData] = useState([]);
+  const ref = useRef();
+  const instagramOnScreen = useOnScreen(ref, isMobile ? '100px' : '300px');
+  
   useEffect(() => {
     const fetchToken = async () => {
       const result = await axios.get('https://techniclarity-instagram-widget.herokuapp.com/token.json');
@@ -24,13 +29,14 @@ function Instagram() {
         setInstagramData(result.data.media.data);
       } catch {}
     };
-    if (token) {
+    if (token && instagramOnScreen) {
       fetchInstagramData();
     }
-  }, [token]);
+  }, [token, instagramOnScreen]);
+
   return (
-    <div className="container-fluid py-xl-5 p-3 bg-yellow">
-      { instagramData.length > 1
+    <div ref={ref} className="container-fluid py-xl-5 p-3 bg-yellow">
+      { instagramData.length > 1 && instagramOnScreen
         ? (
           <>
             <div className="row justify-content-center ">
@@ -50,7 +56,7 @@ function Instagram() {
 
               {instagramData.map((post) => (
                 <a className="col-md-2 col-6 pt-3" href={post.permalink}>
-                  <img className="img-fluid" src={post.media_url} />
+                  <img className="img-fluid" src={post.media_url} alt="social-media-post" />
                 </a>
               ))}
             </div>

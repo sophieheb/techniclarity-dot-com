@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import '../styles/NewsletterSignup.css';
 
@@ -15,8 +15,8 @@ function NewsletterSignupHome() {
               <div />
             </div>
             <div className="ff__fields">
-              <input type="text" name="name" value="" style={{ display: 'none' }} />
-              <input type="hidden" name="submitToken" value="2956704bfedb69dde384ab642226dc345e7e216b08f39d792ef8039bf7f7da6f615da6e34d67b9c429d81f92b62fa93e2fbe1bf3bd6b367e465336b1874b113e3b4bdbb85cf52e97021a2c69af64f1d4b9735ca79c7772c6568b0f6946480031" />
+              <input type="text" name="name" readOnly value="" style={{ display: 'none' }} />
+              <input type="hidden" name="submitToken" readOnly value="2956704bfedb69dde384ab642226dc345e7e216b08f39d792ef8039bf7f7da6f615da6e34d67b9c429d81f92b62fa93e2fbe1bf3bd6b367e465336b1874b113e3b4bdbb85cf52e97021a2c69af64f1d4b9735ca79c7772c6568b0f6946480031" />
               <div className="ff__grid">
 
                 <div className="ff__cell col-12 mw-100">
