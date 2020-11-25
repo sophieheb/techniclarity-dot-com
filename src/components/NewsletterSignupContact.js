@@ -15,7 +15,7 @@ function NewsletterSignupContact() {
               <div />
             </div>
             <div className="ff__fields">
-              <input type="text" name="name"  readOnly value="" style={{ display: 'none' }} />
+              <input type="text" name="name" readOnly value="" style={{ display: 'none' }} />
               <input type="hidden" name="submitToken" readOnly value="2956704bfedb69dde384ab642226dc345e7e216b08f39d792ef8039bf7f7da6f615da6e34d67b9c429d81f92b62fa93e7a20e6008faffd2db9106498ec24b18ca3f795825f9d252af0b9933619dddc10fc5edf2378397403a0d2f9bef9aa9924" />
               <div className="ff__grid">
 

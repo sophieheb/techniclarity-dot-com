@@ -3,6 +3,7 @@ import { MailIcon } from '@primer/octicons-react';
 import {
   useLocation,
 } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import woman from '../assets/woman-contact.svg';
 import greenDiamond from '../assets/green-diamond.svg';
@@ -17,6 +18,18 @@ function Contact() {
 
   return (
     <>
+      <Helmet>
+        <title>Contact | Techniclarity</title>
+        <meta name="description" content="Get in touch to find out about your first steps to a tech startup." />
+        <meta property="og:url" content="techniclarity.co/contact" />
+        <meta property="og:description" content="Get in touch to find out about your first steps to a tech startup." />
+        <meta property="og:title" content="Contact | Techniclarity" />
+        <meta property="og:image" content={woman} />
+        <meta name="twitter:title" content="Contact | Techniclarity" />
+        <meta name="twitter:description" content="Get in touch to find out about your first steps to a tech startup." />
+        <meta name="twitter:image" content={woman} />
+        <meta name="twitter:image:alt" content="Line drawing" />
+      </Helmet>
       <div
         className="container-fluid position-relative p-5 mt-5 d-flex align-items-center"
       >

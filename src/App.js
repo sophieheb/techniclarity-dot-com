@@ -2,6 +2,7 @@ import React, {
   useState, useEffect, Suspense, lazy,
 } from 'react';
 import BarLoader from 'react-spinners/BarLoader';
+import { Helmet } from 'react-helmet';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +12,7 @@ import {
 import CookieConsent, { Cookies } from 'react-cookie-consent';
 import ReactGA from 'react-ga';
 import ReactPixel from 'react-facebook-pixel';
+import womanMiddle from './assets/woman-about-middle.svg';
 
 const Tuition = lazy(() => import('./pages/Tuition'));
 const Home = lazy(() => import('./pages/Home'));
@@ -82,6 +84,20 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <title>Techniclarity</title>
+        <meta name="description" content="Grow and scale your tech startup with education that lifts the mist around technology." />
+        <meta property="og:url" content="techniclarity.co" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Grow and scale your tech startup with education that lifts the mist around technology." />
+        <meta property="og:title" content="Techniclarity" />
+        <meta property="og:image" content={womanMiddle} />
+        <meta property="og:site_name" content="Techniclarity" />
+        <meta name="twitter:title" content="Techniclarity" />
+        <meta name="twitter:description" content="Grow and scale your tech startup with education that lifts the mist around technology." />
+        <meta name="twitter:image" content={womanMiddle} />
+        <meta name="twitter:image:alt" content="Line drawing" />
+      </Helmet>
       <Router>
         <Suspense fallback={(
           <BarLoader

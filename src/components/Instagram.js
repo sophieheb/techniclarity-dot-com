@@ -12,7 +12,7 @@ function Instagram() {
   const [instagramData, setInstagramData] = useState([]);
   const ref = useRef();
   const instagramOnScreen = useOnScreen(ref, isMobile ? '100px' : '300px');
-  
+
   useEffect(() => {
     const fetchToken = async () => {
       const result = await axios.get('https://techniclarity-instagram-widget.herokuapp.com/token.json');

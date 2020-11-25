@@ -5,6 +5,7 @@ import { PlusIcon, DashIcon } from '@primer/octicons-react';
 import { isMobile } from 'react-device-detect';
 import ReactPlayer from 'react-player';
 import { openPopupWidget } from 'react-calendly';
+import { Helmet } from 'react-helmet';
 
 import styles from '../styles/tuition.module.css';
 
@@ -28,6 +29,18 @@ function Tuition() {
 
   return (
     <>
+      <Helmet>
+        <title>Tuition | Techniclarity</title>
+        <meta name="description" content="Get personalised support from someone who's built startups before." />
+        <meta property="og:url" content="techniclarity.co/course" />
+        <meta property="og:description" content="Get personalised support from someone who's built startups before." />
+        <meta property="og:title" content="Tuition | Techniclarity" />
+        <meta property="og:image" content={woman} />
+        <meta name="twitter:title" content="Tuition | Techniclarity" />
+        <meta name="twitter:description" content="Get personalised support from someone who's built startups before." />
+        <meta name="twitter:image" content={woman} />
+        <meta name="twitter:image:alt" content="Line drawing" />
+      </Helmet>
       <div
         className="container-fluid position-relative vh-100 d-flex pt-5 align-items-start align-items-lg-center"
       >

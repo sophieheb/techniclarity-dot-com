@@ -6,6 +6,7 @@ import {
   CheckIcon, XIcon, PlusIcon, DashIcon,
 } from '@primer/octicons-react';
 import { isMobile } from 'react-device-detect';
+import { Helmet } from 'react-helmet';
 import ReactPlayer from 'react-player';
 
 import styles from '../styles/course.module.css';
@@ -44,6 +45,18 @@ function Course() {
 
   return (
     < >
+      <Helmet>
+        <title>Course | Techniclarity</title>
+        <meta name="description" content="An online course for early-stage startup founders." />
+        <meta property="og:url" content="techniclarity.co/course" />
+        <meta property="og:description" content="An online course for early-stage startup founders." />
+        <meta property="og:title" content="Course | Techniclarity" />
+        <meta property="og:image" content={rocket} />
+        <meta name="twitter:title" content="Course | Techniclarity" />
+        <meta name="twitter:description" content="An online course for early-stage startup founders." />
+        <meta name="twitter:image" content={rocket} />
+        <meta name="twitter:image:alt" content="Line drawing" />
+      </Helmet>
       <div
         className="container-fluid position-relative vh-100 d-flex align-items-center"
       >

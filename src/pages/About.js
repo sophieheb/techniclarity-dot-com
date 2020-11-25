@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Instagram from '../components/Instagram';
 
 import pinkCircle from '../assets/pink-circle.svg';
@@ -15,6 +16,19 @@ import Services from '../components/Services';
 function About() {
   return (
     <>
+      <Helmet>
+        <title>About | Techniclarity</title>
+        <meta name="description" content="Techniclarity was started to create long term change - to equip women with what they needed for the future, not just for now." />
+        <meta property="og:url" content="techniclarity.co/about" />
+        <meta property="og:description" content="Techniclarity was started to create long term change - to equip women with what they needed for the future, not just for now." />
+        <meta property="og:title" content="About | Techniclarity" />
+        <meta property="og:image" content={womanTop} />
+        <meta property="og:site_name" content="About | Techniclarity" />
+        <meta name="twitter:title" content="About | Techniclarity" />
+        <meta name="twitter:description" content="Techniclarity was started to create long term change - to equip women with what they needed for the future, not just for now." />
+        <meta name="twitter:image" content={womanTop} />
+        <meta name="twitter:image:alt" content="Line drawing" />
+      </Helmet>
       <div
         className="container-fluid position-relative p-lg-5 p-3 mt-lg-5 d-flex align-items-center mb-5"
       >
