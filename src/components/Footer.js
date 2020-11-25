@@ -64,19 +64,23 @@ function Footer() {
             <div className="col-lg-12 col-6">
               <p className="text-white m-0 footerText">	&#169; Techniclarity 2020</p>
               <p className="text-white m-0 footerText">
-                Site design by{' '}
+                Site design by
+                {' '}
                 <a className="footerLink" href="https://www.chloeford.co.uk/">Chloe Ford</a>
               </p>
               <p className="text-white footerText">
-                Built by{' '}
+                Built by
+                {' '}
                 <a className="footerLink" href="https://sophieheb.com">Sophie Hebdidge</a>
               </p>
               <p className="text-white footerText">
                 <a className="footerLink" href="/terms-and-conditions">Terms and Conditions</a>
-                ,{' '}
+                ,
+                {' '}
                 <a className="footerLink" href="privacy-policy">Privacy Policy</a>
                 {' '}
-                &{' '}
+                &
+                {' '}
                 <a className="footerLink" href="cookie-policy">Cookie Policy</a>
               </p>
             </div>

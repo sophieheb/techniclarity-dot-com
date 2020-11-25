@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, {
+  useState, useEffect, Suspense, lazy,
+} from 'react';
+import BarLoader from 'react-spinners/BarLoader';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,18 +12,18 @@ import CookieConsent, { Cookies } from 'react-cookie-consent';
 import ReactGA from 'react-ga';
 import ReactPixel from 'react-facebook-pixel';
 
-import Tuition from './pages/Tuition';
-import Home from './pages/Home';
-import Course from './pages/Course';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import NotFound from './pages/NotFound';
-import Privacy from './pages/Privacy';
-import Cookie from './pages/Cookie';
-import TermsAndConditions from './pages/TermsAndConditions';
-import Links from './pages/Links';
+const Tuition = lazy(() => import('./pages/Tuition'));
+const Home = lazy(() => import('./pages/Home'));
+const Course = lazy(() => import('./pages/Course'));
+const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Header = lazy(() => import('./components/Header'));
+const Footer = lazy(() => import('./components/Footer'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Cookie = lazy(() => import('./pages/Cookie'));
+const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'));
+const Links = lazy(() => import('./pages/Links'));
 
 function useAnalytics() {
   const location = useLocation();
@@ -37,6 +40,7 @@ function useAnalytics() {
 function Routes({ setHeaderColour }) {
   useAnalytics();
   return (
+
     <Switch>
       <Route path="/tuition">
         <Tuition />
@@ -69,6 +73,7 @@ function Routes({ setHeaderColour }) {
         <NotFound />
       </Route>
     </Switch>
+
   );
 }
 
@@ -78,11 +83,20 @@ function App() {
   return (
     <>
       <Router>
-        <div className="d-flex min-vh-100 flex-column justify-content-between">
-          <Header headerColor={headerColor} />
-          <Routes setHeaderColour={setHeaderColour} />
-          <Footer />
-        </div>
+        <Suspense fallback={(
+          <BarLoader
+            height={10}
+            color="#031799"
+            width="100%"
+          />
+        )}
+        >
+          <div className="d-flex min-vh-100 flex-column justify-content-between">
+            <Header headerColor={headerColor} />
+            <Routes setHeaderColour={setHeaderColour} />
+            <Footer />
+          </div>
+        </Suspense>
       </Router>
       <CookieConsent
         onDecline={() => {
