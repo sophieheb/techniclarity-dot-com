@@ -56,7 +56,7 @@ function Instagram() {
 
               {instagramData.map((post) => (
                 <a className="col-md-2 col-6 pt-3" href={post.permalink}>
-                  <img className="img-fluid" src={post.media_url} alt="social-media-post" />
+                  <img className="img-fluid" src={post.media_url || post.thumbnail_url} alt="social-media-post" />
                 </a>
               ))}
             </div>
