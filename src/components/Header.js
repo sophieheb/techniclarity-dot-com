@@ -7,12 +7,12 @@ import {
 } from 'react-device-detect';
 import styles from '../styles/header.module.css';
 
-import symbolLogo from '../assets/symbol-logo.png';
+import symbolLogo from '../assets/symbol-logo.webp';
 import textLogo from '../assets/textLogo.svg';
 import facebookLogo from '../assets/facebookLogo.svg';
 import instagramLogo from '../assets/instagramLogo.svg';
-import cloudTop from '../assets/cloud-1.png';
-import cloudBottom from '../assets/cloud-2.png';
+import cloudTop from '../assets/cloud-1.webp';
+import cloudBottom from '../assets/cloud-2.webp';
 import Burger from './Burger';
 
 function Header({ headerColor }) {

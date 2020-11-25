@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from '../styles/notFound.module.css';
 
-import globe from '../assets/globe.png';
+import globe from '../assets/globe.webp';
 import pinkGlobe from '../assets/pink-circle.svg';
 
 function NotFound() {

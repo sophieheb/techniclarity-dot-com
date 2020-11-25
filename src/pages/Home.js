@@ -6,15 +6,14 @@ import {
 import { isMobile } from 'react-device-detect';
 
 import styles from '../styles/home.module.css';
-
-import cloudTop from '../assets/cloud-1.png';
-import cloudLeft from '../assets/cloud-2.png';
-import cloudRight from '../assets/cloud-3.png';
-import globe from '../assets/globe.png';
+import cloudTop from '../assets/cloud-1.webp';
+import cloudLeft from '../assets/cloud-2.webp';
+import cloudRight from '../assets/cloud-3.webp';
+import globe from '../assets/globe.webp';
 import pinkGlobe from '../assets/pink-circle.svg';
-import cloudFreebieRight from '../assets/cloud-freebie-right.png';
-import cloudFreebieLeft from '../assets/cloud-freebie-left.png';
-import glossary from '../assets/glossary.png';
+import cloudFreebieRight from '../assets/cloud-freebie-right.webp';
+import cloudFreebieLeft from '../assets/cloud-freebie-left.webp';
+import glossary from '../assets/glossary.webp';
 
 import useOnScreen from '../shared/onScreen';
 

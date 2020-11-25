@@ -1,7 +1,7 @@
 import React from 'react';
-import { MailIcon, MilestoneIcon } from '@primer/octicons-react';
+import { MilestoneIcon } from '@primer/octicons-react';
 
-import cloud from '../assets/cloud-2.png';
+import cloud from '../assets/cloud-2.webp';
 
 function Links() {
   return (

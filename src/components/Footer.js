@@ -6,7 +6,7 @@ import {
 import '../styles/Footer.css';
 import NewsletterSignupFooter from './NewsletterSignupFooter';
 import textLogo from '../assets/textLogoWhite.svg';
-import symbolLogo from '../assets/symbol-logo.png';
+import symbolLogo from '../assets/symbol-logo.webp';
 import facebookLogo from '../assets/facebookLogoWhite.svg';
 import instagramLogo from '../assets/instagramLogoWhite.svg';
 

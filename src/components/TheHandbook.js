@@ -1,5 +1,5 @@
 import React from 'react';
-import handGlobe from '../assets/hand-globe.png';
+import handGlobe from '../assets/hand-globe.webp';
 
 function TheHandbook({ newsletterSignUp, signedUp }) {
   let signUpBox;
