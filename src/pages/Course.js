@@ -503,6 +503,8 @@ function Course() {
                 <p className="pt-4 w-75 m-auto">
                   {' '}
                   A
+                  {' '}
+                  {' '}
                   <b className="font-weight-bold">product vision</b>
                   {' '}
                   so clear, you’ll never lose sight of it.
@@ -541,6 +543,8 @@ function Course() {
                 <p className="pt-4 w-75 m-auto">
                   {' '}
                   A
+                  {' '}
+                  {' '}
                   <b className="font-weight-bold">feature list</b>
                   {' '}
                   that’s more organised than Marie Kondo’s wrapping paper drawer, because then you know exactly what’s worth building.
@@ -555,6 +559,8 @@ function Course() {
                 <p className="pt-4 w-75 m-auto">
                   {' '}
                   A
+                  {' '}
+                  {' '}
                   <b className="font-weight-bold">roadmap, </b>
                   {' '}
                   so that you can plan the rest of your business in parallel with your tech milestones.
@@ -569,6 +575,8 @@ function Course() {
                 <p className="pt-4 w-75 m-auto">
                   {' '}
                   A
+                  {' '}
+                  {' '}
                   <b className="font-weight-bold">launch plan, </b>
                   {' '}
                   because your product’s no good to anyone if it stays stuck on someone’s laptop.
