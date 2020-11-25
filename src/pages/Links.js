@@ -13,6 +13,17 @@ function Links() {
           <h2 className="text-center">Links</h2>
           <h1 className="text-center">What are you looking for?</h1>
           <div className="row d-flex align-items-center justify-content-center">
+          <div className="col-sm-6 col-12 p-5 ">
+              <h2 className="text-center">Event</h2>
+              <a href="/links/#footer-newsletter-signup">
+                <p className="text-center">The One Thing</p>
+              </a>
+              <div className="text-center">
+                <a href="https://www.justjaz.co/theonething">
+                  <MilestoneIcon size={36} />
+                </a>
+              </div>
+            </div>
             <div className="col-sm-6 col-12 p-5 ">
               <h2 className="text-center">Newsletter</h2>
               <a href="/links/#footer-newsletter-signup">
