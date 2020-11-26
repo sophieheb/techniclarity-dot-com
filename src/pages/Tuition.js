@@ -240,12 +240,11 @@ function Tuition() {
               {' '}
               Sanity
               {' '}
-              {' '}
               <span>Check</span>
             </h1>
             <p className="mb-3">
-              You’ve done the work and the research, but you don&apos;t have the
-              professional eye to feel confidence in the output.
+            You’ve done the work and the research. But to feel satisfied 
+            with the output you need someone who’s been there and done that to validate what you’ve done.
               {' '}
             </p>
             <p className="mb-3">
