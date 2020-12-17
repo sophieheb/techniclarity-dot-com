@@ -44,7 +44,7 @@ function Course() {
   const faqIconSize = isMobile ? 18 : 22;
 
   return (
-    < >
+    <>
       <Helmet>
         <title>Course | Techniclarity</title>
         <meta name="description" content="An online course for early-stage startup founders." />
@@ -60,7 +60,7 @@ function Course() {
       <div
         className="container-fluid position-relative vh-100 d-flex align-items-center"
       >
-        <div className="row">
+        <div className="row w-100">
           <div className="col-md-6 col-12 order-1 order-md-0 position-relative d-flex justify-content-center align-items-center">
             <img
               src={greenDiamond}
@@ -667,7 +667,7 @@ function Course() {
 
       <div className="container-fluid position-relative p-5 d-flex align-items-center bg-green overflow-hidden">
         <div className="row">
-          <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-1 order-md-1 ">
+          <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-1 order-md-1 d-flex justify-content-center flex-column">
             <h1 className="text-white">
               About your
               {' '}
