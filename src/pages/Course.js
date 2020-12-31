@@ -44,7 +44,7 @@ function Course() {
   const faqIconSize = isMobile ? 18 : 22;
 
   return (
-    < >
+    <>
       <Helmet>
         <title>Course | Techniclarity</title>
         <meta name="description" content="An online course for early-stage startup founders." />
@@ -60,7 +60,7 @@ function Course() {
       <div
         className="container-fluid position-relative vh-100 d-flex align-items-center"
       >
-        <div className="row">
+        <div className="row w-100">
           <div className="col-md-6 col-12 order-1 order-md-0 position-relative d-flex justify-content-center align-items-center">
             <img
               src={greenDiamond}
@@ -88,8 +88,8 @@ function Course() {
               for early-stage startup founders.
             </h3>
             <div className="text-center">
-              <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button>
-              {/* <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button> */}
+              {/* <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button> */}
+              <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
             </div>
           </div>
         </div>
@@ -133,8 +133,8 @@ function Course() {
               What would you say if I told you I had something to give you everything you needed to stop talking about your idea and actually get it into customers hands?
             </p>
             <div>
-              <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button>
-              {/* <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button> */}
+              {/* <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button> */}
+              <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
             </div>
           </div>
           <div className="col-lg-6 col-12 order-0 order-lg-1  position-relative d-flex justify-content-center align-items-center">
@@ -403,8 +403,8 @@ function Course() {
         <h2 className="text-center text-white p-3 d-lg-block d-none">£450</h2>
         <h3 className="text-center text-white p-3 d-lg-none d-block">£450</h3>
         <div className="text-center p-3">
-          <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button>
-          {/* <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button> */}
+          {/* <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button> */}
+          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
       </div>
 
@@ -630,8 +630,8 @@ function Course() {
         <h2 className="text-center text-white p-3 d-lg-block d-none">£450</h2>
         <h3 className="text-center text-white p-3 d-lg-none d-block">£450</h3>
         <div className="text-center p-3">
-          <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button>
-          {/* <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button> */}
+          {/* <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button> */}
+          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
       </div>
 
@@ -667,7 +667,7 @@ function Course() {
 
       <div className="container-fluid position-relative p-5 d-flex align-items-center bg-green overflow-hidden">
         <div className="row">
-          <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-1 order-md-1 ">
+          <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-1 order-md-1 d-flex justify-content-center flex-column">
             <h1 className="text-white">
               About your
               {' '}
@@ -767,8 +767,8 @@ function Course() {
         <h2 className="text-center text-white p-3 d-lg-block d-none">£450</h2>
         <h3 className="text-center text-white p-3 d-lg-none d-block">£450</h3>
         <div className="text-center p-3">
-          <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button>
-          {/* <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button> */}
+          {/* <Button variant="red" className="btn-lg" target="_blank" href="https://view.flodesk.com/pages/5f9bff5cd722c98461c9758e">JOIN THE WAITLIST</Button> */}
+          <Button variant="red" className="btn-lg" href="https://courses.techniclarity.co/enroll/749942">BUY NOW</Button>
         </div>
       </div>
 

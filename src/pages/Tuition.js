@@ -340,7 +340,7 @@ function Tuition() {
 
       <div className="container-fluid position-relative p-5 d-flex align-items-center bg-green overflow-hidden">
         <div className="row">
-          <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-1 order-md-1 ">
+          <div className="col-md-6 col-12 p-lg-5 py-5 px-3 order-1 order-md-1 d-flex justify-content-center flex-column ">
             <h1 className="text-white">
               About your
               {' '}
