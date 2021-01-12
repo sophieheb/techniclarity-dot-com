@@ -15,6 +15,10 @@ import cloudFreebieRight from '../assets/cloud-freebie-right.webp';
 import cloudFreebieLeft from '../assets/cloud-freebie-left.webp';
 import glossary from '../assets/glossary.webp';
 
+import signify from '../assets/press/signify.png';
+
+import techround from '../assets/press/techround.png';
+
 import useOnScreen from '../shared/onScreen';
 
 import Instagram from '../components/Instagram';
@@ -133,6 +137,36 @@ function Home({ setHeaderColour }) {
       <a name="newsletter-signup">
         <TheHandbook newsletterSignUp={<NewsletterSignupHome />} signedUp={location.hash === '#newsletter-signup'} />
       </a>
+
+      <div
+        className="bg-green p-4 container-fluid position-relative d-flex align-items-center overflow-hidden"
+      >
+        <div className="container py-5">
+          <div className="row justify-content-center">
+            <div
+              className="col-lg-5 py-5 order-lg-1 text-center my-auto"
+            >
+              <h2 className="text-white">Press</h2>
+              <h1 className="text-white">
+                As
+                {' '}
+                <span>seen</span>
+                {' '}
+                in...
+              </h1>
+            </div>
+          </div>
+          <div className="row align-content-center justify-content-center">
+            <a className="col-2 my-3 mx-5 d-flex" href="https://www.signifytechnology.com/blog/2020/05/coffee-with-female-founder-of-techniclarity-sophie-hebdidge">
+              <img src={signify} className="w-100 my-auto" alt="Logo for Signify Technology" target="_blank" />
+            </a>
+            <a className="col-2 my-3 mx-5 d-flex" href="https://techround.co.uk/interviews/sophie-hebdidge-founder-at-techniclarity-helping-aspiring-female-founders-learn-more-about-tech/">
+              <img src={techround} className="w-100 my-auto" alt="Logo for Signify Technology" target="_blank" />
+            </a>
+
+          </div>
+        </div>
+      </div>
 
       <Instagram />
 
