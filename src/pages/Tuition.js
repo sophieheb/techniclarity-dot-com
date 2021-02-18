@@ -17,6 +17,7 @@ import rocket from '../assets/line-rocket.svg';
 import greenDiamond from '../assets/green-diamond.svg';
 
 import Instagram from '../components/Instagram';
+import Testimonials from '../components/Testimonials';
 
 function Tuition() {
   const [faqOneOpen, setFaqOneOpen] = useState(false);
@@ -189,6 +190,8 @@ function Tuition() {
           </div>
         </div>
       </div>
+
+      <Testimonials />
 
       <a id="buy-now" />
       <div className="container-fluid p-5">

@@ -25,6 +25,8 @@ $bg-variant: (
 "bg-cyan": #8294F1,
 );
 
+$overflows: scroll, auto, hidden !default;
+
 @media (min-width: 768px) {  
 
 }
@@ -98,6 +100,20 @@ span {
     letter-spacing: 1px;
     font-size: 0.8rem;
 }
+#testimonials::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+  
+  #testimonials::-webkit-scrollbar-thumb {
+    background-color: transparent   ;
+  }
+  
+  #testimonials::-webkit-scrollbar:vertical {
+    display: none;
+  }
+
+
 
 @media (min-width: 1px) {
     .w-xs-100 {
