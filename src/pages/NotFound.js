@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '../styles/notFound.module.css';
 
 import globe from '../assets/globe.webp';
+import globePng from '../assets/globe.png';
 import pinkGlobe from '../assets/pink-circle.svg';
 
 function NotFound() {
@@ -10,11 +11,16 @@ function NotFound() {
     <div
       className="container-fluid position-relative h-100 d-flex align-items-center overflow-hidden flex-grow-1"
     >
-      <img
-        src={globe}
-        alt="Globe Background"
-        className={`position-absolute h-75 ${styles.globe}`}
-      />
+      {' '}
+      <picture>
+        <source srcSet={globe} type="image/webp" />
+        <img
+          src={globePng}
+          alt="Globe Background"
+          className={`position-absolute h-75 ${styles.globe}`}
+        />
+      </picture>
+
       <img
         src={pinkGlobe}
         alt="Globe Background"

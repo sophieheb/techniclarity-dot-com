@@ -1,5 +1,6 @@
 import React from 'react';
 import handGlobe from '../assets/hand-globe.webp';
+import handGlobePng from '../assets/hand-globe.png';
 
 function TheHandbook({ newsletterSignUp, signedUp }) {
   let signUpBox;
@@ -16,7 +17,7 @@ function TheHandbook({ newsletterSignUp, signedUp }) {
       className="bg-cyan p-4 container-fluid position-relative d-flex align-items-center"
     >
       <div className="container py-5">
-        <div className="row justify-content-center">
+        <div className="row align-content-center justify-content-center">
 
           <div
             className="col-lg-6 text-center my-auto"
@@ -32,11 +33,15 @@ function TheHandbook({ newsletterSignUp, signedUp }) {
             </p>
             {signUpBox}
           </div>
-          <img
-            src={handGlobe}
-            alt="Line drawing of a hand holding a globe"
-            className="col-lg-6 h-50 align-self-center img-fluid w-100"
-          />
+          <picture className="col-lg-6 my-auto text-center h-50 w-100">
+            <source srcSet={handGlobe} type="image/webp" />
+            <img
+              src={handGlobePng}
+              alt="Line drawing of a hand holding a globe"
+              className=" img-fluid"
+            />
+          </picture>
+
         </div>
       </div>
     </div>

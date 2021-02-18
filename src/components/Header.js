@@ -8,11 +8,14 @@ import {
 import styles from '../styles/header.module.css';
 
 import symbolLogo from '../assets/symbol-logo.webp';
+import symbolLogoPng from '../assets/symbol-logo.png';
 import textLogo from '../assets/textLogo.svg';
 import facebookLogo from '../assets/facebookLogo.svg';
 import instagramLogo from '../assets/instagramLogo.svg';
 import cloudTop from '../assets/cloud-1.webp';
+import cloudTopPng from '../assets/cloud-1.png';
 import cloudBottom from '../assets/cloud-2.webp';
+import cloudBottomPng from '../assets/cloud-2.png';
 import Burger from './Burger';
 
 function Header({ headerColor }) {
@@ -57,12 +60,16 @@ function Header({ headerColor }) {
             />
           </Navbar.Brand>
           <a href="/">
-            <img
-              src={symbolLogo}
-              height={50}
-              alt="Techniclarity logo"
-              className={`${scrolled ? 'd-none' : 'd-flex'}`}
-            />
+            <picture>
+              <source srcSet={symbolLogo} type="image/webp" />
+              <img
+                src={symbolLogoPng}
+                height={50}
+                alt="Techniclarity logo"
+                className={`${scrolled ? 'd-none' : 'd-flex'}`}
+              />
+            </picture>
+
           </a>
           <Nav className="" navbar={false}>
             <Nav.Link href="tuition">TUITION</Nav.Link>
@@ -87,18 +94,25 @@ function Header({ headerColor }) {
           {collapsed ? null
             : (
               <div className={`container flex-grow-1 d-flex justify-content-between flex-column pb-4 pt-3 ${styles.menu}`}>
-                <img
-                  src={cloudTop}
-                  alt="Cloud Background"
-                  className="position-absolute h-25"
-                  style={{ top: '10%', left: '50%' }}
-                />
-                <img
-                  src={cloudBottom}
-                  alt="Cloud Background"
-                  className="position-absolute h-25"
-                  style={{ top: '40%', right: '45%' }}
-                />
+                <picture>
+                  <source srcSet={cloudTop} type="image/webp" />
+                  <img
+                    src={cloudTopPng}
+                    alt="Cloud Background"
+                    className="position-absolute h-25"
+                    style={{ top: '10%', left: '50%' }}
+                  />
+                </picture>
+
+                <picture>
+                  <source srcSet={cloudBottom} type="image/webp" />
+                  <img
+                    src={cloudBottomPng}
+                    alt="Cloud Background"
+                    className="position-absolute h-25"
+                    style={{ top: '40%', right: '45%' }}
+                  />
+                </picture>
                 <div className="row flex-column h-75">
                   <Nav className="col-12 flex-column" navbar={false}>
                     <Nav.Link href="tuition" className={styles.link}>Tuition</Nav.Link>

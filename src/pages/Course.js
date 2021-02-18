@@ -16,8 +16,11 @@ import greenDiamond from '../assets/green-diamond.svg';
 import pinkCircle from '../assets/pink-circle.svg';
 import woman from '../assets/woman-course.svg';
 import globe from '../assets/globe.webp';
+import globePng from '../assets/globe.png';
 import sparkle from '../assets/sparkle.svg';
 import cloud from '../assets/small-cloud.webp';
+import cloudPng from '../assets/small-cloud.png';
+
 import headshot from '../assets/headshot.jpg';
 import hand from '../assets/line-hand-left.svg';
 import Instagram from '../components/Instagram';
@@ -177,12 +180,16 @@ function Course() {
           <div className="col-lg-4 col-12 pt-5">
             <div className={styles.curriculum}>
               <h1>The Curriculum</h1>
-              <img
-                src={globe}
-                alt="Globe background"
-                className={`position-relative d-lg-inline d-none
+              <picture>
+                <source srcSet={globe} type="image/webp" />
+                <img
+                  src={globePng}
+                  alt="Globe background"
+                  className={`position-relative d-lg-inline d-none
            ${styles.globe}`}
-              />
+                />
+              </picture>
+
             </div>
           </div>
           <div className="col-lg-6 col-12 p-lg-5 p-3">
@@ -497,11 +504,14 @@ function Course() {
       <div className="container-fluid my-5">
         <div className="row mt-5">
           <div className="col-6 d-lg-block d-none">
-            <img
-              src={globe}
-              alt="Globe background"
-              className="float-right"
-            />
+            <picture>
+              <source srcSet={globe} type="image/webp" />
+              <img
+                src={globePng}
+                alt="Globe background"
+                className="float-right"
+              />
+            </picture>
           </div>
           <div className="col-lg-6 col-12 my-auto">
             <h3 className="mb-4 pb-4 text-center">
@@ -511,11 +521,14 @@ function Course() {
             </h3>
             <div className="row justify-content-center">
               <div className="w-50 pb-5 mb-5 text-center">
-                <img
-                  src={cloud}
-                  alt="Cloud icon"
-                  className="w-lg-25 w-xs-75 "
-                />
+                <picture>
+                  <source srcSet={cloud} type="image/webp" />
+                  <img
+                    src={cloudPng}
+                    alt="Cloud icon"
+                    className="w-lg-25 w-xs-75 "
+                  />
+                </picture>
                 <p className="pt-4 w-75 m-auto">
                   {' '}
                   A
@@ -527,11 +540,14 @@ function Course() {
                 </p>
               </div>
               <div className="w-50 pb-5 mb-5 text-center">
-                <img
-                  src={cloud}
-                  alt="Cloud icon"
-                  className="w-lg-25 w-xs-75 "
-                />
+                <picture>
+                  <source srcSet={cloud} type="image/webp" />
+                  <img
+                    src={cloudPng}
+                    alt="Cloud icon"
+                    className="w-lg-25 w-xs-75 "
+                  />
+                </picture>
                 <p className="pt-4 w-75 m-auto">
                   <b className="font-weight-bold">Digital mockups and diagrams </b>
                   {' '}
@@ -539,11 +555,14 @@ function Course() {
                 </p>
               </div>
               <div className="w-50 pb-5 mb-5 text-center">
-                <img
-                  src={cloud}
-                  alt="Cloud icon"
-                  className="w-lg-25 w-xs-75 "
-                />
+                <picture>
+                  <source srcSet={cloud} type="image/webp" />
+                  <img
+                    src={cloudPng}
+                    alt="Cloud icon"
+                    className="w-lg-25 w-xs-75 "
+                  />
+                </picture>
                 <p className="pt-4 w-75 m-auto">
                   <b className="font-weight-bold">Feedback from your ideal users,</b>
                   {' '}
@@ -551,11 +570,14 @@ function Course() {
                 </p>
               </div>
               <div className="w-50 pb-5 mb-5 text-center">
-                <img
-                  src={cloud}
-                  alt="Cloud icon"
-                  className="w-lg-25 w-xs-75 "
-                />
+                <picture>
+                  <source srcSet={cloud} type="image/webp" />
+                  <img
+                    src={cloudPng}
+                    alt="Cloud icon"
+                    className="w-lg-25 w-xs-75 "
+                  />
+                </picture>
                 <p className="pt-4 w-75 m-auto">
                   {' '}
                   A
@@ -567,11 +589,14 @@ function Course() {
                 </p>
               </div>
               <div className="w-50 pb-5 mb-5 text-center">
-                <img
-                  src={cloud}
-                  alt="Cloud icon"
-                  className="w-lg-25 w-xs-75 "
-                />
+                <picture>
+                  <source srcSet={cloud} type="image/webp" />
+                  <img
+                    src={cloudPng}
+                    alt="Cloud icon"
+                    className="w-lg-25 w-xs-75 "
+                  />
+                </picture>
                 <p className="pt-4 w-75 m-auto">
                   {' '}
                   A
@@ -583,11 +608,14 @@ function Course() {
                 </p>
               </div>
               <div className="w-50 pb-5 mb-5 text-center">
-                <img
-                  src={cloud}
-                  alt="Cloud icon"
-                  className="w-lg-25 w-xs-75 "
-                />
+                <picture>
+                  <source srcSet={cloud} type="image/webp" />
+                  <img
+                    src={cloudPng}
+                    alt="Cloud icon"
+                    className="w-lg-25 w-xs-75 "
+                  />
+                </picture>
                 <p className="pt-4 w-75 m-auto">
                   {' '}
                   A
@@ -599,11 +627,14 @@ function Course() {
                 </p>
               </div>
               <div className="w-50 pb-5 mb-5 text-center">
-                <img
-                  src={cloud}
-                  alt="Cloud icon"
-                  className="w-lg-25 w-xs-75 "
-                />
+                <picture>
+                  <source srcSet={cloud} type="image/webp" />
+                  <img
+                    src={cloudPng}
+                    alt="Cloud icon"
+                    className="w-lg-25 w-xs-75 "
+                  />
+                </picture>
                 <p className="pt-4 w-75 m-auto">
                   <b className="font-weight-bold">Estimates</b>
                   {' '}
