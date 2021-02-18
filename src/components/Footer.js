@@ -7,6 +7,7 @@ import '../styles/Footer.css';
 import NewsletterSignupFooter from './NewsletterSignupFooter';
 import textLogo from '../assets/textLogoWhite.svg';
 import symbolLogo from '../assets/symbol-logo.webp';
+import symbolLogoPng from '../assets/symbol-logo.png';
 import facebookLogo from '../assets/facebookLogoWhite.svg';
 import instagramLogo from '../assets/instagramLogoWhite.svg';
 
@@ -55,11 +56,14 @@ function Footer() {
         <div className="col-lg-4 col-12 p-xl-5 py-4">
           <div className="row">
             <div className="col-6 col-sm-4 col-md-2 col-lg-12">
-              <img
-                src={symbolLogo}
-                alt="Techniclarity logo"
-                className="w-lg-25 w-xs-100 mb-2 img-fluid"
-              />
+              <picture>
+                <source srcSet={symbolLogo} type="image/webp" />
+                <img
+                  src={symbolLogoPng}
+                  alt="Techniclarity logo"
+                  className="w-lg-25 w-xs-100 mb-2 img-fluid"
+                />
+              </picture>
             </div>
             <div className="col-lg-12 col-6">
               <p className="text-white m-0 footerText">	&#169; Techniclarity 2020</p>

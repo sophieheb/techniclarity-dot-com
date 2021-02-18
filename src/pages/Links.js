@@ -2,6 +2,7 @@ import React from 'react';
 import { MilestoneIcon } from '@primer/octicons-react';
 
 import cloud from '../assets/cloud-2.webp';
+import cloudPng from '../assets/cloud-2.png';
 
 function Links() {
   return (
@@ -93,11 +94,15 @@ function Links() {
           </div>
         </div>
         <div className="col-lg-6 col-12 position-relative d-flex justify-content-center align-items-center">
-          <img
-            src={cloud}
-            alt="Cloud"
-            className="w-100 "
-          />
+          <picture>
+            <source srcSet={cloud} type="image/webp" />
+            <img
+              src={cloudPng}
+              alt="Cloud"
+              className="w-100 "
+            />
+          </picture>
+
         </div>
       </div>
     </div>
