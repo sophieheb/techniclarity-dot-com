@@ -21,6 +21,7 @@ import cloud from '../assets/small-cloud.webp';
 import headshot from '../assets/headshot.jpg';
 import hand from '../assets/line-hand-left.svg';
 import Instagram from '../components/Instagram';
+import Testimonials from '../components/Testimonials';
 
 function Course() {
   const [sparkleOne, setSparkleOne] = useState(false);
@@ -168,6 +169,8 @@ function Course() {
           </div>
         </div>
       </div>
+
+      <Testimonials />
 
       <div className="container-fluid ">
         <div className="row">
