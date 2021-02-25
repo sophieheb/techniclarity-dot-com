@@ -22,8 +22,8 @@ import cloudFreebieLeftPng from '../assets/cloud-freebie-left.png';
 import glossary from '../assets/glossary.webp';
 import glossaryPng from '../assets/glossary.png';
 
+import startupsmag from '../assets/press/startupsmag.png';
 import signify from '../assets/press/signify.png';
-
 import techround from '../assets/press/techround.png';
 
 import useOnScreen from '../shared/onScreen';
@@ -189,11 +189,14 @@ function Home({ setHeaderColour }) {
             </div>
           </div>
           <div className="row align-content-center justify-content-center">
-            <a className="col-lg-2 col-8 col-sm-5 my-md-3 px-5" href="https://www.signifytechnology.com/blog/2020/05/coffee-with-female-founder-of-techniclarity-sophie-hebdidge">
-              <img src={signify} className="w-100 my-auto" alt="Logo for Signify Technology" target="_blank" />
+            <a className="col-lg-2 col-8 col-sm-5 px-2 py-3 my-auto" href="https://startupsmagazine.co.uk/article-mentoring-and-funding-are-only-getting-us-so-far">
+              <img src={startupsmag} className="img-fluid" alt="Logo for Startups Magazine" target="_blank" />
             </a>
-            <a className="col-lg-2 col-8 col-sm-5 my-md-3 px-5 " href="https://techround.co.uk/interviews/sophie-hebdidge-founder-at-techniclarity-helping-aspiring-female-founders-learn-more-about-tech/">
-              <img src={techround} className="w-100 my-auto" alt="Logo for Signify Technology" target="_blank" />
+            <a className="col-lg-2 col-8 col-sm-5 px-5 py-3 my-auto" href="https://www.signifytechnology.com/blog/2020/05/coffee-with-female-founder-of-techniclarity-sophie-hebdidge">
+              <img src={signify} className="img-fluid" alt="Logo for Signify Technology" target="_blank" />
+            </a>
+            <a className="col-lg-2 col-8 col-sm-5 px-5 py-3 my-auto" href="https://techround.co.uk/interviews/sophie-hebdidge-founder-at-techniclarity-helping-aspiring-female-founders-learn-more-about-tech/">
+              <img src={techround} className="img-fluid" alt="Logo for Signify Technology" target="_blank" />
             </a>
 
           </div>
