@@ -81,6 +81,17 @@ function Links() {
               </div>
             </div>
             <div className="col-sm-6 col-12 p-5 ">
+              <h2 className="text-center">Freebie</h2>
+              <a href="https://bit.ly/3bPsl8w">
+                <p className="text-center">Idea to Product Workbook</p>
+              </a>
+              <div className="text-center">
+                <a href="https://bit.ly/3bPsl8w">
+                  <MilestoneIcon size={36} />
+                </a>
+              </div>
+            </div>
+            <div className="col-sm-6 col-12 p-5 ">
               <h2 className="text-center">Home</h2>
               <a href="/">
                 <p className="text-center">The Website</p>
