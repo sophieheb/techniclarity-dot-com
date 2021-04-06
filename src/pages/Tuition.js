@@ -233,7 +233,7 @@ function Tuition() {
               How much will it cost to build an app?
             </p>
             <h2 className="mt-5">ONE HOUR</h2>
-            <h1>£100</h1>
+            <h1>£200</h1>
             <Button variant="red" className="btn-lg" as="a" onClick={() => openPopupWidget({ url: 'https://calendly.com/learning-about-technology/power-hour' })}>BOOK NOW</Button>
           </div>
           <div className={`w-100 ${styles.divider} d-lg-none`} />
@@ -282,7 +282,7 @@ function Tuition() {
               What haven&apos;t I thought of?
             </p>
             <h2 className="mt-5">ONE HOUR</h2>
-            <h1>£100</h1>
+            <h1>£200</h1>
             <Button
               variant="red"
               className="btn-lg"
@@ -304,7 +304,7 @@ function Tuition() {
               up the session having ticked that big scary tech task off of your to-do list.
             </p>
             <h2 className="mt-5">FOUR HOURS</h2>
-            <h1>£500</h1>
+            <h1>£900</h1>
             <Button
               variant="red"
               className="btn-lg"
