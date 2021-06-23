@@ -18,7 +18,7 @@ import cloudBottom from '../assets/cloud-2.webp';
 import cloudBottomPng from '../assets/cloud-2.png';
 import Burger from './Burger';
 
-function Header({ headerColor }) {
+function Header() {
   const [collapsed, setCollapsed] = useState(true);
   const [scrolled, setScrolled] = useState(false);
 
@@ -45,12 +45,11 @@ function Header({ headerColor }) {
       <BrowserView>
         <div className="container-fluid bg-green">
           <a href="https://view.flodesk.com/pages/5f4e822801a6b70026d79b01" className={`${styles.annoucementBarLink}`}>
-            <h2 className={`text-center text-white m-0 p-2 ${styles.annoucementBar}`}>GET YOUR FREE GUIDE 'THE GLOSSARY OF TECH LINGO'</h2>
+            <h2 className={`text-center text-white m-0 p-2 ${styles.annoucementBar}`}>GET YOUR FREE GUIDE &apos;THE GLOSSARY OF TECH LINGO&apos;</h2>
           </a>
         </div>
         <Navbar
-          className={`${scrolled ? styles.scrolled : null} w-100 d-flex justify-content-between align-items-start`}
-          style={{ backgroundColor: headerColor }}
+          className={`${scrolled ? styles.scrolled : null} w-100 d-flex justify-content-between align-items-start ${styles.nav}`}
         >
           <Navbar.Brand href="/" className="">
             <img

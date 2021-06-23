@@ -193,7 +193,7 @@ function Tuition() {
 
       <Testimonials />
 
-      <a id="buy-now" />
+      <a id="buy-now" /> { /* eslint-disable-line */ }
       <div className="container-fluid p-5">
         <div className="row">
           <div className="col-lg-6 col-12 p-lg-5 py-5 px-3">
@@ -247,7 +247,8 @@ function Tuition() {
             </h1>
             <p className="mb-3">
               You’ve done the work and the research. But to feel satisfied
-              with the output you need someone who’s been there and done that to validate what you’ve done.
+              with the output you need someone who’s been
+              there and done that to validate what you’ve done.
               {' '}
             </p>
             <p className="mb-3">

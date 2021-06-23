@@ -89,7 +89,13 @@ function About() {
               {' '}
               <span>one demographic.</span>
             </h1>
-            <p>Technology is creating a new world; this gives us the chance to create a more equal society. However, when the majority of founders, people leading technological change and new ideas all come from one demographic, well that new world is going to be pretty geared towards that one group - and won’t be so equal.</p>
+            <p>
+              Technology is creating a new world; this gives us the chance to create
+              a more equal society. However, when the majority of founders,
+              people leading technological change and new ideas all come from
+              one demographic, well that new world is going to be pretty
+              geared towards that one group - and won’t be so equal.
+            </p>
           </div>
         </div>
       </div>
@@ -100,7 +106,7 @@ function About() {
             <h1 className="text-white text-center">
               20%
             </h1>
-            <p className="text-white text-center">Only 20% of founders are female (and that's an improvement from last year).</p>
+            <p className="text-white text-center">Only 20% of founders are female (and that&apos;s an improvement from last year).</p>
           </div>
           <div className="col-lg-4 col-12 p-lg-5 p-3">
             <h1 className="text-white text-center">
@@ -135,7 +141,8 @@ function About() {
           {' '}
           <span>long term change </span>
           {' '}
-          - to equip women with what they needed for the future, not just for now. Which is why Techniclarity is
+          - to equip women with what they needed for the future, not just for now.
+          Which is why Techniclarity is
           {' '}
           <span>all about education </span>
           because as you grow, so does your business.
@@ -149,17 +156,47 @@ function About() {
           <div className="col-lg-6 col-12">
             <h2>About me</h2>
             <h1>
-              I'm Sophie and I'm the
+              I&apos;m Sophie and I&apos;m the
               {' '}
               <span> Founder </span>
               {' '}
               of Techniclarity
             </h1>
-            <p>A cross-hatch of experience led me to found Techniclarity. I've developed websites and apps for small business and charities focussing on creating solutions that solve problems for women. Think anything from sex-tech to ed-tech. Plus I spent four years teaching senior execs about the digital transformation their businesses were going through.</p>
-            <p>My journey into technology started early when I studied Computer Science and Maths at university. My subject was thrust upon me, but I fell in love with creating new technology and the way it’s transforming the world.</p>
-            <p>Whilst wrapping up the first business I had my light-bulb moment. I was the CTO of PKT which created a voice bot that equipped teenage girls with the skills they need to manage their own mental health. I kept encountering women who were turning their backs on entrepreneurship simply because despite having an incredible idea, they lacked the technical fluency to turn it into action.</p>
-            <p>I’m inspired to help people without my sort of background, to help themselves gain a better understanding of technology. Then support them whilst they use that new clarity to grow businesses that make an impact.</p>
-            <p><i>P.S I’m also a sausage dog owner, attempting to learn Spanish and a total chocoholic. I love listening to podcasts and starting new books (finishing them is a different story).</i></p>
+            <p>
+              A cross-hatch of experience led me to found Techniclarity.
+              I&apos;ve developed websites and apps for small business and
+              charities focussing on creating solutions that solve
+              problems for women. Think anything from sex-tech to ed-tech.
+              Plus I spent four years teaching senior execs about the digital
+              transformation their businesses were going through.
+            </p>
+            <p>
+              My journey into technology started early when I studied Computer
+              Science and Maths at university. My subject was thrust upon me,
+              but I fell in love with creating new technology and the way it’s
+              transforming the world.
+            </p>
+            <p>
+              Whilst wrapping up the first business I had my light-bulb moment.
+              I was the CTO of PKT which created a voice bot that equipped teenage
+              girls with the skills they need to manage their own mental health. I kept
+              encountering women who were turning their backs on entrepreneurship simply
+              because despite having an incredible idea, they lacked the technical
+              fluency to turn it into action.
+            </p>
+            <p>
+              I’m inspired to help people without my sort of background, to help
+              themselves gain a better understanding of technology. Then support them
+              whilst they use that new clarity to grow businesses that make an impact.
+            </p>
+            <p>
+              <i>
+                P.S I’m also a cockerpoo owner, attempting to
+                learn Spanish and a total chocoholic. I love
+                listening to podcasts and starting new books
+                (finishing them is a different story).
+              </i>
+            </p>
           </div>
           <div className="col-lg-6 col-12">
             <div className="d-flex justify-content-center align-items-center h-100">

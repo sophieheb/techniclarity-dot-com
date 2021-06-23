@@ -34,16 +34,14 @@ import TheHandbook from '../components/TheHandbook';
 
 import NewsletterSignupHome from '../components/NewsletterSignupHome';
 
-function Home({ setHeaderColour }) {
+function Home() {
   const location = useLocation();
 
   const [loaded, setLoaded] = useState(false);
   const [glossaryHasBeenOnScreen, setGlossaryHasBeenOnScreen] = useState(false);
 
   useEffect(() => {
-    setHeaderColour('#262DBA');
     const timer = setTimeout(() => {
-      setHeaderColour('#8294F1');
       setLoaded(true);
     }, 10);
     return () => clearTimeout(timer);
@@ -56,12 +54,12 @@ function Home({ setHeaderColour }) {
     if (glossaryOnScreen && !glossaryHasBeenOnScreen) {
       setGlossaryHasBeenOnScreen(true);
     }
-  });
+  }, [glossaryOnScreen, glossaryHasBeenOnScreen]);
 
   return (
     <>
       <div
-        className={`container-fluid position-relative vh-100 d-flex align-items-lg-center align-items-top overflow-hidden ${loaded ? styles.containerTopLoaded : styles.containerTop}`}
+        className={`container-fluid position-relative vh-100 d-flex align-items-lg-center align-items-top overflow-hidden ${styles.containerTop}`}
       >
         <picture>
           <source srcSet={cloudTop} type="image/webp" />
@@ -109,7 +107,10 @@ function Home({ setHeaderColour }) {
             {' '}
             <span>make it happen.</span>
           </h1>
-          <p>We develop female founders by teaching them the tech know-how they need to lead a startup to success.</p>
+          <p>
+            We develop female founders by teaching them the tech know-how they need
+            to lead a startup to success.
+          </p>
         </div>
       </div>
       <div
@@ -166,7 +167,7 @@ function Home({ setHeaderColour }) {
       </div>
       <Services />
 
-      <a name="newsletter-signup">
+      <a name="newsletter-signup"> { /* eslint-disable-line */ }
         <TheHandbook newsletterSignUp={<NewsletterSignupHome />} signedUp={location.hash === '#newsletter-signup'} />
       </a>
 

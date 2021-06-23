@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import handGlobe from '../assets/hand-globe.webp';
 import handGlobePng from '../assets/hand-globe.png';
 
@@ -29,7 +30,9 @@ function TheHandbook({ newsletterSignUp, signedUp }) {
               <span>handbook</span>
             </h1>
             <p className="text-white">
-              You don’t need more advice (or inbox clutter), you just need high-quality info that stops you feeling like a fraud when you’re running your startup.
+              You don’t need more advice (or inbox clutter), you just need
+              high-quality info that stops you feeling like a fraud
+              when you’re running your startup.
             </p>
             {signUpBox}
           </div>
@@ -48,5 +51,10 @@ function TheHandbook({ newsletterSignUp, signedUp }) {
 
   );
 }
+
+TheHandbook.propTypes = {
+  newsletterSignUp: PropTypes.element.isRequired,
+  signedUp: PropTypes.bool.isRequired,
+};
 
 export default TheHandbook;

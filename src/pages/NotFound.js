@@ -32,7 +32,7 @@ function NotFound() {
         <h1>
           <span>404</span>
           {' '}
-          Whoops! This page doesn't exist.
+          Whoops! This page doesn&apos;t exist.
         </h1>
         <p>
           You were probably looking for our

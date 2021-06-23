@@ -90,25 +90,16 @@
             animation-iteration-count: infinite;
 }
 
-.containerTopLoaded {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#8294F1), to(#E1D5FA));
-    background-image: -o-linear-gradient(#8294F1, #E1D5FA);
-    background-image: linear-gradient(#8294F1, #E1D5FA);
-    overflow: hidden;
-    -webkit-transition: linear-gradient 5s;
-    -o-transition: linear-gradient 5s;
-    transition: linear-gradient 5s;
+
+.containerTop{
+    -webkit-transition: background-image 5s 10s;
+    -o-transition: background-image 5s;
+    transition: background-image 5s  ease-out 10s;
     -webkit-transition-timing-function: ease-out;
          -o-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
-
-}
-
-.containerTop{
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#262DBA), color-stop(#8294F1), to(#E1D5FA));
-    background-image: -o-linear-gradient(#262DBA, #8294F1, #E1D5FA);
-    background-image: linear-gradient(#262DBA, #8294F1, #E1D5FA);
-    overflow: hidden
+    overflow: hidden;
+    background-image: linear-gradient(#8294F1, #E1D5FA);
 }
 
 .cloudFreebieLeft{

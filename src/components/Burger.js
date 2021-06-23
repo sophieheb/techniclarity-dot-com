@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../styles/burger.module.css';
 
 function Burger({ collapsed, setCollapsed }) {
@@ -6,6 +7,7 @@ function Burger({ collapsed, setCollapsed }) {
     <button
       className="button shadow-none"
       onClick={() => { setCollapsed(); }}
+      type="button"
     >
       <span
         className={`${collapsed ? styles.bun : styles.topBun} ${styles.allBuns} bg-blue`}
@@ -16,5 +18,10 @@ function Burger({ collapsed, setCollapsed }) {
     </button>
   );
 }
+
+Burger.propTypes = {
+  collapsed: PropTypes.bool.isRequired,
+  setCollapsed: PropTypes.func.isRequired,
+};
 
 export default Burger;

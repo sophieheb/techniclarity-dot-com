@@ -47,8 +47,11 @@ function Footer() {
             {' '}
             <span>Handbook</span>
           </h3>
-          <p className="text-white footerText">Sign up to our newsletter for high-quality info that stops you feeling like a fraud when you're running your startup.</p>
-          <a name="footer-newsletter-signup">
+          <p className="text-white footerText">
+            Sign up to our newsletter for high-quality info that stops
+            you feeling like a fraud when you&apos;re running your startup.
+          </p>
+          <a name="footer-newsletter-signup"> { /* eslint-disable-line */ }
             {location.hash === '#newsletter-signup' ? <h2 className="text-white">Thanks for signing up</h2> : <NewsletterSignupFooter />}
 
           </a>
@@ -66,7 +69,7 @@ function Footer() {
               </picture>
             </div>
             <div className="col-lg-12 col-6">
-              <p className="text-white m-0 footerText">	&#169; Techniclarity 2020</p>
+              <p className="text-white m-0 footerText">&#169; Techniclarity 2020</p>
               <p className="text-white m-0 footerText">
                 Site design by
                 {' '}
