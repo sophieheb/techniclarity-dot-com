@@ -1,5 +1,5 @@
 import React, {
-  useState, useEffect, Suspense, lazy,
+  useEffect, Suspense, lazy,
 } from 'react';
 import BarLoader from 'react-spinners/BarLoader';
 import { Helmet } from 'react-helmet';
@@ -39,7 +39,7 @@ function useAnalytics() {
   }, [location]);
 }
 
-function Routes({ setHeaderColour }) {
+function Routes() {
   useAnalytics();
   return (
 
@@ -69,7 +69,7 @@ function Routes({ setHeaderColour }) {
         <Links />
       </Route>
       <Route exact path="/">
-        <Home setHeaderColour={(color) => setHeaderColour(color)} />
+        <Home />
       </Route>
       <Route>
         <NotFound />
@@ -80,8 +80,6 @@ function Routes({ setHeaderColour }) {
 }
 
 function App() {
-  const [headerColor, setHeaderColour] = useState('#E1D5FA');
-
   return (
     <>
       <Helmet>
@@ -108,8 +106,8 @@ function App() {
         )}
         >
           <div className="d-flex min-vh-100 flex-column justify-content-between">
-            <Header headerColor={headerColor} />
-            <Routes setHeaderColour={setHeaderColour} />
+            <Header />
+            <Routes />
             <Footer />
           </div>
         </Suspense>
@@ -136,7 +134,9 @@ function App() {
         contentStyle={{ display: 'flex' }}
       >
         <h2>
-          We use cookies to improve your experience on our site. By using our site you consent to cookies.
+          We use cookies to improve your experience on our site.
+          By using our site you consent to cookies.
+          {' '}
           <a href="/cookie-policy" className="text-white" style={{ 'text-decoration-line': 'underline' }}>Learn more</a>
         </h2>
       </CookieConsent>

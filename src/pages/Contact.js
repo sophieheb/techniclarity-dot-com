@@ -36,7 +36,7 @@ function Contact() {
         <div className="row">
           <div className="col-lg-6 col-12">
             <h2 className="text-center">Contact</h2>
-            <h1 className="text-center">Let's have a chat</h1>
+            <h1 className="text-center">Let&apos;s have a chat</h1>
             <div className="row d-flex align-items-center justify-content-center">
               <div className="col-sm-6 col-12 p-5 ">
                 <h2 className="text-center">Media Enquiries</h2>
@@ -88,7 +88,7 @@ function Contact() {
         </div>
       </div>
 
-      <a name="newsletter-signup">
+      <a name="newsletter-signup"> { /* eslint-disable-line */ }
         <TheHandbook newsletterSignUp={<NewsletterSignupContact />} signedUp={location.hash === '#newsletter-signup'} />
       </a>
       <Instagram />

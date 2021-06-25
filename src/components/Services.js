@@ -37,7 +37,13 @@ function Services() {
             {' '}
             you need to get your idea ready for your future technical team.
           </h3>
-          <p>Product Launchpad is an online course that guides you through the first few steps of creating your app or web platform. You’ll learn all the knowledge you need to launch your product and put all that new know-how into practice at the same time.</p>
+          <p>
+            Product Launchpad is an online course that guides you
+            through the first few steps of creating your app or
+            web platform. You’ll learn all the knowledge you need
+            to launch your product and put all that new know-how
+            into practice at the same time.
+          </p>
           <Button className="btn-lg" variant="red" href="/course">FIND OUT MORE</Button>
         </div>
 
@@ -73,7 +79,11 @@ function Services() {
             {' '}
           </h3>
           <p>
-            You can do all the research in the world, but sometimes all you need is an experienced pair of eyes to validate your thinking. You’ll leave with solutions to problems that have been holding you back, so that you can lead with confidence.
+            You can do all the research in the world, but sometimes
+            all you need is an experienced pair of eyes to validate
+            your thinking. You’ll leave with solutions to problems
+            that have been holding you back, so that you can lead
+            with confidence.
           </p>
           <Button className="btn-lg" variant="red" href="/tuition">FIND OUT MORE</Button>
         </div>

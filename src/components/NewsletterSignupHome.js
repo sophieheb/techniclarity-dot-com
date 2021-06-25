@@ -45,7 +45,7 @@ function NewsletterSignupHome() {
         </div>
       </div>
 
-      <img height="1" width="1" style={{ display: 'none' }} src="https://t.flodesk.com/utm.gif?r=5f490f51c1e8d80026e7fb98" />
+      <img height="1" width="1" style={{ display: 'none' }} alt="" src="https://t.flodesk.com/utm.gif?r=5f490f51c1e8d80026e7fb98" />
       <script src="https://assets.flodesk.com/form.js?v=1600276197696" />
     </div>
 
