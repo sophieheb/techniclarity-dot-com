@@ -12,6 +12,7 @@ import {
 import CookieConsent, { Cookies } from 'react-cookie-consent';
 import ReactGA from 'react-ga';
 import ReactPixel from 'react-facebook-pixel';
+import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 import womanMiddle from './assets/woman-about-middle.svg';
 
 const Tuition = lazy(() => import('./pages/Tuition'));
@@ -24,6 +25,7 @@ const Footer = lazy(() => import('./components/Footer'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Cookie = lazy(() => import('./pages/Cookie'));
+const BlogPost = lazy(() => import('./pages/BlogPost'));
 const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'));
 const Links = lazy(() => import('./pages/Links'));
 
@@ -38,6 +40,11 @@ function useAnalytics() {
     ReactGA.pageview(location.pathname);
   }, [location]);
 }
+
+const contentfulClient = new ContentfulClient({
+  accessToken: process.env.REACT_APP_CONTENTFUL_API_KEY,
+  space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
+});
 
 function Routes() {
   useAnalytics();
@@ -68,6 +75,10 @@ function Routes() {
       <Route path="/links">
         <Links />
       </Route>
+      <Route path="/blog/:slug*">
+        <BlogPost />
+      </Route>
+
       <Route exact path="/">
         <Home />
       </Route>
@@ -96,22 +107,24 @@ function App() {
         <meta name="twitter:image" content={womanMiddle} />
         <meta name="twitter:image:alt" content="Line drawing" />
       </Helmet>
-      <Router>
-        <Suspense fallback={(
-          <BarLoader
-            height={10}
-            color="#031799"
-            width="100%"
-          />
+      <ContentfulProvider client={contentfulClient}>
+        <Router>
+          <Suspense fallback={(
+            <BarLoader
+              height={10}
+              color="#031799"
+              width="100%"
+            />
         )}
-        >
-          <div className="d-flex min-vh-100 flex-column justify-content-between">
-            <Header />
-            <Routes />
-            <Footer />
-          </div>
-        </Suspense>
-      </Router>
+          >
+            <div className="d-flex min-vh-100 flex-column justify-content-between">
+              <Header />
+              <Routes />
+              <Footer />
+            </div>
+          </Suspense>
+        </Router>
+      </ContentfulProvider>
       <CookieConsent
         onDecline={() => {
           ReactPixel.revokeConsent();
