@@ -14,7 +14,7 @@ import ReactGA from 'react-ga';
 import ReactPixel from 'react-facebook-pixel';
 import womanMiddle from './assets/woman-about-middle.svg';
 
-const Tuition = lazy(() => import('./pages/Tuition'));
+// const Tuition = lazy(() => import('./pages/Tuition'));
 const Home = lazy(() => import('./pages/Home'));
 const Course = lazy(() => import('./pages/Course'));
 const About = lazy(() => import('./pages/About'));
@@ -44,9 +44,9 @@ function Routes() {
   return (
 
     <Switch>
-      <Route path="/tuition">
+      {/* <Route path="/tuition">
         <Tuition />
-      </Route>
+      </Route> */}
       <Route path="/course">
         <Course />
       </Route>

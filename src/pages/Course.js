@@ -22,7 +22,7 @@ import cloud from '../assets/small-cloud.webp';
 import cloudPng from '../assets/small-cloud.png';
 
 import headshot from '../assets/headshot.jpg';
-import hand from '../assets/line-hand-left.svg';
+// import hand from '../assets/line-hand-left.svg';
 import Instagram from '../components/Instagram';
 import Testimonials from '../components/Testimonials';
 
@@ -917,11 +917,12 @@ function Course() {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="container-fluid position-relative d-flex align-items-center p-5 "
       >
         <div className="row">
-          <div className="col-md-6 col-12 position-relative d-flex justify-content-center align-items-center">
+          <div className="col-md-6 col-12 position-relative
+          d-flex justify-content-center align-items-center">
             <img
               src={pinkCircle}
               alt="Pink circle background"
@@ -945,7 +946,7 @@ function Course() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Instagram />
 

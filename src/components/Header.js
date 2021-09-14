@@ -71,7 +71,7 @@ function Header() {
 
           </a>
           <Nav className="" navbar={false}>
-            <Nav.Link href="tuition">TUITION</Nav.Link>
+            {/* <Nav.Link href="tuition">TUITION</Nav.Link> */}
             <Nav.Link href="course">COURSE</Nav.Link>
             <Nav.Link href="about">ABOUT</Nav.Link>
             <Nav.Link href="contact">CONTACT</Nav.Link>
@@ -114,7 +114,7 @@ function Header() {
                 </picture>
                 <div className="row flex-column h-75">
                   <Nav className="col-12 flex-column" navbar={false}>
-                    <Nav.Link href="tuition" className={styles.link}>Tuition</Nav.Link>
+                    {/* <Nav.Link href="tuition" className={styles.link}>Tuition</Nav.Link> */}
                     <Nav.Link href="course" className={styles.link}>Course</Nav.Link>
                     <Nav.Link href="about" className={styles.link}>About</Nav.Link>
                     <Nav.Link href="contact" className={styles.link}>Contact</Nav.Link>
