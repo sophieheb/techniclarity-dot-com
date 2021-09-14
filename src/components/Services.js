@@ -2,14 +2,14 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 
 import rocket from '../assets/line-rocket.svg';
-import hand from '../assets/line-hand-right.svg';
-import pinkCircle from '../assets/pink-circle.svg';
+// import hand from '../assets/line-hand-right.svg';
+// import pinkCircle from '../assets/pink-circle.svg';
 import greenDiamond from '../assets/green-diamond.svg';
 
 function Services() {
   return (
     <div className="container py-5">
-      <h1 className="text-center">Services</h1>
+      {/* <h1 className="text-center">Services</h1> */}
       <div className="row py-5">
         <div className="col-lg-6 order-lg-1 position-relative d-flex justify-content-center align-items-center">
           <img
@@ -48,8 +48,9 @@ function Services() {
         </div>
 
       </div>
-      <div className="row py-5">
-        <div className="col-lg-6 position-relative d-flex justify-content-center align-items-center">
+      {/* <div className="row py-5">
+        <div className="col-lg-6 position-relative
+        d-flex justify-content-center align-items-center">
           <img
             src={pinkCircle}
             alt="Pink circle background"
@@ -88,7 +89,7 @@ function Services() {
           <Button className="btn-lg" variant="red" href="/tuition">FIND OUT MORE</Button>
         </div>
 
-      </div>
+      </div> */}
     </div>
 
   );

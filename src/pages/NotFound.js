@@ -37,9 +37,9 @@ function NotFound() {
         <p>
           You were probably looking for our
           <a href="/course">courses</a>
-          {' '}
+          {/* {' '}
           or
-          <a href="/tuition">tuition</a>
+          <a href="/tuition">tuition</a> */}
           . Or maybe you just want to head back to the
           <a href="/">homepage.</a>
         </p>
