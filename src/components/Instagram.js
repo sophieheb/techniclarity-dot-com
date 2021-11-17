@@ -27,7 +27,7 @@ function Instagram() {
       try {
         const result = await axios.get(`https://graph.instagram.com/me?fields=media.limit(${isMobile ? 4 : 5}){thumbnail_url,media_url,permalink}&access_token=${token}`);
         setInstagramData(result.data.media.data);
-      } catch { setInstagramData(null); }
+      } catch (err) { console.log(`Could not load instagram data: ${err}`); setInstagramData([]); }
     };
     if (token && instagramOnScreen) {
       fetchInstagramData();

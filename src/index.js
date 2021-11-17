@@ -6,15 +6,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './styles/custom.scss';
 
-// console.log(process.env.REACT_APP_SENTRY)
-Sentry.init({
-  dsn: process.env.REACT_APP_SENTRY,
-  integrations: [
-    new Integrations.BrowserTracing(),
-  ],
+// // console.log(process.env.REACT_APP_SENTRY)
+// Sentry.init({
+//   dsn: process.env.REACT_APP_SENTRY,
+//   integrations: [
+//     new Integrations.BrowserTracing(),
+//   ],
 
-  tracesSampleRate: 1.0,
-});
+//   tracesSampleRate: 1.0,
+// });
 
 ReactDOM.render(
   <React.StrictMode>
